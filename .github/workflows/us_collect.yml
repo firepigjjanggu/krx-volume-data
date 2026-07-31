@@ -1,0 +1,26 @@
+name: 미국 거래량 스캔
+on:
+  schedule:
+    - cron: '20 21 * * 1-5'   # 한국시간 화~토 새벽 6:20 (미국장 마감 후)
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  us:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install yfinance pandas lxml
+      - run: python us_collect.py
+      - name: 커밋
+        run: |
+          git config user.name "krx-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git pull --rebase || true
+          git add -A data
+          git diff --cached --quiet || git commit -m "us: $(date -u +%F)"
+          git push
