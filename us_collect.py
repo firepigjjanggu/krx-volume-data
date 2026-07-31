@@ -1,5 +1,6 @@
 # 미국 주요종목(S&P500+나스닥100) 거래량 스캔 - 마감 후 실행
 import datetime, io, os, sys, time
+from zoneinfo import ZoneInfo
 import pandas as pd
 import yfinance as yf
 
@@ -47,6 +48,14 @@ syms = sorted(tickers.keys())
 data = yf.download(syms, period="60d", interval="1d", group_by="ticker",
                    auto_adjust=False, threads=True, progress=False)
 
+# 미국 동부시간 기준, 마지막으로 "마감이 끝난" 날짜 계산 (시간외 임시봉 차단)
+et = datetime.datetime.now(ZoneInfo("America/New_York"))
+cut_date = et.date()
+if (et.hour, et.minute) < (16, 30):
+    cut_date -= datetime.timedelta(days=1)
+cut = pd.Timestamp(cut_date)
+print("마감 기준 컷오프:", cut_date, "(ET 현재", et.strftime("%m-%d %H:%M"), ")")
+
 frames = {}
 last_dates = []
 for s in syms:
@@ -54,13 +63,15 @@ for s in syms:
         d = data[s].dropna(subset=["Close", "Volume"])
     except Exception:
         continue
-    d = d[d["Volume"] > 0]
+    if getattr(d.index, "tz", None) is not None:
+        d.index = d.index.tz_localize(None)
+    d = d[(d["Volume"] > 0) & (d.index <= cut)]
     if len(d) < 25:
         continue
     frames[s] = d
     last_dates.append(d.index[-1])
 
-# 다수결로 "진짜 마감된 세션" 결정 (시간외 반쪽 데이터 제거)
+# 다수결로 기준 세션 확정
 target = pd.Series(last_dates).mode()[0]
 print("기준 세션:", target.date(), "| 전체", len(frames), "종목")
 
