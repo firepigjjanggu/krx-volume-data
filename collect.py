@@ -90,4 +90,9 @@ df["Amount"] = (df["Close"] * df["Volume"]).round()
 df = df[["Code", "Close", "Volume", "Amount", "Market", "ChangesRatio"]]
 df.to_csv(f"data/{date}.csv", index=False)
 
-stems = sorted(f[:8] for f in os.listdir("data") if f.endswith(".csv") and f[:8].
+stems = sorted(f[:8] for f in os.listdir("data") if f.endswith(".csv") and f[:8].isdigit())
+with open("data/latest_date.txt", "w") as f:
+    f.write(stems[-1])
+for s in stems[:-40]:
+    os.remove(os.path.join("data", s + ".csv"))
+print("저장 완료:", date, len(df), "종목")
