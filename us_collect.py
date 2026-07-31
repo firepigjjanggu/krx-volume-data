@@ -47,48 +47,57 @@ syms = sorted(tickers.keys())
 data = yf.download(syms, period="60d", interval="1d", group_by="ticker",
                    auto_adjust=False, threads=True, progress=False)
 
-rows = []
+frames = {}
+last_dates = []
 for s in syms:
     try:
         d = data[s].dropna(subset=["Close", "Volume"])
     except Exception:
         continue
-    if len(d) < 25:
-        continue
     d = d[d["Volume"] > 0]
     if len(d) < 25:
+        continue
+    frames[s] = d
+    last_dates.append(d.index[-1])
+
+# 다수결로 "진짜 마감된 세션" 결정 (시간외 반쪽 데이터 제거)
+target = pd.Series(last_dates).mode()[0]
+print("기준 세션:", target.date(), "| 전체", len(frames), "종목")
+
+rows = []
+for s, d in frames.items():
+    if target not in d.index:
+        continue
+    pos = d.index.get_loc(target)
+    if pos < 21:
         continue
     vol = d["Volume"]
     avg20 = vol.shift(1).rolling(20, min_periods=15).mean()
     ratio = vol / avg20
-    last = d.index[-1]
-    lastdate = str(last.date())
-    close = float(d["Close"].iloc[-1])
-    prev = float(d["Close"].iloc[-2])
+    close = float(d["Close"].iloc[pos])
+    prev = float(d["Close"].iloc[pos - 1])
     surged = (ratio >= 1.2)
     streak = 0
-    for i in range(len(d) - 1, -1, -1):
+    for i in range(pos, -1, -1):
         v = surged.iloc[i]
         if pd.notna(v) and v:
             streak += 1
         else:
             break
-    r = float(ratio.iloc[-1]) if pd.notna(ratio.iloc[-1]) else 0
-    if close * float(vol.iloc[-1]) < 5_000_000:
+    r = float(ratio.iloc[pos]) if pd.notna(ratio.iloc[pos]) else 0
+    if close * float(vol.iloc[pos]) < 5_000_000:
         continue
     rows.append({
         "Ticker": s, "Name": tickers[s]["Name"], "Exchange": tickers[s]["Exchange"],
-        "Date": lastdate, "Close": round(close, 2),
+        "Date": str(target.date()), "Close": round(close, 2),
         "ChangePct": round((close / prev - 1) * 100, 2),
-        "Volume": int(vol.iloc[-1]), "Avg20": int(avg20.iloc[-1]) if pd.notna(avg20.iloc[-1]) else 0,
+        "Volume": int(vol.iloc[pos]), "Avg20": int(avg20.iloc[pos]) if pd.notna(avg20.iloc[pos]) else 0,
         "Ratio": round(r, 2), "Streak": min(streak, 9),
     })
 
 df = pd.DataFrame(rows)
 if len(df) < 200:
     sys.exit("미국 데이터 부족: " + str(len(df)))
-maxd = df["Date"].max()
-df = df[df["Date"] == maxd]
 df = df[df["Ratio"] >= 1.2].sort_values("Ratio", ascending=False)
 df.to_csv("data/us/latest.csv", index=False)
-print("미국 저장 완료:", maxd, len(df), "종목 (전체 유니버스 중 급증만)")
+print("미국 저장 완료:", target.date(), len(df), "종목 (급증만)")
