@@ -1,0 +1,48 @@
+name: 데이터 탐사(임시)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - name: 탐사 실행
+        run: |
+          python3 - <<'PYEOF'
+          import json, requests, os
+          os.makedirs("data", exist_ok=True)
+          UA={"User-Agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1","Accept":"application/json","Referer":"https://m.stock.naver.com/"}
+          tests={
+           "basic":"https://m.stock.naver.com/api/stock/005930/basic",
+           "integration":"https://m.stock.naver.com/api/stock/005930/integration",
+           "overtime":"https://m.stock.naver.com/api/stock/005930/overtime",
+           "mv_kospi":"https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=1&pageSize=2",
+           "mv_nxt":"https://m.stock.naver.com/api/stocks/marketValue/NXT?page=1&pageSize=2",
+           "mv_param":"https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=1&pageSize=2&stockExchangeType=NXT",
+           "daily":"https://m.stock.naver.com/api/stock/005930/trade/daily?page=1&pageSize=3",
+          }
+          out={}
+          for k,u in tests.items():
+              try:
+                  r=requests.get(u,headers=UA,timeout=20)
+                  out[k]={"status":r.status_code,"body":r.text[:1500]}
+              except Exception as e:
+                  out[k]={"error":str(e)}
+          open("data/probe.json","w").write(json.dumps(out,ensure_ascii=False,indent=1))
+          print("탐사 완료")
+          PYEOF
+      - name: 커밋
+        run: |
+          git config user.name "krx-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git pull --rebase || true
+          git add -A data
+          git diff --cached --quiet || git commit -m "probe"
+          git push
