@@ -19,24 +19,28 @@ jobs:
           import json, requests, os
           os.makedirs("data", exist_ok=True)
           UA={"User-Agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1","Accept":"application/json","Referer":"https://m.stock.naver.com/"}
-          tests={
-           "basic":"https://m.stock.naver.com/api/stock/005930/basic",
-           "integration":"https://m.stock.naver.com/api/stock/005930/integration",
-           "overtime":"https://m.stock.naver.com/api/stock/005930/overtime",
-           "mv_kospi":"https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=1&pageSize=2",
-           "mv_nxt":"https://m.stock.naver.com/api/stocks/marketValue/NXT?page=1&pageSize=2",
-           "mv_param":"https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=1&pageSize=2&stockExchangeType=NXT",
-           "daily":"https://m.stock.naver.com/api/stock/005930/trade/daily?page=1&pageSize=3",
-          }
+          def get(u):
+              return requests.get(u,headers=UA,timeout=20).json()
           out={}
-          for k,u in tests.items():
+          try:
+              j=get("https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=1&pageSize=3")
+              s0=j['stocks'][0]
+              out['sweep_keys']=sorted(s0.keys())
+              out['overMarketPriceInfo']=s0.get('overMarketPriceInfo')
+          except Exception as e:
+              out['sweep_err']=str(e)
+          for code,label in [("005930","samsung_kospi"),("255440","yas_kosdaq"),("002210","dongsung_kospi")]:
               try:
-                  r=requests.get(u,headers=UA,timeout=20)
-                  out[k]={"status":r.status_code,"body":r.text[:1500]}
+                  j=get(f"https://m.stock.naver.com/api/stock/{code}/integration")
+                  info={t['code']:t.get('value') for t in j.get('totalInfos',[])}
+                  out[label]={'totalInfos':info,'topKeys':sorted(j.keys())}
+                  b=get(f"https://m.stock.naver.com/api/stock/{code}/basic")
+                  out[label]['basic_close']=b.get('closePrice')
+                  out[label]['basic_ratio']=b.get('fluctuationsRatio')
               except Exception as e:
-                  out[k]={"error":str(e)}
+                  out[label]={'err':str(e)}
           open("data/probe.json","w").write(json.dumps(out,ensure_ascii=False,indent=1))
-          print("탐사 완료")
+          print("탐사2 완료")
           PYEOF
       - name: 커밋
         run: |
@@ -44,5 +48,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git pull --rebase || true
           git add -A data
-          git diff --cached --quiet || git commit -m "probe"
+          git diff --cached --quiet || git commit -m "probe2"
           git push
