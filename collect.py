@@ -56,6 +56,7 @@ def fetch_market(market):
         for it in items:
             rows.append({
                 "Code": str(it.get("itemCode", "")).zfill(6),
+                "Name": str(it.get("stockName", "")).strip(),
                 "Close": num(it.get("closePrice")),
                 "Volume": num(it.get("accumulatedTradingVolume")),
                 "ChangesRatio": num(it.get("fluctuationsRatio")),
@@ -121,7 +122,7 @@ print(f"통합 거래량 성공 {ok}/{len(rows)} ({int(time.time()-t0)}초 소�
 df = pd.DataFrame(rows).dropna(subset=["Close", "Volume"])
 df["Amount"] = (df["Close"] * df["Volume"]).round()
 df["AmountTotal"] = (df["Close"] * df["VolumeTotal"]).round()
-df = df[["Code", "Close", "Volume", "VolumeTotal", "Amount", "AmountTotal", "Market", "ChangesRatio"]]
+df = df[["Code", "Name", "Close", "Volume", "VolumeTotal", "Amount", "AmountTotal", "Market", "ChangesRatio"]]
 df.to_csv(path, index=False)
 
 up = df[df["VolumeTotal"] > df["Volume"]]
