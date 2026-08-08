@@ -19,26 +19,49 @@ def get_universe():
         print("S&P500:", len(sp))
     except Exception as e:
         print("S&P500 목록 실패:", e)
+    nq = None
     try:
-        html = requests.get("https://en.wikipedia.org/wiki/Nasdaq-100", headers=ua, timeout=60).text
+        # 1차: 나스닥100 구성종목이 분리된 문서(위키 Nasdaq-100 본문은 표가 빠졌음 - FN-023)
+        html = requests.get(
+            "https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies", headers=ua, timeout=60
+        ).text
         tabs = pd.read_html(io.StringIO(html))
-        nq = None
         for t in tabs:
             cols = [str(c).lower() for c in t.columns]
             if any("ticker" in c or "symbol" in c for c in cols) and len(t) >= 90:
                 nq = t; break
-        if nq is not None:
-            tcol = [c for c in nq.columns if "icker" in str(c) or "ymbol" in str(c)][0]
-            ncol = [c for c in nq.columns if "ompany" in str(c)][0]
-            for _, r in nq.iterrows():
-                sym = str(r[tcol]).replace(".", "-")
+    except Exception as e:
+        print("나스닥100 목록(1차 위키) 실패:", e)
+
+    if nq is not None:
+        tcol = [c for c in nq.columns if "icker" in str(c) or "ymbol" in str(c)][0]
+        ncol = [c for c in nq.columns if "ompany" in str(c)][0]
+        for _, r in nq.iterrows():
+            sym = str(r[tcol]).replace(".", "-")
+            if sym in tickers:
+                tickers[sym]["Exchange"] = "NASDAQ"
+            else:
+                tickers[sym] = {"Name": str(r[ncol]), "Exchange": "NASDAQ"}
+        print("나스닥100 병합 후:", len(tickers))
+    else:
+        # 2차 폴백: api.nasdaq.com (Actions 러너 IP 차단 가능성 있음 - 실패해도 계속 진행)
+        try:
+            r = requests.get(
+                "https://api.nasdaq.com/api/quote/list-type/nasdaq100",
+                headers={**ua, "Accept": "application/json"},
+                timeout=60,
+            )
+            rows = r.json()["data"]["rows"]
+            for row in rows:
+                sym = str(row["symbol"]).replace(".", "-")
                 if sym in tickers:
                     tickers[sym]["Exchange"] = "NASDAQ"
                 else:
-                    tickers[sym] = {"Name": str(r[ncol]), "Exchange": "NASDAQ"}
+                    tickers[sym] = {"Name": str(row.get("companyName", sym)), "Exchange": "NASDAQ"}
             print("나스닥100 병합 후:", len(tickers))
-    except Exception as e:
-        print("나스닥100 목록 실패:", e)
+        except Exception as e:
+            print("나스닥100 목록(2차 api.nasdaq.com) 실패:", e)
+            print("[경고] 나스닥100 목록을 두 소스 모두에서 가져오지 못함 - 거래소 구분 없이 진행(NYSE 단일)")
     if len(tickers) < 300:
         sys.exit("종목 목록 수집 실패")
     return tickers

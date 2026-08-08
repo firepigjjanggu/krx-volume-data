@@ -362,11 +362,13 @@ def build_notes(kr, us):
         if us["has_exchange_split"] is False:
             # scan.py의 print('(거래소 분류 없음 - 통합 표시)')와 동일 취지(반영 #5 ①)
             notes.append("나스닥100 분류 정보가 아직 반영되지 않아 거래소 구분 없이 통합 표시했습니다.")
-        # exchange는 실제 상장 거래소가 아니라 지수 구성 기준임을 밝힘(반영 #5 ②)
-        notes.append(
-            "미국 종목의 거래소 표기는 실제 상장 거래소가 아니라 지수 구성 기준입니다"
-            "(S&P500 편입=NYSE, 나스닥100 편입=NASDAQ으로 표시)."
-        )
+        if us["has_exchange_split"] is True:
+            # exchange는 실제 상장 거래소가 아니라 지수 구성 기준임을 밝힘(반영 #5 ②)
+            # D-006: 거래소 라벨이 실제로 화면에 나뉘어 보일 때만 그 의미를 설명 - split=false면 노이즈
+            notes.append(
+                "미국 종목의 거래소 표기는 실제 상장 거래소가 아니라 지수 구성 기준입니다"
+                "(S&P500 편입=NYSE, 나스닥100 편입=NASDAQ으로 표시)."
+            )
     return notes[:10]
 
 
