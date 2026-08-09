@@ -242,6 +242,7 @@ def _us_item(row):
         "change_pct": float(row["ChangePct"]),
         "volume": int(row["Volume"]),
         "ratio": round(float(row["Ratio"]), 1),
+        "streak": int(row["Streak"]),
     }
 
 
