@@ -23,6 +23,14 @@ import os
 import re
 import sys
 
+# 표준출력이 cp949(윈도우 기본)면 '—' 같은 문자를 못 찍어 UnicodeEncodeError로 죽는다.
+# 하필 그게 예외 처리부의 경고 문구라, 진짜 실패 원인이 그 크래시에 가려진 적이 있다
+# (2026-08-11: scan_ref.py의 Name 컬럼 충돌이 인코딩 에러로 둔갑). 검증 도구가 자기
+# 에러 메시지 때문에 죽으면 안 되므로 여기서 막는다.
+with contextlib.suppress(Exception):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
 BRIEF_PATH = os.path.join(REPO_ROOT, "data", "brief.json")
 
