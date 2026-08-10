@@ -1,17 +1,15 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-10T00:46:33+09:00",
+  "generated_at": "2026-08-10T22:08:52+09:00",
   "status": "ok",
   "errors": [],
   "kr": {
     "date": "2026-08-07",
-    "integrated_count": 4091,
-    "source": "repo+marcap",
-    "repo_days_used": [
-      "2026-08-07"
-    ],
+    "integrated_count": 0,
+    "source": "marcap_only",
+    "repo_days_used": [],
     "kospi": {
-      "over20_count": 85,
+      "over20_count": 82,
       "threshold": 465,
       "items": [
         {
@@ -20,8 +18,8 @@
           "grp": "코스피",
           "close": 5910,
           "change_pct": 29.89,
-          "volume_shown": 3565034,
-          "amount_shown": 21069350940,
+          "volume_shown": 3568342,
+          "amount_shown": 20437740455,
           "ratio": 57.0,
           "integrated": false
         },
@@ -31,9 +29,9 @@
           "grp": "코스피",
           "close": 3015,
           "change_pct": -0.82,
-          "volume_shown": 3122051,
-          "amount_shown": 9412983765,
-          "ratio": 27.7,
+          "volume_shown": 3129034,
+          "amount_shown": 9927047358,
+          "ratio": 27.8,
           "integrated": false
         },
         {
@@ -42,8 +40,8 @@
           "grp": "코스피",
           "close": 2360,
           "change_pct": 6.07,
-          "volume_shown": 1137551,
-          "amount_shown": 2684620360,
+          "volume_shown": 1138269,
+          "amount_shown": 2787012781,
           "ratio": 27.5,
           "integrated": false
         },
@@ -53,9 +51,9 @@
           "grp": "코스피",
           "close": 12300,
           "change_pct": 1.91,
-          "volume_shown": 4190538,
-          "amount_shown": 51543617400,
-          "ratio": 16.7,
+          "volume_shown": 4207934,
+          "amount_shown": 55081759305,
+          "ratio": 16.8,
           "integrated": false
         },
         {
@@ -64,8 +62,8 @@
           "grp": "코스피",
           "close": 17800,
           "change_pct": 2.83,
-          "volume_shown": 189121,
-          "amount_shown": 3366353800,
+          "volume_shown": 189582,
+          "amount_shown": 3640813895,
           "ratio": 16.1,
           "integrated": false
         },
@@ -75,8 +73,8 @@
           "grp": "코스피",
           "close": 4555,
           "change_pct": -1.3,
-          "volume_shown": 3322321,
-          "amount_shown": 15133172155,
+          "volume_shown": 3332140,
+          "amount_shown": 15846418220,
           "ratio": 13.6,
           "integrated": false
         },
@@ -86,9 +84,9 @@
           "grp": "코스피",
           "close": 2130,
           "change_pct": 0.71,
-          "volume_shown": 688860,
-          "amount_shown": 1467271800,
-          "ratio": 13.3,
+          "volume_shown": 690117,
+          "amount_shown": 1526456032,
+          "ratio": 13.4,
           "integrated": false
         },
         {
@@ -97,8 +95,8 @@
           "grp": "코스피",
           "close": 7990,
           "change_pct": 7.97,
-          "volume_shown": 482613,
-          "amount_shown": 3856077870,
+          "volume_shown": 483327,
+          "amount_shown": 3783349775,
           "ratio": 9.2,
           "integrated": false
         },
@@ -108,9 +106,9 @@
           "grp": "코스피",
           "close": 7810,
           "change_pct": 15.02,
-          "volume_shown": 21908635,
-          "amount_shown": 171106439350,
-          "ratio": 8.9,
+          "volume_shown": 22041484,
+          "amount_shown": 175490068895,
+          "ratio": 9.0,
           "integrated": false
         },
         {
@@ -119,15 +117,15 @@
           "grp": "코스피",
           "close": 52500,
           "change_pct": 5.53,
-          "volume_shown": 26932,
-          "amount_shown": 1413930000,
+          "volume_shown": 26976,
+          "amount_shown": 1412866600,
           "ratio": 7.2,
           "integrated": false
         }
       ]
     },
     "kosdaq": {
-      "over20_count": 143,
+      "over20_count": 145,
       "threshold": 1905,
       "items": [
         {
@@ -136,8 +134,8 @@
           "grp": "코스닥",
           "close": 1852,
           "change_pct": 29.96,
-          "volume_shown": 5040474,
-          "amount_shown": 9334957848,
+          "volume_shown": 5043305,
+          "amount_shown": 8992482120,
           "ratio": 122.1,
           "integrated": false
         },
@@ -147,9 +145,9 @@
           "grp": "코스닥",
           "close": 4450,
           "change_pct": -11.88,
-          "volume_shown": 7536016,
-          "amount_shown": 33535271200,
-          "ratio": 55.7,
+          "volume_shown": 7607975,
+          "amount_shown": 40492553180,
+          "ratio": 56.3,
           "integrated": false
         },
         {
@@ -158,9 +156,9 @@
           "grp": "코스닥",
           "close": 5320,
           "change_pct": 12.47,
-          "volume_shown": 2583404,
-          "amount_shown": 13743709280,
-          "ratio": 49.0,
+          "volume_shown": 2591005,
+          "amount_shown": 14645963535,
+          "ratio": 49.1,
           "integrated": false
         },
         {
@@ -169,9 +167,9 @@
           "grp": "코스닥",
           "close": 5080,
           "change_pct": 16.25,
-          "volume_shown": 580004,
-          "amount_shown": 2946420320,
-          "ratio": 47.2,
+          "volume_shown": 582770,
+          "amount_shown": 2983145975,
+          "ratio": 47.4,
           "integrated": false
         },
         {
@@ -180,9 +178,9 @@
           "grp": "코스닥",
           "close": 3705,
           "change_pct": -4.63,
-          "volume_shown": 1560625,
-          "amount_shown": 5782115625,
-          "ratio": 36.8,
+          "volume_shown": 1564768,
+          "amount_shown": 6633884745,
+          "ratio": 36.9,
           "integrated": false
         },
         {
@@ -191,9 +189,9 @@
           "grp": "코스닥",
           "close": 14690,
           "change_pct": 13.88,
-          "volume_shown": 2100739,
-          "amount_shown": 30859855910,
-          "ratio": 32.6,
+          "volume_shown": 2118758,
+          "amount_shown": 32596383570,
+          "ratio": 32.9,
           "integrated": false
         },
         {
@@ -202,9 +200,9 @@
           "grp": "코스닥",
           "close": 5850,
           "change_pct": -22.21,
-          "volume_shown": 2580166,
-          "amount_shown": 15093971100,
-          "ratio": 32.0,
+          "volume_shown": 2609695,
+          "amount_shown": 15401312415,
+          "ratio": 32.3,
           "integrated": false
         },
         {
@@ -213,9 +211,9 @@
           "grp": "코스닥",
           "close": 2905,
           "change_pct": 9.62,
-          "volume_shown": 944554,
-          "amount_shown": 2743929370,
-          "ratio": 30.3,
+          "volume_shown": 945472,
+          "amount_shown": 2894441342,
+          "ratio": 30.4,
           "integrated": false
         },
         {
@@ -224,9 +222,9 @@
           "grp": "코스닥",
           "close": 7010,
           "change_pct": 7.35,
-          "volume_shown": 2514123,
-          "amount_shown": 17624002230,
-          "ratio": 23.2,
+          "volume_shown": 2523313,
+          "amount_shown": 18695414785,
+          "ratio": 23.3,
           "integrated": false
         },
         {
@@ -235,9 +233,9 @@
           "grp": "코스닥",
           "close": 1529,
           "change_pct": 12.01,
-          "volume_shown": 2312703,
-          "amount_shown": 3536122887,
-          "ratio": 20.1,
+          "volume_shown": 2314423,
+          "amount_shown": 3693772342,
+          "ratio": 20.2,
           "integrated": false
         }
       ]
@@ -248,7 +246,7 @@
           "name": "애드포러스",
           "code": "397810",
           "grp": "코스닥",
-          "ratio": 47.2
+          "ratio": 47.4
         },
         {
           "name": "가비아",
@@ -260,7 +258,7 @@
           "name": "오이솔루션",
           "code": "138080",
           "grp": "코스닥",
-          "ratio": 8.0
+          "ratio": 8.1
         },
         {
           "name": "금호석유화학우",
@@ -272,7 +270,7 @@
           "name": "상상인증권",
           "code": "001290",
           "grp": "코스피",
-          "ratio": 4.5
+          "ratio": 4.6
         },
         {
           "name": "상상인",
@@ -350,7 +348,7 @@
           "name": "유니슨",
           "code": "018000",
           "grp": "코스닥",
-          "ratio": 1.8
+          "ratio": 1.9
         },
         {
           "name": "씨어스",
@@ -377,6 +375,12 @@
           "ratio": 1.7
         },
         {
+          "name": "코스맥스엔비티",
+          "code": "222040",
+          "grp": "코스닥",
+          "ratio": 1.7
+        },
+        {
           "name": "안국약품",
           "code": "001540",
           "grp": "코스닥",
@@ -387,12 +391,6 @@
           "code": "460940",
           "grp": "코스닥",
           "ratio": 1.7
-        },
-        {
-          "name": "코스맥스엔비티",
-          "code": "222040",
-          "grp": "코스닥",
-          "ratio": 1.6
         },
         {
           "name": "스튜디오드래곤",
@@ -413,14 +411,20 @@
           "ratio": 1.5
         },
         {
-          "name": "심텍",
-          "code": "222800",
+          "name": "티엘비",
+          "code": "356860",
           "grp": "코스닥",
           "ratio": 1.5
         },
         {
           "name": "매드업",
           "code": "0039P0",
+          "grp": "코스닥",
+          "ratio": 1.5
+        },
+        {
+          "name": "심텍",
+          "code": "222800",
           "grp": "코스닥",
           "ratio": 1.5
         },
@@ -435,18 +439,6 @@
           "code": "317450",
           "grp": "코스피",
           "ratio": 1.5
-        },
-        {
-          "name": "티엘비",
-          "code": "356860",
-          "grp": "코스닥",
-          "ratio": 1.4
-        },
-        {
-          "name": "바이오니아",
-          "code": "064550",
-          "grp": "코스닥",
-          "ratio": 1.4
         },
         {
           "name": "셀바스헬스케어",
@@ -467,14 +459,14 @@
           "ratio": 1.3
         },
         {
-          "name": "한국화장품제조",
-          "code": "003350",
-          "grp": "코스피",
-          "ratio": 1.2
+          "name": "심텍홀딩스",
+          "code": "036710",
+          "grp": "코스닥",
+          "ratio": 1.3
         },
         {
-          "name": "LS",
-          "code": "006260",
+          "name": "한국화장품제조",
+          "code": "003350",
           "grp": "코스피",
           "ratio": 1.2
         },
@@ -483,6 +475,12 @@
           "code": "417840",
           "grp": "코스닥",
           "ratio": 1.2
+        },
+        {
+          "name": "LS",
+          "code": "006260",
+          "grp": "코스피",
+          "ratio": 1.2
         }
       ],
       "3": [
@@ -490,7 +488,7 @@
           "name": "광전자",
           "code": "017900",
           "grp": "코스피",
-          "ratio": 8.9
+          "ratio": 9.0
         },
         {
           "name": "이랜시스",
@@ -607,15 +605,15 @@
           "ratio": 1.3
         },
         {
-          "name": "현대백화점",
-          "code": "069960",
-          "grp": "코스피",
-          "ratio": 1.2
-        },
-        {
           "name": "KBI메탈",
           "code": "024840",
           "grp": "코스닥",
+          "ratio": 1.2
+        },
+        {
+          "name": "현대백화점",
+          "code": "069960",
+          "grp": "코스피",
           "ratio": 1.2
         }
       ],
@@ -624,13 +622,13 @@
           "name": "비큐AI",
           "code": "148780",
           "grp": "코스닥",
-          "ratio": 55.7
+          "ratio": 56.3
         },
         {
           "name": "큐라티스",
           "code": "348080",
           "grp": "코스닥",
-          "ratio": 36.8
+          "ratio": 36.9
         },
         {
           "name": "이스트에이드",
@@ -642,7 +640,7 @@
           "name": "뉴엔AI",
           "code": "463020",
           "grp": "코스닥",
-          "ratio": 8.3
+          "ratio": 8.4
         },
         {
           "name": "유티아이",
@@ -672,7 +670,7 @@
           "name": "수젠텍",
           "code": "253840",
           "grp": "코스닥",
-          "ratio": 3.6
+          "ratio": 3.7
         },
         {
           "name": "티앤엘",
@@ -684,7 +682,7 @@
           "name": "본느",
           "code": "226340",
           "grp": "코스닥",
-          "ratio": 3.3
+          "ratio": 3.4
         },
         {
           "name": "스피어",
@@ -1454,7 +1452,7 @@
   },
   "notes": [
     "한국 거래량은 정규장+시간외+넥스트레이드 통합 기준이며, 통합 이력이 쌓이는 중이라 일부 종목은 정규장 기준 자동 적용(약 한 달 내 완전 전환). 스팩·거래대금 10억 미만 제외.",
-    "미국은 S&P500+나스닥100 대상.",
+    "미국은 S&P500+나스닥100 대상. 한국 데이터는 저장소 CSV 없이 공개 데이터셋만 사용했습니다(2거래일 이상 전 데이터일 수 있음).",
     "나스닥100 분류 정보가 아직 반영되지 않아 거래소 구분 없이 통합 표시했습니다."
   ]
 }

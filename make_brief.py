@@ -31,14 +31,81 @@ MARCAP_BASE = "https://raw.githubusercontent.com/FinanceData/marcap/master/data/
 SPAC_KEYWORD = "스팩"
 AMOUNT_FILTER = 1_000_000_000  # 거래대금 10억 원 이상만 표시(handoff §3)
 
+# --- marcap parquet sanity 게이트 상수(S7 M-3: 무결성 검사 없이 read_parquet에 바로 넣던 문제 수리) ---
+# 실측 근거(2026-08-10, marcap-2025.parquet/marcap-2026.parquet 실제 다운로드분 기준):
+#   2025년(완결) 696,524행/242거래일 = 일평균 2,879행, 파일 25,153,419B
+#   2026년(1~8월, 146거래일) 420,559행/일평균 2,881행, 파일 15,688,442B
+#   단일 거래일치만 잘라 parquet로 저장하면 약 242,781B(2,903행) - 실제 최소 크기 추정 근거
+#   raw.githubusercontent.com에 없는 파일을 요청하면 404 + 본문 14바이트 "404: Not Found"
+#   (다만 이건 r.ok가 False라 기존 HTTP 실패 경로에서 이미 걸러짐 - 문제는 200인데 내용이 이상한 경우)
+PARQUET_MAGIC = b"PAR1"  # parquet 포맷은 파일 시작·끝에 이 4바이트 매직넘버가 있다
+MIN_RESPONSE_BYTES = 50_000  # 최소 거래일 1일치(~24만B)의 1/5 - 오류/점검 페이지는 통상 이보다 훨씬 작음
+MAX_RESPONSE_BYTES = 150_000_000  # 실측 최대(25MB)의 6배 여유 - 메모리 폭발 방지용 상한
+# compute_kr()이 실제로 쓰는 원본 컬럼만(코드 확인함, :159 cols 리스트) - Grp/VolumeTotal/AmountTotal은
+# 이 함수가 파생시키는 컬럼이라 원본에 없어도 됨
+REQUIRED_MARCAP_COLUMNS = {"Market", "Code", "Date", "Name", "Close", "ChangesRatio", "Volume", "Amount"}
+MIN_ROWS_PER_TRADING_DAY = 2000  # 실측 일평균 ~2,880행 대비 30% 여유
+COMPLETED_YEAR_MIN_TRADING_DAYS = 200  # KRX 연간 거래일수는 통상 245~250일 - 넉넉한 하한
+
+
+def _min_trading_days_for_year(y, now):
+    """행 수 하한 계산용 최소 거래일수. 이미 끝난 연도는 고정 하한을 쓰고, 당해년도는
+    연초~어제까지의 평일수 x 0.7(공휴일·발행지연 여유)로 낮춘다 - 1월에 실행하면 당해년도
+    행 수가 적은 게 정상이므로 그 사정을 반영한다."""
+    if y < now.year:
+        return COMPLETED_YEAR_MIN_TRADING_DAYS
+    start = pd.Timestamp(year=y, month=1, day=1)
+    end = pd.Timestamp(now.date()) - pd.Timedelta(days=1)
+    if end < start:
+        return 1
+    weekdays = len(pd.bdate_range(start, end))
+    return max(1, int(weekdays * 0.7))
+
+
+def _sanity_check_marcap(content, y, now):
+    """marcap-{y}.parquet로 받은 바이트를 채택 전에 검사한다(S7 M-3).
+    통과하면 (DataFrame, None), 실패하면 (None, 사유문자열)을 반환한다 - 예외를 던지지 않고
+    호출부의 기존 재시도 루프에 그대로 흡수시킨다(다운로드 실패와 동일하게 취급).
+    """
+    size = len(content)
+    if size < MIN_RESPONSE_BYTES:
+        return None, f"응답 크기 {size}B < 최소 {MIN_RESPONSE_BYTES}B(오류/점검 페이지 의심)"
+    if size > MAX_RESPONSE_BYTES:
+        return None, f"응답 크기 {size}B > 최대 {MAX_RESPONSE_BYTES}B(메모리 보호)"
+    if content[:4] != PARQUET_MAGIC or content[-4:] != PARQUET_MAGIC:
+        return None, "parquet 매직넘버(PAR1) 불일치 - HTML/점검 페이지 의심"
+
+    try:
+        frame = pd.read_parquet(io.BytesIO(content))
+    except Exception as e:  # noqa: BLE001 - 파싱 실패도 검사 실패로 흡수해 재시도 루프로 넘김
+        return None, f"parquet 파싱 실패: {e}"
+
+    missing = REQUIRED_MARCAP_COLUMNS - set(frame.columns)
+    if missing:
+        return None, f"필수 컬럼 누락: {sorted(missing)}"
+
+    min_days = _min_trading_days_for_year(y, now)
+    min_rows = min_days * MIN_ROWS_PER_TRADING_DAY
+    if len(frame) < min_rows:
+        return None, f"행 수 {len(frame)} < 최소 {min_rows}({min_days}거래일 x {MIN_ROWS_PER_TRADING_DAY}행/일)"
+
+    dates = pd.to_datetime(frame["Date"])
+    out_of_year = int((dates.dt.year != y).sum())
+    if out_of_year > len(frame) * 0.01:
+        return None, f"Date 연도 불일치 {out_of_year}/{len(frame)}행이 {y}년 밖(파일이 바뀐 것으로 의심)"
+
+    return frame, None
+
 
 def kst_now():
     """collect.py:8-9 관례 승계 — ZoneInfo(Asia/Seoul), 기기/러너 타임존 무관."""
     return datetime.datetime.now(ZoneInfo("Asia/Seoul"))
 
 
-def load_marcap(years):
-    """전년+당해 marcap parquet을 원격에서 읽는다. 실패 시 3회 재시도(지수 백오프) 후 예외 전파."""
+def load_marcap(years, now):
+    """전년+당해 marcap parquet을 원격에서 읽는다. 받은 바이트/프레임은 _sanity_check_marcap으로
+    검사해 통과한 것만 채택한다 - "받긴 받았는데 내용이 이상함"도 다운로드 실패와 동일하게 취급해
+    같은 재시도 루프에 흡수시킨다(S7 M-3). 실패 시 3회 재시도(지수 백오프) 후 예외 전파."""
     frames = []
     for y in years:
         last_err = None
@@ -46,10 +113,14 @@ def load_marcap(years):
             try:
                 r = requests.get(MARCAP_BASE + f"marcap-{y}.parquet", timeout=180)
                 if r.ok:
-                    frames.append(pd.read_parquet(io.BytesIO(r.content)))
-                    last_err = None
-                    break
-                last_err = Exception(f"marcap-{y}.parquet HTTP {r.status_code}")
+                    frame, reason = _sanity_check_marcap(r.content, y, now)
+                    if frame is not None:
+                        frames.append(frame)
+                        last_err = None
+                        break
+                    last_err = Exception(f"marcap-{y}.parquet 검사 실패: {reason}")
+                else:
+                    last_err = Exception(f"marcap-{y}.parquet HTTP {r.status_code}")
             except Exception as e:  # noqa: BLE001 - 재시도 후 최종 예외 전파
                 last_err = e
             if attempt < 2:
@@ -143,7 +214,7 @@ def compute_kr():
     """handoff §3 scan.py의 한국 계산 블록을 그대로 재현한다."""
     now = kst_now()
     frames_years = (now.year - 1, now.year)
-    df = load_marcap(frames_years)
+    df = load_marcap(frames_years, now)
     df = df[df["Market"].isin(["KOSPI", "KOSDAQ", "KOSDAQ GLOBAL"])].copy()
     df["Code"] = df["Code"].astype(str).str.zfill(6)
     df["Grp"] = df["Market"].map(lambda m: "코스피" if m == "KOSPI" else "코스닥")
@@ -470,7 +541,16 @@ def main():
     check2 = brief["kr"]["date"] == latest_stem_fmt
     violations = _validate(brief)
     check3 = len(violations) == 0
-    check4 = len(brief["kr"]["repo_days_used"]) > 0
+    # ④ 저장소 CSV 스캔이 "써야 할 날"을 빠뜨리지 않았는지 본다.
+    # 목록이 비는 것 자체는 정상일 수 있다 — marcap 원격이 최신 거래일까지 이미
+    # 발행하면 load_repo_csvs()의 `day_ts <= marcap_max: continue`가 전부 걸러내고,
+    # 그때는 marcap 쪽이 오히려 확정치라 더 정확하다(2026-08-10 실측: 선정 종목 동일,
+    # 거래량만 소폭 상향). 그래서 "비어 있으면 무조건 실패"로 두면 정상 실행에서
+    # 거짓 경보가 나고, 경보가 일상이 되면 진짜 고장을 놓친다.
+    # 진짜 고장은 "저장소 스캔이 깨져서 최신일이 계산에서 빠지는 것"인데, 그건
+    # kr.date가 최신 CSV 날짜와 어긋나는 형태로 드러나므로 check2로 판별한다.
+    repo_days_used = brief["kr"]["repo_days_used"]
+    check4 = len(repo_days_used) > 0 or check2
     # handoff §3 규칙: age<=4 이면 available=true(omit_reason=None), age>4 이면 stale
     if us["age_days"] is None:
         check5 = us["available"] is False and us["omit_reason"] in ("missing", "error")
@@ -481,7 +561,10 @@ def main():
     print(f"① schema_version==1: {check1}")
     print(f"② kr.date({brief['kr']['date']}) == data/ 최신 CSV stem({latest_stem_fmt}): {check2}")
     print(f"③ api-spec §A-3 값 정합 12조 위반 0건: {check3} (위반 {len(violations)}건){' ' + str(violations) if violations else ''}")
-    print(f"④ kr.repo_days_used 비어있지 않음: {check4} ({brief['kr']['repo_days_used']})")
+    print(
+        f"④ 저장소 CSV 스캔 정합(비어 있으면 marcap이 최신일을 이미 포함해야 함): "
+        f"{check4} (repo_days_used={repo_days_used})"
+    )
     print(f"⑤ us.available 판정이 handoff §3 age<=4 규칙과 동일: {check5} (age_days={us['age_days']}, available={us['available']})")
 
     if not (check1 and check2 and check3 and check4 and check5):
