@@ -145,11 +145,36 @@ def validate():
     return kr_date
 
 
+def _clear_regenerated_brief():
+    """pull 전에 data/brief.json 의 미저장 변경만 되돌린다.
+
+    make_brief.py 는 실행할 때마다 generated_at 을 새로 찍으므로, 한 번 돌리고
+    커밋하지 않으면(특히 --dry-run) 워킹트리가 더러워져 다음 실행의 git pull 이
+    거부된다. brief.json 은 바로 다음 단계에서 다시 만들어지는 생성물이라
+    되돌려도 잃는 것이 없다.
+
+    단 brief.json 외에 다른 변경이 있으면 손대지 않고 멈춘다 — 사람이 작업하던
+    코드를 이 도구가 조용히 날리면 안 된다.
+    """
+    r = subprocess.run(["git", "status", "--porcelain"], cwd=HERE,
+                       capture_output=True, text=True)
+    dirty = [ln[3:].strip() for ln in r.stdout.splitlines() if ln[:2] != "??"]
+    if not dirty:
+        return
+    others = [f for f in dirty if f != "data/brief.json"]
+    if others:
+        fail("data/brief.json 외에 저장하지 않은 변경이 있다: "
+             + ", ".join(others) + " — 먼저 커밋하거나 스태시할 것")
+    print("  (이전 실행이 남긴 data/brief.json 변경을 되돌린다 — 곧 다시 생성됨)")
+    run(["git", "checkout", "--", "data/brief.json"])
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true", help="재생성·검증만 하고 커밋하지 않음")
     args = ap.parse_args()
 
+    _clear_regenerated_brief()
     if run(["git", "pull", "--rebase", "origin", "main"]).returncode != 0:
         fail("git pull 실패 — 충돌이나 네트워크 문제를 먼저 해결할 것")
 
