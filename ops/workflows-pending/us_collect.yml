@@ -1,0 +1,63 @@
+# ⚠ 이 파일은 아직 동작하지 않는다. .github/workflows/us_collect.yml 로 복사해야 적용된다.
+#    복사·적용 절차는 같은 폴더의 README.md 참조. (토큰 workflow 스코프 미부여 = MT-001)
+#
+# 현재 origin의 us_collect.yml 대비 달라지는 점은 collect.yml과 동일하다
+# (make_brief 스텝·버전 고정·액션 SHA 고정·토큰 최소화·잡 단위 권한).
+name: 미국 거래량 스캔
+on:
+  schedule:
+    - cron: '20 21 * * 1-5'   # 한국시간 화~토 새벽 6:20 (미국장 마감 후)
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  us:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.4.0
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065  # v5.6.0
+        with:
+          python-version: '3.12'
+
+      # 두 워크플로가 같은 requirements.txt를 쓴다 — 고정 버전의 단일 출처를 유지하기
+      # 위해서다. KR 전용 패키지까지 함께 깔리지만(수십 초) 버전이 갈라지는 것보다 낫다.
+      - run: pip install -r requirements.txt
+
+      - run: python us_collect.py
+
+      - name: 브리핑 생성
+        id: brief
+        continue-on-error: true
+        run: python make_brief.py
+
+      - name: 커밋
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git config user.name "krx-bot"
+          git config user.email "actions@users.noreply.github.com"
+          REMOTE="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git pull --rebase "$REMOTE" "${GITHUB_REF_NAME}" || true
+          git add -A data
+          if git diff --cached --quiet; then
+            echo "변경 없음 — 커밋 생략"
+            exit 0
+          fi
+          git commit -m "us: $(date -u +%F)"
+          git push "$REMOTE" "HEAD:${GITHUB_REF_NAME}" \
+            || (git pull --rebase "$REMOTE" "${GITHUB_REF_NAME}" \
+                && git push "$REMOTE" "HEAD:${GITHUB_REF_NAME}")
+
+      - name: 브리핑 생성 실패 확인
+        if: steps.brief.outcome == 'failure'
+        run: |
+          echo "make_brief.py 실패 — brief.json이 갱신되지 않았다. 로그를 확인할 것." >&2
+          exit 1
