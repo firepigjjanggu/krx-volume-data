@@ -57,13 +57,17 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           # 토큰을 .git/config에 남기지 않으려고 remote를 고치지 않고 URL을 직접 넘긴다.
           REMOTE="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git pull --rebase "$REMOTE" "${GITHUB_REF_NAME}" || true
           git add -A data
           if git diff --cached --quiet; then
             echo "변경 없음 — 커밋 생략"
             exit 0
           fi
           git commit -m "auto: $(date -u +%F)"
+          # pull --rebase 는 반드시 커밋 뒤에 한다. 커밋 전에는 collect/make_brief 가
+          # data/ 를 고쳐 놓아 워킹트리가 더러우므로 rebase 가 항상 거부되고,
+          # `|| true` 에 삼켜져 아무 일도 하지 않는 죽은 줄이 된다. 그러면 동기화가
+          # push 실패 후 fallback 에만 걸려 두 워크플로가 겹칠 때 한 번씩 꼭 실패한다.
+          git pull --rebase "$REMOTE" "${GITHUB_REF_NAME}" || true
           git push "$REMOTE" "HEAD:${GITHUB_REF_NAME}" \
             || (git pull --rebase "$REMOTE" "${GITHUB_REF_NAME}" \
                 && git push "$REMOTE" "HEAD:${GITHUB_REF_NAME}")

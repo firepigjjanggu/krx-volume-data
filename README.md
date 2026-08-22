@@ -91,19 +91,23 @@ data/
 | `us_collect.yml` | `cron: 20 21 * * 1-5` + `workflow_dispatch` | 정상 자동 실행 중. `pip install yfinance pandas lxml` → `python us_collect.py` → 커밋·push만 함 |
 | `probe.yml` | `workflow_dispatch`만 | 임시 조사용 1회성 스크립트(네이버 API 필드 탐색). 삭제 대상으로 계획됐으나 아직 origin에 남아 있음 |
 
-**⚠ 이 저장소를 처음 보는 사람이 반드시 알아야 할 사실**: GitHub 계정(`firepigjjanggu`)의 `gh` CLI 토큰에 `workflow` scope가 없어 `.github/workflows/*`를 변경하는 커밋을 push할 수 없습니다. 그래서 위 표의 "현재 상태"는 **로컬에서 이미 만들어진 개선분과 다릅니다** — `pyarrow` 설치, `make_brief.py` 실행 3스텝(성공/실패 격리), push 재시도 로직이 로컬 브랜치 `pending/workflow-scope`(커밋 `0bda5e6`, `a58c6db`)에 보존돼 있고, 아직 origin에 반영되지 않았습니다. 즉 **`data/*.csv`는 매일 자동 갱신되지만 `data/brief.json`은 자동으로 다시 계산되지 않습니다.**
+**⚠ 이 저장소를 처음 보는 사람이 반드시 알아야 할 사실**: GitHub 계정(`firepigjjanggu`)의 `gh` CLI 토큰에 `workflow` scope가 없어 `.github/workflows/*`를 변경하는 커밋을 push할 수 없습니다(MT-001). 그래서 위 표의 "현재 상태"는 **이미 만들어져 있는 개선분과 다릅니다.** 즉 **`data/*.csv`는 매일 자동 갱신되지만 `data/brief.json`은 자동으로 다시 계산되지 않습니다.**
 
-해소 절차와 이로 인한 앱 쪽 영향(며칠 후 앱 화면이 "연휴/휴장"으로 덮이는 문제)은 앱 저장소의 `docs/OPERATIONS.md` "알려진 미해결 이슈"에 자세히 정리돼 있습니다. 이 저장소에서 할 일만 요약하면:
+적용을 기다리는 최종본은 **`ops/workflows-pending/`** 에 있습니다(같은 폴더의 `README.md`에 적용 절차와 첫 실행에서 확인할 항목이 정리돼 있습니다). GitHub Actions는 `.github/workflows/` 안의 파일만 실행하므로, 이 경로에 있는 동안에는 그냥 텍스트 파일이고 push도 허용됩니다.
+
+해소 전까지의 완화책은 **사람이 `python refresh_brief.py`를 최소 5일에 한 번(권장: 거래일마다) 돌리는 것**입니다. 앱 쪽 영향(며칠 후 앱 화면이 "연휴/휴장"으로 덮이는 문제, INC-001)은 앱 저장소의 `docs/OPERATIONS.md`에 정리돼 있습니다.
 
 ```
-gh auth refresh -h github.com -s workflow                 # 브라우저 승인 필요
-git cherry-pick 0bda5e6                                     # pending/workflow-scope의 make_brief 통합 커밋
-git push
+gh auth refresh -h github.com -s workflow                    # 브라우저 승인 필요
+cp ops/workflows-pending/collect.yml     .github/workflows/  # cherry-pick 아님 — 복사
+cp ops/workflows-pending/us_collect.yml  .github/workflows/
+git add .github/workflows && git commit -m "ci: make_brief 스텝 통합 + H-1 공급망 하드닝" && git push
 gh workflow run collect.yml && gh workflow run us_collect.yml
 ```
 
+옛 안내는 로컬 브랜치 `pending/workflow-scope`의 커밋을 `git cherry-pick` 하라고 했지만 **더 이상 그렇게 하지 마세요.** 그 커밋에는 이후 추가된 H-1 공급망 하드닝(버전 고정·액션 SHA 고정·토큰 최소화·권한 축소)이 빠져 있고, 브랜치가 이 PC에만 있어 다른 곳에서는 재현되지 않습니다.
+
 ## `[확인필요]` 목록
 
-- `requirements.txt` 부재 — 워크플로 파일 안에 `pip install` 목록이 직접 나열돼 있음, 통합 여부는 관리자 판단 필요
-- `probe.yml` 삭제 재시도 시점 — `workflow` scope 해소에 종속
+- `probe.yml` 삭제 재시도 시점 — `workflow` scope 해소에 종속(MT-001)
 - 라이선스 — 이 저장소에 `LICENSE` 파일 없음(Glob 실측), public 저장소이나 라이선스 정책 미확정

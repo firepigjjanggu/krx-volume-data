@@ -102,7 +102,18 @@ def validate():
             if it["name"] == it["code"] or it["name"].isdigit():
                 problems.append(f"{mk} {it['code']} 종목명이 코드로 폴백됨")
             # ③ 확정치가 스냅샷보다 작으면 이상 (블록딜 때문에 큰 것은 정상)
-            base = int(r["VolumeTotal"]) if pd.notna(r["VolumeTotal"]) else int(r["Volume"])
+            #
+            # 비교 기준은 brief 의 거래량이 어디서 왔는지에 따라 갈라야 한다.
+            # 저장소 CSV 를 썼으면 volume_shown 은 통합값(VolumeTotal)이므로 그것과
+            # 맞대면 된다. 그러나 marcap 이 최신일을 이미 발행한 날에는
+            # repo_days_used 가 비고 volume_shown 이 marcap 의 정규장 확정치가 되는데,
+            # 그걸 CSV 의 통합값과 맞대면 시간외 거래가 있는 종목마다 "원천보다 작다"로
+            # 걸린다 — 정상 데이터인데 도구가 커밋을 거부한다. INC-001 완화 도구가
+            # 하필 marcap 이 따라잡은 날 마비되는 셈이라, 출처에 맞는 기준을 쓴다.
+            if uses_repo and pd.notna(r["VolumeTotal"]):
+                base = int(r["VolumeTotal"])
+            else:
+                base = int(r["Volume"])
             if base > 0:
                 diff = (it["volume_shown"] - base) / base * 100
                 if diff < VOLUME_UNDERSHOOT_PCT:
@@ -166,7 +177,12 @@ def _clear_regenerated_brief():
         fail("data/brief.json 외에 저장하지 않은 변경이 있다: "
              + ", ".join(others) + " — 먼저 커밋하거나 스태시할 것")
     print("  (이전 실행이 남긴 data/brief.json 변경을 되돌린다 — 곧 다시 생성됨)")
-    run(["git", "checkout", "--", "data/brief.json"])
+    # HEAD 를 명시하는 것이 중요하다. `git checkout -- <path>` 는 인덱스에서
+    # 워킹트리로만 되돌리므로, 이전 실행이 git add 까지 마치고 커밋에서 실패했다면
+    # staged 상태가 그대로 남는다. 그러면 워킹트리는 깨끗해 보이는데 인덱스가
+    # 더러워 다음 실행의 git pull --rebase 가 계속 거부되고, 사용자는 "충돌이나
+    # 네트워크 문제"라는 엉뚱한 안내를 받으며 도구가 영구히 막힌다.
+    run(["git", "checkout", "HEAD", "--", "data/brief.json"])
 
 
 def main():
@@ -176,7 +192,8 @@ def main():
 
     _clear_regenerated_brief()
     if run(["git", "pull", "--rebase", "origin", "main"]).returncode != 0:
-        fail("git pull 실패 — 충돌이나 네트워크 문제를 먼저 해결할 것")
+        fail("git pull 실패 — 충돌·네트워크, 또는 인덱스에 커밋되지 않은 변경이 남아 "
+             "있을 수 있다. `git status` 로 확인할 것")
 
     print("\n=== make_brief.py 실행 (marcap 다운로드 포함, 수 분 소요) ===")
     if run([sys.executable, os.path.join(HERE, "make_brief.py")]).returncode != 0:

@@ -526,12 +526,6 @@ def main():
         "notes": build_notes(kr, us),
     }
 
-    os.makedirs(os.path.dirname(TMP_PATH), exist_ok=True)
-    with open(TMP_PATH, "w", encoding="utf-8") as f:
-        json.dump(brief, f, ensure_ascii=False, indent=2)
-    os.replace(TMP_PATH, OUT_PATH)
-    print("brief.json 원자적 쓰기 완료:", OUT_PATH)
-
     # ---- 자체점검 5항목 (인수조건) ----
     latest_stem_path = os.path.join(DATA_DIR, "latest_date.txt")
     with open(latest_stem_path, encoding="utf-8") as f:
@@ -568,7 +562,27 @@ def main():
     print(f"⑤ us.available 판정이 handoff §3 age<=4 규칙과 동일: {check5} (age_days={us['age_days']}, available={us['available']})")
 
     if not (check1 and check2 and check3 and check4 and check5):
-        print("[경고] 자체점검 항목 중 실패가 있습니다. 위 로그를 확인하세요.", file=sys.stderr)
+        # 여기서 brief.json 을 쓰지 않고 종료코드 1로 끝내는 것이 핵심이다.
+        #
+        # 왜 경고만 찍고 넘어가면 안 되는가: 워크플로의 "브리핑 생성 실패 확인"
+        # 스텝은 이 스크립트의 종료코드만 본다. 예전처럼 stderr 경고만 내고 0으로
+        # 끝나면, check2 실패(= kr.date 가 최신 CSV 와 어긋남 — INC-001 과 똑같은
+        # 신호)가 그대로 커밋·push 되고 잡은 성공으로 표시된다. 재발 방지 게이트가
+        # 실제로는 아무것도 막지 못하는 상태였다.
+        #
+        # 왜 쓰기 전에 검사하는가: 검사가 끝난 뒤에 쓰면, 실패해도 이미 파일이
+        # 바뀐 뒤라 커밋 스텝(git add -A data)이 잘못된 값을 그대로 올린다.
+        # 쓰지 않으면 직전 brief.json 이 남는다 — 낡았을지언정 틀리지는 않다.
+        print("[실패] 자체점검 항목 중 실패가 있습니다. brief.json 을 쓰지 않고 종료합니다.",
+              file=sys.stderr)
+        print("       위 5항목 로그에서 False 인 항목을 확인할 것.", file=sys.stderr)
+        sys.exit(1)
+
+    os.makedirs(os.path.dirname(TMP_PATH), exist_ok=True)
+    with open(TMP_PATH, "w", encoding="utf-8") as f:
+        json.dump(brief, f, ensure_ascii=False, indent=2)
+    os.replace(TMP_PATH, OUT_PATH)
+    print("brief.json 원자적 쓰기 완료:", OUT_PATH)
 
 
 if __name__ == "__main__":
