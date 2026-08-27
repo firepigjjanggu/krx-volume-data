@@ -79,9 +79,10 @@ jobs:
             fi
             echo "push 거부 — 원격이 앞섰다. rebase 후 재시도 ($attempt/3)"
             if ! git pull --rebase "$REMOTE" "${GITHUB_REF_NAME}"; then
-              # 충돌 파일은 data/brief.json 하나뿐이다(생성물). 이번 실행이 방금
-              # 만든 쪽을 채택한다 — rebase 중에는 replay 되는 우리 커밋이 "theirs".
-              echo "rebase 충돌 — 생성물 data/brief.json 은 이번 실행분을 채택한다"
+              # 충돌 파일은 data/brief.json 하나뿐이다(둘 다 새로 만드는 생성물).
+              # 어느 쪽을 골라도 곧 다시 만들 것이므로 일단 우리 쪽으로 진행만 시킨다
+              # — rebase 중에는 replay 되는 우리 커밋이 "theirs".
+              echo "rebase 충돌 — data/brief.json 은 아래에서 다시 만든다"
               git checkout --theirs -- data/brief.json || true
               git add -A data
               if ! GIT_EDITOR=true git rebase --continue; then
@@ -90,6 +91,17 @@ jobs:
                 exit 1
               fi
             fi
+
+            # rebase 로 원격의 CSV 가 합쳐졌다. brief.json 은 **합쳐진 전체**를 보고
+            # 다시 만들어야 한다. 안 그러면 오래된 CSV 집합으로 만든 brief 가 더
+            # 신선한 것을 덮어쓴다 — 2026-08-27 실측: workflow_dispatch 는 요청 시점
+            # SHA 에 고정되므로, 큐에서 기다리는 동안 다른 실행이 새 CSV 를 올려도
+            # 이 잡의 체크아웃에는 없다. 그 상태로 만든 kr.date=08-26 짜리 brief 가
+            # 08-27 짜리를 덮었다. make_brief 는 몇 초면 끝나므로 비용도 작다.
+            # (자체점검이 실패하면 여기서 exit 1 — 잡이 실패로 끝난다)
+            python make_brief.py
+            git add -A data
+            git diff --cached --quiet || git commit --amend --no-edit
             LOCAL_SHA="$(git rev-parse HEAD)"
           done
 
