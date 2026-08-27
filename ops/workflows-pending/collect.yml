@@ -1,8 +1,12 @@
-# ⚠ 이 파일은 아직 동작하지 않는다. .github/workflows/collect.yml 로 복사해야 적용된다.
-#    복사·적용 절차는 같은 폴더의 README.md 참조. (토큰 workflow 스코프 미부여 = MT-001)
+# KRX 수집 + 브리핑 재생성. 2026-08-27 적용(MT-001 해소).
 #
-# 현재 origin의 collect.yml 대비 달라지는 점:
-#   ① make_brief 실행 스텝 추가 — 지금은 CSV만 쌓이고 brief.json이 갱신되지 않는다
+# 이 워크플로가 존재하는 이유: 예전에는 CSV만 쌓이고 data/brief.json 이 갱신되지
+# 않아, 앱이 5일마다 실제 휴장이 아닌데도 "연휴/휴장" 화면으로 덮였다
+# (INC-001, 2026-08-16~20 및 08-22~26 두 차례 실제 발생). make_brief 스텝이
+# 여기 들어있는 것이 그 재발을 막는 핵심이다 — 지우지 말 것.
+#
+# 이전 정의 대비 달라진 점:
+#   ① make_brief 실행 스텝 — CSV만 쌓이고 brief.json이 갱신되지 않던 문제 해소
 #   ② pyarrow 설치 — make_brief가 marcap parquet을 읽는다
 #   ③ 버전 고정(requirements.txt) — H-1 공급망 하드닝
 #   ④ 액션을 커밋 SHA로 고정 — 태그는 옮겨 달릴 수 있다
@@ -16,6 +20,13 @@ on:
 
 # H-1: 워크플로 전역이 아니라 잡 단위로 최소 권한만 준다.
 permissions: {}
+
+# 두 워크플로가 같은 그룹을 쓴다. data/brief.json 을 둘 다 새로 만들기 때문에
+# 동시에 돌면 반드시 충돌한다. 큐에 세워 한 번에 하나만 쓰게 한다
+# (cancel-in-progress: false — 취소하면 그날 수집분이 날아간다).
+concurrency:
+  group: krx-data-write
+  cancel-in-progress: false
 
 jobs:
   collect:
@@ -63,14 +74,52 @@ jobs:
             exit 0
           fi
           git commit -m "auto: $(date -u +%F)"
-          # pull --rebase 는 반드시 커밋 뒤에 한다. 커밋 전에는 collect/make_brief 가
-          # data/ 를 고쳐 놓아 워킹트리가 더러우므로 rebase 가 항상 거부되고,
-          # `|| true` 에 삼켜져 아무 일도 하지 않는 죽은 줄이 된다. 그러면 동기화가
-          # push 실패 후 fallback 에만 걸려 두 워크플로가 겹칠 때 한 번씩 꼭 실패한다.
-          git pull --rebase "$REMOTE" "${GITHUB_REF_NAME}" || true
-          git push "$REMOTE" "HEAD:${GITHUB_REF_NAME}" \
-            || (git pull --rebase "$REMOTE" "${GITHUB_REF_NAME}" \
-                && git push "$REMOTE" "HEAD:${GITHUB_REF_NAME}")
+          LOCAL_SHA="$(git rev-parse HEAD)"
+
+          # push 를 먼저 시도하고, 거부되면(원격이 앞섬) rebase 후 재시도한다.
+          #
+          # 예전 코드는 커밋 직후 `git pull --rebase ... || true` 를 했는데,
+          # data/brief.json 은 두 워크플로가 모두 새로 만드는 생성물이라 겹치면
+          # 반드시 충돌한다. `|| true` 가 그 실패를 삼키고 rebase 가 중단된 채로
+          # 남으면 HEAD 가 원격 커밋과 같아져 다음 push 가 "Everything up-to-date"
+          # 로 **성공**해 버린다. 그러면 fallback 도 안 돌고 잡은 초록불인데
+          # 그날 데이터는 통째로 사라진다 — 2026-08-27 실제 발생(커밋 cc45054 소실,
+          # data/20260827.csv 유실, published kr.date 가 하루 뒤처짐).
+          pushed=0
+          for attempt in 1 2 3; do
+            if git push "$REMOTE" "HEAD:${GITHUB_REF_NAME}"; then
+              pushed=1
+              break
+            fi
+            echo "push 거부 — 원격이 앞섰다. rebase 후 재시도 ($attempt/3)"
+            if ! git pull --rebase "$REMOTE" "${GITHUB_REF_NAME}"; then
+              # 충돌 파일은 data/brief.json 하나뿐이다(생성물). 이번 실행이 방금
+              # 만든 쪽을 채택한다 — rebase 중에는 replay 되는 우리 커밋이 "theirs".
+              echo "rebase 충돌 — 생성물 data/brief.json 은 이번 실행분을 채택한다"
+              git checkout --theirs -- data/brief.json || true
+              git add -A data
+              if ! GIT_EDITOR=true git rebase --continue; then
+                git rebase --abort || true
+                echo "rebase 를 복구하지 못했다" >&2
+                exit 1
+              fi
+            fi
+            LOCAL_SHA="$(git rev-parse HEAD)"
+          done
+
+          if [ "$pushed" != "1" ]; then
+            echo "3회 시도에도 push 하지 못했다" >&2
+            exit 1
+          fi
+
+          # push 가 no-op 이 아니었는지 원격에서 직접 확인한다.
+          # 이 확인이 없으면 위에 적은 "성공했는데 데이터가 없는" 사고를 못 잡는다.
+          git fetch "$REMOTE" "${GITHUB_REF_NAME}"
+          if ! git merge-base --is-ancestor "$LOCAL_SHA" FETCH_HEAD; then
+            echo "push 는 성공으로 끝났으나 원격에 $LOCAL_SHA 이 없다 — 데이터 유실" >&2
+            exit 1
+          fi
+          echo "push 확인 완료: $LOCAL_SHA 이 원격에 반영됨"
 
       # 브리핑 생성이 조용히 실패하면 CSV만 쌓이는 상태가 재발한다 — 잡을 실패로 만든다.
       - name: 브리핑 생성 실패 확인
