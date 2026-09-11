@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-12T02:02:59+09:00",
+  "generated_at": "2026-09-12T08:20:37+09:00",
   "status": "ok",
   "errors": [],
   "kr": {
@@ -1022,298 +1022,178 @@
   "us": {
     "available": true,
     "omit_reason": null,
-    "session": "2026-09-10",
-    "age_days": 2,
+    "session": "2026-09-11",
+    "age_days": 1,
     "has_exchange_split": true,
     "nyse": {
-      "over20_count": 95,
-      "threshold": 110,
+      "over20_count": 66,
+      "threshold": 95,
       "items": [
+        {
+          "name": "Oracle Corporation",
+          "ticker": "ORCL",
+          "exchange": "NYSE",
+          "close": 150.28,
+          "change_pct": -1.74,
+          "volume": 78527486,
+          "ratio": 3.3,
+          "streak": 2
+        },
+        {
+          "name": "Kimco Realty",
+          "ticker": "KIM",
+          "exchange": "NYSE",
+          "close": 23.19,
+          "change_pct": -0.43,
+          "volume": 12969708,
+          "ratio": 2.9,
+          "streak": 2
+        },
         {
           "name": "Cooper Companies (The)",
           "ticker": "COO",
           "exchange": "NYSE",
-          "close": 54.17,
-          "change_pct": -14.67,
-          "volume": 18649062,
-          "ratio": 9.0,
-          "streak": 5
-        },
-        {
-          "name": "Kenvue",
-          "ticker": "KVUE",
-          "exchange": "NYSE",
-          "close": 17.79,
-          "change_pct": 0.23,
-          "volume": 64356966,
-          "ratio": 3.2,
-          "streak": 2
+          "close": 53.91,
+          "change_pct": -0.48,
+          "volume": 6438834,
+          "ratio": 2.3,
+          "streak": 6
         },
         {
           "name": "Kimberly-Clark",
           "ticker": "KMB",
           "exchange": "NYSE",
-          "close": 98.48,
-          "change_pct": -0.22,
-          "volume": 9856387,
-          "ratio": 3.1,
-          "streak": 2
-        },
-        {
-          "name": "Casey's",
-          "ticker": "CASY",
-          "exchange": "NYSE",
-          "close": 627.64,
-          "change_pct": -0.22,
-          "volume": 1118278,
-          "ratio": 2.4,
-          "streak": 4
-        },
-        {
-          "name": "Extra Space Storage",
-          "ticker": "EXR",
-          "exchange": "NYSE",
-          "close": 136.45,
-          "change_pct": 0.6,
-          "volume": 2042076,
-          "ratio": 2.3,
-          "streak": 1
-        },
-        {
-          "name": "Vertiv",
-          "ticker": "VRT",
-          "exchange": "NYSE",
-          "close": 248.13,
-          "change_pct": -5.61,
-          "volume": 10015696,
-          "ratio": 2.3,
-          "streak": 2
-        },
-        {
-          "name": "Uber",
-          "ticker": "UBER",
-          "exchange": "NYSE",
-          "close": 72.56,
-          "change_pct": 2.08,
-          "volume": 35283827,
+          "close": 98.15,
+          "change_pct": -0.34,
+          "volume": 8136406,
           "ratio": 2.3,
           "streak": 3
         },
         {
-          "name": "Oracle Corporation",
-          "ticker": "ORCL",
+          "name": "Clorox",
+          "ticker": "CLX",
           "exchange": "NYSE",
-          "close": 152.94,
-          "change_pct": -5.38,
-          "volume": 50925752,
-          "ratio": 2.2,
+          "close": 87.76,
+          "change_pct": -1.14,
+          "volume": 6203100,
+          "ratio": 2.1,
           "streak": 1
         },
         {
-          "name": "Invitation Homes",
-          "ticker": "INVH",
+          "name": "Kroger",
+          "ticker": "KR",
           "exchange": "NYSE",
-          "close": 27.56,
-          "change_pct": -2.2,
-          "volume": 7636742,
-          "ratio": 2.2,
+          "close": 58.49,
+          "change_pct": 2.7,
+          "volume": 12295172,
+          "ratio": 2.1,
+          "streak": 4
+        },
+        {
+          "name": "Johnson Controls",
+          "ticker": "JCI",
+          "exchange": "NYSE",
+          "close": 146.01,
+          "change_pct": 2.24,
+          "volume": 5782158,
+          "ratio": 2.1,
+          "streak": 1
+        },
+        {
+          "name": "Kenvue",
+          "ticker": "KVUE",
+          "exchange": "NYSE",
+          "close": 17.78,
+          "change_pct": -0.06,
+          "volume": 46746588,
+          "ratio": 2.0,
+          "streak": 3
+        },
+        {
+          "name": "American International Group",
+          "ticker": "AIG",
+          "exchange": "NYSE",
+          "close": 75.33,
+          "change_pct": 0.4,
+          "volume": 6711225,
+          "ratio": 2.0,
           "streak": 3
         }
       ]
     },
     "nasdaq": {
-      "over20_count": 19,
+      "over20_count": 7,
       "threshold": 20,
       "items": [
+        {
+          "name": "Kraft Heinz",
+          "ticker": "KHC",
+          "exchange": "NASDAQ",
+          "close": 24.6,
+          "change_pct": 0.86,
+          "volume": 123763532,
+          "ratio": 7.7,
+          "streak": 2
+        },
         {
           "name": "Adobe Inc.",
           "ticker": "ADBE",
           "exchange": "NASDAQ",
-          "close": 248.83,
-          "change_pct": -2.37,
-          "volume": 9883241,
+          "close": 252.23,
+          "change_pct": 1.37,
+          "volume": 10749034,
           "ratio": 2.3,
-          "streak": 1
+          "streak": 2
         },
         {
-          "name": "Warner Bros. Discovery",
-          "ticker": "WBD",
+          "name": "Copart",
+          "ticker": "CPRT",
           "exchange": "NASDAQ",
-          "close": 28.2,
-          "change_pct": 1.04,
-          "volume": 32192189,
-          "ratio": 1.8,
-          "streak": 1
+          "close": 29.95,
+          "change_pct": -2.6,
+          "volume": 21847280,
+          "ratio": 2.1,
+          "streak": 2
         },
         {
           "name": "Baker Hughes",
           "ticker": "BKR",
           "exchange": "NASDAQ",
-          "close": 59.4,
-          "change_pct": -6.66,
-          "volume": 11181829,
-          "ratio": 1.8,
-          "streak": 1
+          "close": 59.06,
+          "change_pct": -0.57,
+          "volume": 10194744,
+          "ratio": 1.6,
+          "streak": 2
         },
         {
-          "name": "Apple Inc.",
-          "ticker": "AAPL",
+          "name": "Intuitive Surgical",
+          "ticker": "ISRG",
           "exchange": "NASDAQ",
-          "close": 326.57,
-          "change_pct": 3.56,
-          "volume": 69820744,
-          "ratio": 1.7,
+          "close": 369.15,
+          "change_pct": 2.41,
+          "volume": 3348733,
+          "ratio": 1.5,
           "streak": 2
         },
         {
           "name": "Shopify",
           "ticker": "SHOP",
           "exchange": "NASDAQ",
-          "close": 126.6,
-          "change_pct": -0.15,
-          "volume": 12092699,
-          "ratio": 1.7,
-          "streak": 3
-        },
-        {
-          "name": "Xcel Energy",
-          "ticker": "XEL",
-          "exchange": "NASDAQ",
-          "close": 75.41,
-          "change_pct": -1.02,
-          "volume": 7684814,
-          "ratio": 1.6,
-          "streak": 1
-        },
-        {
-          "name": "Copart",
-          "ticker": "CPRT",
-          "exchange": "NASDAQ",
-          "close": 30.75,
-          "change_pct": -4.0,
-          "volume": 15045152,
-          "ratio": 1.5,
-          "streak": 1
-        },
-        {
-          "name": "Intuitive Surgical",
-          "ticker": "ISRG",
-          "exchange": "NASDAQ",
-          "close": 360.46,
-          "change_pct": 2.04,
-          "volume": 3347921,
-          "ratio": 1.5,
-          "streak": 1
-        },
-        {
-          "name": "Exelon",
-          "ticker": "EXC",
-          "exchange": "NASDAQ",
-          "close": 43.39,
-          "change_pct": -0.71,
-          "volume": 10033335,
-          "ratio": 1.5,
-          "streak": 1
-        },
-        {
-          "name": "Kraft Heinz",
-          "ticker": "KHC",
-          "exchange": "NASDAQ",
-          "close": 24.39,
-          "change_pct": -0.89,
-          "volume": 23741847,
-          "ratio": 1.5,
-          "streak": 1
-        },
-        {
-          "name": "Qualcomm",
-          "ticker": "QCOM",
-          "exchange": "NASDAQ",
-          "close": 176.88,
-          "change_pct": 0.27,
-          "volume": 15541314,
-          "ratio": 1.5,
-          "streak": 3
-        },
-        {
-          "name": "SpaceX",
-          "ticker": "SPCX",
-          "exchange": "NASDAQ",
-          "close": 148.18,
-          "change_pct": 0.43,
-          "volume": 118244140,
+          "close": 128.79,
+          "change_pct": 1.73,
+          "volume": 10748777,
           "ratio": 1.4,
-          "streak": 2
+          "streak": 4
         },
         {
-          "name": "Amgen",
-          "ticker": "AMGN",
+          "name": "GE HealthCare",
+          "ticker": "GEHC",
           "exchange": "NASDAQ",
-          "close": 382.47,
-          "change_pct": -2.25,
-          "volume": 3346481,
-          "ratio": 1.3,
-          "streak": 1
-        },
-        {
-          "name": "Lam Research",
-          "ticker": "LRCX",
-          "exchange": "NASDAQ",
-          "close": 298.01,
-          "change_pct": -5.65,
-          "volume": 9841410,
-          "ratio": 1.3,
-          "streak": 1
-        },
-        {
-          "name": "Ferrovial",
-          "ticker": "FER",
-          "exchange": "NASDAQ",
-          "close": 55.5,
-          "change_pct": -1.87,
-          "volume": 1567531,
-          "ratio": 1.3,
-          "streak": 3
-        },
-        {
-          "name": "Starbucks",
-          "ticker": "SBUX",
-          "exchange": "NASDAQ",
-          "close": 99.22,
-          "change_pct": -0.82,
-          "volume": 6940448,
+          "close": 63.93,
+          "change_pct": -0.48,
+          "volume": 3191073,
           "ratio": 1.2,
           "streak": 1
-        },
-        {
-          "name": "Axon Enterprise",
-          "ticker": "AXON",
-          "exchange": "NASDAQ",
-          "close": 478.85,
-          "change_pct": -2.28,
-          "volume": 934305,
-          "ratio": 1.2,
-          "streak": 1
-        },
-        {
-          "name": "Fastenal",
-          "ticker": "FAST",
-          "exchange": "NASDAQ",
-          "close": 49.01,
-          "change_pct": 0.45,
-          "volume": 7212341,
-          "ratio": 1.2,
-          "streak": 1
-        },
-        {
-          "name": "Cintas",
-          "ticker": "CTAS",
-          "exchange": "NASDAQ",
-          "close": 198.44,
-          "change_pct": -0.8,
-          "volume": 2055511,
-          "ratio": 1.2,
-          "streak": 2
         }
       ]
     },
@@ -1321,280 +1201,154 @@
     "streaks": {
       "2": [
         {
-          "name": "Kenvue",
-          "ticker": "KVUE",
-          "ratio": 3.2,
+          "name": "Kraft Heinz",
+          "ticker": "KHC",
+          "ratio": 7.7,
           "streak": 2
         },
         {
-          "name": "Kimberly-Clark",
-          "ticker": "KMB",
-          "ratio": 3.1,
+          "name": "Oracle Corporation",
+          "ticker": "ORCL",
+          "ratio": 3.3,
           "streak": 2
         },
         {
-          "name": "Vertiv",
-          "ticker": "VRT",
+          "name": "Kimco Realty",
+          "ticker": "KIM",
+          "ratio": 2.9,
+          "streak": 2
+        },
+        {
+          "name": "Adobe Inc.",
+          "ticker": "ADBE",
           "ratio": 2.3,
           "streak": 2
         },
         {
-          "name": "Labcorp",
-          "ticker": "LH",
+          "name": "Copart",
+          "ticker": "CPRT",
           "ratio": 2.1,
           "streak": 2
         },
         {
-          "name": "PulteGroup",
-          "ticker": "PHM",
-          "ratio": 1.7,
+          "name": "Extra Space Storage",
+          "ticker": "EXR",
+          "ratio": 1.9,
           "streak": 2
         },
         {
-          "name": "Apple Inc.",
-          "ticker": "AAPL",
-          "ratio": 1.7,
+          "name": "Skyworks Solutions",
+          "ticker": "SWKS",
+          "ratio": 1.9,
           "streak": 2
         },
         {
-          "name": "Sysco",
-          "ticker": "SYY",
-          "ratio": 1.7,
+          "name": "United Airlines Holdings",
+          "ticker": "UAL",
+          "ratio": 1.8,
           "streak": 2
         },
         {
-          "name": "Illinois Tool Works",
-          "ticker": "ITW",
+          "name": "Ingersoll Rand",
+          "ticker": "IR",
+          "ratio": 1.8,
+          "streak": 2
+        },
+        {
+          "name": "Packaging Corporation of America",
+          "ticker": "PKG",
           "ratio": 1.6,
           "streak": 2
         },
         {
-          "name": "American International Group",
-          "ticker": "AIG",
+          "name": "Baker Hughes",
+          "ticker": "BKR",
+          "ratio": 1.6,
+          "streak": 2
+        },
+        {
+          "name": "Biogen",
+          "ticker": "BIIB",
           "ratio": 1.5,
           "streak": 2
         },
         {
-          "name": "SpaceX",
-          "ticker": "SPCX",
+          "name": "Intuitive Surgical",
+          "ticker": "ISRG",
+          "ratio": 1.5,
+          "streak": 2
+        },
+        {
+          "name": "Masco",
+          "ticker": "MAS",
+          "ratio": 1.5,
+          "streak": 2
+        },
+        {
+          "name": "DTE Energy",
+          "ticker": "DTE",
           "ratio": 1.4,
           "streak": 2
         },
         {
-          "name": "Wynn Resorts",
-          "ticker": "WYNN",
+          "name": "Procter & Gamble",
+          "ticker": "PG",
           "ratio": 1.3,
           "streak": 2
         },
         {
-          "name": "Norwegian Cruise Line Holdings",
-          "ticker": "NCLH",
+          "name": "McCormick & Company",
+          "ticker": "MKC",
           "ratio": 1.3,
-          "streak": 2
-        },
-        {
-          "name": "Valero Energy",
-          "ticker": "VLO",
-          "ratio": 1.3,
-          "streak": 2
-        },
-        {
-          "name": "C.H. Robinson",
-          "ticker": "CHRW",
-          "ratio": 1.3,
-          "streak": 2
-        },
-        {
-          "name": "Occidental Petroleum",
-          "ticker": "OXY",
-          "ratio": 1.3,
-          "streak": 2
-        },
-        {
-          "name": "Charter Communications",
-          "ticker": "CHTR",
-          "ratio": 1.2,
-          "streak": 2
-        },
-        {
-          "name": "Centene Corporation",
-          "ticker": "CNC",
-          "ratio": 1.2,
-          "streak": 2
-        },
-        {
-          "name": "Cintas",
-          "ticker": "CTAS",
-          "ratio": 1.2,
           "streak": 2
         }
       ],
       "3": [
         {
-          "name": "Uber",
-          "ticker": "UBER",
+          "name": "Kimberly-Clark",
+          "ticker": "KMB",
           "ratio": 2.3,
           "streak": 3
         },
         {
-          "name": "Invitation Homes",
-          "ticker": "INVH",
-          "ratio": 2.2,
-          "streak": 3
-        },
-        {
-          "name": "W. R. Berkley Corporation",
-          "ticker": "WRB",
+          "name": "Kenvue",
+          "ticker": "KVUE",
           "ratio": 2.0,
           "streak": 3
         },
         {
-          "name": "D. R. Horton",
-          "ticker": "DHI",
+          "name": "American International Group",
+          "ticker": "AIG",
           "ratio": 2.0,
           "streak": 3
         },
         {
-          "name": "Lennar",
-          "ticker": "LEN",
-          "ratio": 1.9,
-          "streak": 3
-        },
-        {
-          "name": "SBA Communications",
-          "ticker": "SBAC",
-          "ratio": 1.9,
-          "streak": 3
-        },
-        {
-          "name": "PPG Industries",
-          "ticker": "PPG",
-          "ratio": 1.8,
-          "streak": 3
-        },
-        {
-          "name": "KeyCorp",
-          "ticker": "KEY",
-          "ratio": 1.7,
-          "streak": 3
-        },
-        {
-          "name": "Shopify",
-          "ticker": "SHOP",
-          "ratio": 1.7,
-          "streak": 3
-        },
-        {
-          "name": "Regency Centers",
-          "ticker": "REG",
-          "ratio": 1.6,
-          "streak": 3
-        },
-        {
-          "name": "UDR, Inc.",
-          "ticker": "UDR",
-          "ratio": 1.6,
-          "streak": 3
-        },
-        {
-          "name": "Mid-America Apartment Communities",
-          "ticker": "MAA",
-          "ratio": 1.6,
-          "streak": 3
-        },
-        {
-          "name": "Dominion Energy",
-          "ticker": "D",
-          "ratio": 1.6,
-          "streak": 3
-        },
-        {
-          "name": "Qualcomm",
-          "ticker": "QCOM",
-          "ratio": 1.5,
-          "streak": 3
-        },
-        {
-          "name": "Ameriprise Financial",
-          "ticker": "AMP",
+          "name": "Sysco",
+          "ticker": "SYY",
           "ratio": 1.4,
           "streak": 3
         },
         {
-          "name": "Arch Capital Group",
-          "ticker": "ACGL",
-          "ratio": 1.4,
-          "streak": 3
-        },
-        {
-          "name": "Kroger",
-          "ticker": "KR",
+          "name": "Valero Energy",
+          "ticker": "VLO",
           "ratio": 1.3,
           "streak": 3
         },
         {
-          "name": "Ferrovial",
-          "ticker": "FER",
+          "name": "Wynn Resorts",
+          "ticker": "WYNN",
           "ratio": 1.3,
           "streak": 3
         },
         {
-          "name": "Howmet Aerospace",
-          "ticker": "HWM",
-          "ratio": 1.3,
-          "streak": 3
-        },
-        {
-          "name": "Simon Property Group",
-          "ticker": "SPG",
-          "ratio": 1.3,
-          "streak": 3
-        },
-        {
-          "name": "Royal Caribbean Group",
-          "ticker": "RCL",
-          "ratio": 1.3,
-          "streak": 3
-        },
-        {
-          "name": "Constellation Brands",
-          "ticker": "STZ",
-          "ratio": 1.3,
-          "streak": 3
-        },
-        {
-          "name": "Martin Marietta Materials",
-          "ticker": "MLM",
-          "ratio": 1.3,
-          "streak": 3
-        },
-        {
-          "name": "Stryker Corporation",
-          "ticker": "SYK",
+          "name": "Labcorp",
+          "ticker": "LH",
           "ratio": 1.2,
           "streak": 3
         },
         {
-          "name": "Las Vegas Sands",
-          "ticker": "LVS",
-          "ratio": 1.2,
-          "streak": 3
-        },
-        {
-          "name": "Everest Group",
-          "ticker": "EG",
-          "ratio": 1.2,
-          "streak": 3
-        },
-        {
-          "name": "Bunge Global",
-          "ticker": "BG",
-          "ratio": 1.2,
-          "streak": 3
-        },
-        {
-          "name": "Paramount Skydance Corporation",
-          "ticker": "PSKY",
+          "name": "Apple Inc.",
+          "ticker": "AAPL",
           "ratio": 1.2,
           "streak": 3
         }
@@ -1603,43 +1357,97 @@
         {
           "name": "Cooper Companies (The)",
           "ticker": "COO",
-          "ratio": 9.0,
-          "streak": 5
+          "ratio": 2.3,
+          "streak": 6
         },
         {
-          "name": "Casey's",
-          "ticker": "CASY",
-          "ratio": 2.4,
+          "name": "Kroger",
+          "ticker": "KR",
+          "ratio": 2.1,
           "streak": 4
         },
         {
           "name": "Aon plc",
           "ticker": "AON",
-          "ratio": 2.1,
-          "streak": 8
+          "ratio": 1.7,
+          "streak": 9
+        },
+        {
+          "name": "Invitation Homes",
+          "ticker": "INVH",
+          "ratio": 1.6,
+          "streak": 4
+        },
+        {
+          "name": "Uber",
+          "ticker": "UBER",
+          "ratio": 1.5,
+          "streak": 4
+        },
+        {
+          "name": "Dominion Energy",
+          "ticker": "D",
+          "ratio": 1.5,
+          "streak": 4
+        },
+        {
+          "name": "Shopify",
+          "ticker": "SHOP",
+          "ratio": 1.4,
+          "streak": 4
+        },
+        {
+          "name": "W. R. Berkley Corporation",
+          "ticker": "WRB",
+          "ratio": 1.4,
+          "streak": 4
         },
         {
           "name": "Elevance Health",
           "ticker": "ELV",
-          "ratio": 2.1,
-          "streak": 5
+          "ratio": 1.4,
+          "streak": 6
         },
         {
-          "name": "Builders FirstSource",
-          "ticker": "BLDR",
-          "ratio": 1.7,
+          "name": "Stryker Corporation",
+          "ticker": "SYK",
+          "ratio": 1.4,
           "streak": 4
         },
         {
-          "name": "Xylem Inc.",
-          "ticker": "XYL",
-          "ratio": 1.6,
+          "name": "Lennar",
+          "ticker": "LEN",
+          "ratio": 1.3,
           "streak": 4
         },
         {
           "name": "PTC Inc.",
           "ticker": "PTC",
           "ratio": 1.3,
+          "streak": 5
+        },
+        {
+          "name": "D. R. Horton",
+          "ticker": "DHI",
+          "ratio": 1.2,
+          "streak": 4
+        },
+        {
+          "name": "Regency Centers",
+          "ticker": "REG",
+          "ratio": 1.2,
+          "streak": 4
+        },
+        {
+          "name": "Casey's",
+          "ticker": "CASY",
+          "ratio": 1.2,
+          "streak": 5
+        },
+        {
+          "name": "Mid-America Apartment Communities",
+          "ticker": "MAA",
+          "ratio": 1.2,
           "streak": 4
         }
       ]
