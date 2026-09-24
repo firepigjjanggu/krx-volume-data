@@ -1,27 +1,25 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T08:47:05+09:00",
+  "generated_at": "2026-09-25T02:40:27+09:00",
   "status": "ok",
   "errors": [],
   "kr": {
     "date": "2026-09-23",
-    "integrated_count": 4108,
-    "source": "repo+marcap",
-    "repo_days_used": [
-      "2026-09-23"
-    ],
+    "integrated_count": 0,
+    "source": "marcap_only",
+    "repo_days_used": [],
     "kospi": {
-      "over20_count": 71,
-      "threshold": 290,
+      "over20_count": 73,
+      "threshold": 340,
       "items": [
         {
           "name": "KTis",
           "code": "058860",
           "grp": "코스피",
-          "close": 2590,
-          "change_pct": 5.71,
+          "close": 2575,
+          "change_pct": 5.1,
           "volume_shown": 5043256,
-          "amount_shown": 13062033040,
+          "amount_shown": 13838265700,
           "ratio": 154.6,
           "integrated": false
         },
@@ -32,7 +30,7 @@
           "close": 2610,
           "change_pct": 23.11,
           "volume_shown": 1374746,
-          "amount_shown": 3588087060,
+          "amount_shown": 3494287925,
           "ratio": 18.6,
           "integrated": false
         },
@@ -40,10 +38,10 @@
           "name": "KTcs",
           "code": "058850",
           "grp": "코스피",
-          "close": 2190,
-          "change_pct": 4.29,
+          "close": 2175,
+          "change_pct": 3.57,
           "volume_shown": 933504,
-          "amount_shown": 2044373760,
+          "amount_shown": 2035913718,
           "ratio": 16.7,
           "integrated": false
         },
@@ -51,10 +49,10 @@
           "name": "삼일씨엔에스",
           "code": "004440",
           "grp": "코스피",
-          "close": 5420,
-          "change_pct": 5.45,
+          "close": 5020,
+          "change_pct": -2.33,
           "volume_shown": 743750,
-          "amount_shown": 4031125000,
+          "amount_shown": 4287308320,
           "ratio": 14.2,
           "integrated": false
         },
@@ -62,21 +60,32 @@
           "name": "KSS해운",
           "code": "044450",
           "grp": "코스피",
-          "close": 11730,
-          "change_pct": 16.6,
+          "close": 11860,
+          "change_pct": 17.89,
           "volume_shown": 892666,
-          "amount_shown": 10470972180,
+          "amount_shown": 10471908500,
           "ratio": 13.1,
+          "integrated": false
+        },
+        {
+          "name": "DB",
+          "code": "012030",
+          "grp": "코스피",
+          "close": 1692,
+          "change_pct": -0.24,
+          "volume_shown": 7174350,
+          "amount_shown": 11740463354,
+          "ratio": 11.8,
           "integrated": false
         },
         {
           "name": "대양금속",
           "code": "009190",
           "grp": "코스피",
-          "close": 963,
-          "change_pct": -14.85,
+          "close": 965,
+          "change_pct": -14.68,
           "volume_shown": 3661310,
-          "amount_shown": 3525841530,
+          "amount_shown": 3426398720,
           "ratio": 9.1,
           "integrated": false
         },
@@ -84,10 +93,10 @@
           "name": "계양전기",
           "code": "012200",
           "grp": "코스피",
-          "close": 3300,
-          "change_pct": -13.61,
+          "close": 3235,
+          "change_pct": -15.31,
           "volume_shown": 3032328,
-          "amount_shown": 10006682400,
+          "amount_shown": 10065371491,
           "ratio": 6.3,
           "integrated": false
         },
@@ -95,10 +104,10 @@
           "name": "TP",
           "code": "007980",
           "grp": "코스피",
-          "close": 1783,
-          "change_pct": 4.15,
+          "close": 1790,
+          "change_pct": 4.56,
           "volume_shown": 641318,
-          "amount_shown": 1143469994,
+          "amount_shown": 1142549281,
           "ratio": 6.3,
           "integrated": false
         },
@@ -106,38 +115,27 @@
           "name": "무림P&P",
           "code": "009580",
           "grp": "코스피",
-          "close": 1792,
-          "change_pct": -1.27,
+          "close": 1794,
+          "change_pct": -1.16,
           "volume_shown": 5165762,
-          "amount_shown": 9257045504,
+          "amount_shown": 10101927701,
           "ratio": 5.7,
-          "integrated": false
-        },
-        {
-          "name": "PKC",
-          "code": "001340",
-          "grp": "코스피",
-          "close": 5130,
-          "change_pct": 5.99,
-          "volume_shown": 286444,
-          "amount_shown": 1469457720,
-          "ratio": 4.4,
           "integrated": false
         }
       ]
     },
     "kosdaq": {
-      "over20_count": 161,
-      "threshold": 1615,
+      "over20_count": 158,
+      "threshold": 1670,
       "items": [
         {
           "name": "서울전자통신",
           "code": "027040",
           "grp": "코스닥",
-          "close": 1851,
-          "change_pct": 8.63,
+          "close": 1895,
+          "change_pct": 11.21,
           "volume_shown": 7056070,
-          "amount_shown": 13060785570,
+          "amount_shown": 14817978958,
           "ratio": 124.7,
           "integrated": false
         },
@@ -145,10 +143,10 @@
           "name": "토마토시스템",
           "code": "393210",
           "grp": "코스닥",
-          "close": 3715,
-          "change_pct": 12.07,
+          "close": 4060,
+          "change_pct": 22.47,
           "volume_shown": 15207842,
-          "amount_shown": 56497133030,
+          "amount_shown": 60700410311,
           "ratio": 54.2,
           "integrated": false
         },
@@ -156,10 +154,10 @@
           "name": "노브랜드",
           "code": "145170",
           "grp": "코스닥",
-          "close": 2735,
-          "change_pct": 4.39,
+          "close": 2755,
+          "change_pct": 5.15,
           "volume_shown": 938378,
-          "amount_shown": 2566463830,
+          "amount_shown": 2741583673,
           "ratio": 36.0,
           "integrated": false
         },
@@ -167,10 +165,10 @@
           "name": "삼기에너지솔루션즈",
           "code": "419050",
           "grp": "코스닥",
-          "close": 1884,
-          "change_pct": 17.53,
+          "close": 1936,
+          "change_pct": 20.77,
           "volume_shown": 36461754,
-          "amount_shown": 68693944536,
+          "amount_shown": 70194600212,
           "ratio": 35.3,
           "integrated": false
         },
@@ -178,10 +176,10 @@
           "name": "더블유에스아이",
           "code": "299170",
           "grp": "코스닥",
-          "close": 1364,
-          "change_pct": -11.72,
+          "close": 1361,
+          "change_pct": -11.91,
           "volume_shown": 6347495,
-          "amount_shown": 8657983180,
+          "amount_shown": 9145459416,
           "ratio": 21.2,
           "integrated": false
         },
@@ -189,10 +187,10 @@
           "name": "케이쓰리아이",
           "code": "431190",
           "grp": "코스닥",
-          "close": 4305,
-          "change_pct": 11.82,
+          "close": 4360,
+          "change_pct": 13.25,
           "volume_shown": 1695384,
-          "amount_shown": 7298628120,
+          "amount_shown": 7672630935,
           "ratio": 20.4,
           "integrated": false
         },
@@ -200,10 +198,10 @@
           "name": "나라스페이스테크놀로지",
           "code": "478340",
           "grp": "코스닥",
-          "close": 14050,
-          "change_pct": 7.83,
+          "close": 14190,
+          "change_pct": 8.9,
           "volume_shown": 9729490,
-          "amount_shown": 136699334500,
+          "amount_shown": 145667375640,
           "ratio": 20.3,
           "integrated": false
         },
@@ -211,10 +209,10 @@
           "name": "카페24",
           "code": "042000",
           "grp": "코스닥",
-          "close": 17800,
-          "change_pct": 18.67,
-          "volume_shown": 1677445,
-          "amount_shown": 29858521000,
+          "close": 18030,
+          "change_pct": 20.2,
+          "volume_shown": 951709,
+          "amount_shown": 16755115650,
           "ratio": 19.9,
           "integrated": false
         },
@@ -222,22 +220,22 @@
           "name": "보원케미칼",
           "code": "0010F0",
           "grp": "코스닥",
-          "close": 2550,
-          "change_pct": 11.6,
+          "close": 2545,
+          "change_pct": 11.38,
           "volume_shown": 2701358,
-          "amount_shown": 6888462900,
+          "amount_shown": 6993269826,
           "ratio": 19.2,
           "integrated": false
         },
         {
-          "name": "동국생명과학",
-          "code": "303810",
+          "name": "푸드웰",
+          "code": "005670",
           "grp": "코스닥",
-          "close": 2760,
-          "change_pct": -9.06,
-          "volume_shown": 13244896,
-          "amount_shown": 36555912960,
-          "ratio": 17.7,
+          "close": 6160,
+          "change_pct": -0.81,
+          "volume_shown": 261002,
+          "amount_shown": 1665083580,
+          "ratio": 18.9,
           "integrated": false
         }
       ]
@@ -303,6 +301,12 @@
           "code": "026910",
           "grp": "코스닥",
           "ratio": 12.1
+        },
+        {
+          "name": "DB",
+          "code": "012030",
+          "grp": "코스피",
+          "ratio": 11.8
         },
         {
           "name": "노타",
@@ -479,6 +483,12 @@
           "ratio": 2.0
         },
         {
+          "name": "SK스퀘어",
+          "code": "402340",
+          "grp": "코스피",
+          "ratio": 2.0
+        },
+        {
           "name": "코리아써키트",
           "code": "007810",
           "grp": "코스피",
@@ -572,18 +582,6 @@
           "name": "하이브",
           "code": "352820",
           "grp": "코스피",
-          "ratio": 1.3
-        },
-        {
-          "name": "SK스퀘어",
-          "code": "402340",
-          "grp": "코스피",
-          "ratio": 1.3
-        },
-        {
-          "name": "퓨쳐켐",
-          "code": "220100",
-          "grp": "코스닥",
           "ratio": 1.3
         },
         {
@@ -751,12 +749,6 @@
           "ratio": 2.0
         },
         {
-          "name": "에프앤가이드",
-          "code": "064850",
-          "grp": "코스닥",
-          "ratio": 1.9
-        },
-        {
           "name": "OCI홀딩스",
           "code": "010060",
           "grp": "코스피",
@@ -833,12 +825,6 @@
           "code": "357880",
           "grp": "코스닥",
           "ratio": 1.3
-        },
-        {
-          "name": "툴젠",
-          "code": "199800",
-          "grp": "코스닥",
-          "ratio": 1.2
         }
       ],
       "4plus": [
@@ -853,6 +839,12 @@
           "code": "478340",
           "grp": "코스닥",
           "ratio": 20.3
+        },
+        {
+          "name": "푸드웰",
+          "code": "005670",
+          "grp": "코스닥",
+          "ratio": 18.9
         },
         {
           "name": "SH에너지화학",
@@ -1023,12 +1015,6 @@
           "ratio": 1.5
         },
         {
-          "name": "에이직랜드",
-          "code": "445090",
-          "grp": "코스닥",
-          "ratio": 1.5
-        },
-        {
           "name": "이수페타시스",
           "code": "007660",
           "grp": "코스피",
@@ -1083,7 +1069,7 @@
     "available": true,
     "omit_reason": null,
     "session": "2026-09-23",
-    "age_days": 1,
+    "age_days": 2,
     "has_exchange_split": true,
     "nyse": {
       "over20_count": 98,
@@ -1735,7 +1721,7 @@
   },
   "notes": [
     "한국 거래량은 정규장+시간외+넥스트레이드 통합 기준이며, 통합 이력이 쌓이는 중이라 일부 종목은 정규장 기준 자동 적용(약 한 달 내 완전 전환). 스팩·거래대금 10억 미만 제외.",
-    "미국은 S&P500+나스닥100 대상.",
+    "미국은 S&P500+나스닥100 대상. 한국 데이터는 저장소 CSV 없이 공개 데이터셋만 사용했습니다(2거래일 이상 전 데이터일 수 있음).",
     "미국 종목의 거래소 표기는 실제 상장 거래소가 아니라 지수 구성 기준입니다(S&P500 편입=NYSE, 나스닥100 편입=NASDAQ으로 표시)."
   ]
 }
