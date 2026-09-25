@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-25T08:55:14+09:00",
+  "generated_at": "2026-09-26T02:40:51+09:00",
   "status": "ok",
   "errors": [],
   "kr": {
@@ -1069,7 +1069,7 @@
     "available": true,
     "omit_reason": null,
     "session": "2026-09-24",
-    "age_days": 1,
+    "age_days": 2,
     "has_exchange_split": true,
     "nyse": {
       "over20_count": 97,
