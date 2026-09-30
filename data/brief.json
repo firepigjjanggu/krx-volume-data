@@ -1,14 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-30T03:41:41+09:00",
-  "status": "partial",
-  "errors": [
-    {
-      "scope": "us",
-      "code": "US_STALE",
-      "message": "미국 데이터가 오래됨(2026-09-25)"
-    }
-  ],
+  "generated_at": "2026-09-30T09:33:38+09:00",
+  "status": "ok",
+  "errors": [],
   "kr": {
     "date": "2026-09-29",
     "integrated_count": 4131,
@@ -1051,22 +1045,384 @@
     }
   },
   "us": {
-    "available": false,
-    "omit_reason": "stale",
-    "session": "2026-09-25",
-    "age_days": 5,
-    "has_exchange_split": null,
-    "nyse": null,
-    "nasdaq": null,
+    "available": true,
+    "omit_reason": null,
+    "session": "2026-09-28",
+    "age_days": 2,
+    "has_exchange_split": true,
+    "nyse": {
+      "over20_count": 69,
+      "threshold": 65,
+      "items": [
+        {
+          "name": "Boeing",
+          "ticker": "BA",
+          "exchange": "NYSE",
+          "close": 184.39,
+          "change_pct": -6.91,
+          "volume": 18053700,
+          "ratio": 2.8,
+          "streak": 1
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "ticker": "CMG",
+          "exchange": "NYSE",
+          "close": 31.85,
+          "change_pct": 1.66,
+          "volume": 31440100,
+          "ratio": 2.5,
+          "streak": 1
+        },
+        {
+          "name": "MGM Resorts",
+          "ticker": "MGM",
+          "exchange": "NYSE",
+          "close": 31.86,
+          "change_pct": -2.21,
+          "volume": 9359100,
+          "ratio": 2.4,
+          "streak": 5
+        },
+        {
+          "name": "Carvana",
+          "ticker": "CVNA",
+          "exchange": "NYSE",
+          "close": 60.47,
+          "change_pct": -7.06,
+          "volume": 15472300,
+          "ratio": 2.3,
+          "streak": 1
+        },
+        {
+          "name": "Medtronic",
+          "ticker": "MDT",
+          "exchange": "NYSE",
+          "close": 89.5,
+          "change_pct": 0.97,
+          "volume": 22548000,
+          "ratio": 2.3,
+          "streak": 2
+        },
+        {
+          "name": "Blackstone Inc.",
+          "ticker": "BX",
+          "exchange": "NYSE",
+          "close": 114.56,
+          "change_pct": -3.26,
+          "volume": 8078400,
+          "ratio": 2.2,
+          "streak": 4
+        },
+        {
+          "name": "Gen Digital",
+          "ticker": "GEN",
+          "exchange": "NYSE",
+          "close": 20.85,
+          "change_pct": -3.56,
+          "volume": 18419100,
+          "ratio": 2.0,
+          "streak": 5
+        },
+        {
+          "name": "Alliant Energy",
+          "ticker": "LNT",
+          "exchange": "NYSE",
+          "close": 63.21,
+          "change_pct": -0.61,
+          "volume": 4040400,
+          "ratio": 1.8,
+          "streak": 2
+        },
+        {
+          "name": "Evergy",
+          "ticker": "EVRG",
+          "exchange": "NYSE",
+          "close": 77.91,
+          "change_pct": -0.17,
+          "volume": 3762200,
+          "ratio": 1.7,
+          "streak": 1
+        },
+        {
+          "name": "Chubb Limited",
+          "ticker": "CB",
+          "exchange": "NYSE",
+          "close": 331.37,
+          "change_pct": -0.6,
+          "volume": 2692600,
+          "ratio": 1.7,
+          "streak": 1
+        }
+      ]
+    },
+    "nasdaq": {
+      "over20_count": 8,
+      "threshold": 20,
+      "items": [
+        {
+          "name": "DoorDash",
+          "ticker": "DASH",
+          "exchange": "NASDAQ",
+          "close": 178.39,
+          "change_pct": -7.74,
+          "volume": 6847900,
+          "ratio": 1.8,
+          "streak": 1
+        },
+        {
+          "name": "Arm Holdings",
+          "ticker": "ARM",
+          "exchange": "NASDAQ",
+          "close": 283.33,
+          "change_pct": -8.7,
+          "volume": 9104000,
+          "ratio": 1.7,
+          "streak": 8
+        },
+        {
+          "name": "Regeneron Pharmaceuticals",
+          "ticker": "REGN",
+          "exchange": "NASDAQ",
+          "close": 752.25,
+          "change_pct": -4.54,
+          "volume": 1149800,
+          "ratio": 1.6,
+          "streak": 1
+        },
+        {
+          "name": "Monster Beverage",
+          "ticker": "MNST",
+          "exchange": "NASDAQ",
+          "close": 41.86,
+          "change_pct": -2.9,
+          "volume": 14859500,
+          "ratio": 1.5,
+          "streak": 1
+        },
+        {
+          "name": "Netflix",
+          "ticker": "NFLX",
+          "exchange": "NASDAQ",
+          "close": 69.23,
+          "change_pct": -2.7,
+          "volume": 43366300,
+          "ratio": 1.3,
+          "streak": 1
+        },
+        {
+          "name": "Ferrovial",
+          "ticker": "FER",
+          "exchange": "NASDAQ",
+          "close": 55.77,
+          "change_pct": -0.11,
+          "volume": 1874100,
+          "ratio": 1.3,
+          "streak": 1
+        },
+        {
+          "name": "Nvidia",
+          "ticker": "NVDA",
+          "exchange": "NASDAQ",
+          "close": 228.86,
+          "change_pct": 1.68,
+          "volume": 142344300,
+          "ratio": 1.2,
+          "streak": 1
+        },
+        {
+          "name": "Meta Platforms",
+          "ticker": "META",
+          "exchange": "NASDAQ",
+          "close": 715.62,
+          "change_pct": -4.79,
+          "volume": 27943100,
+          "ratio": 1.2,
+          "streak": 1
+        }
+      ]
+    },
     "all": null,
     "streaks": {
-      "2": [],
-      "3": [],
-      "4plus": []
+      "2": [
+        {
+          "name": "Medtronic",
+          "ticker": "MDT",
+          "ratio": 2.3,
+          "streak": 2
+        },
+        {
+          "name": "Alliant Energy",
+          "ticker": "LNT",
+          "ratio": 1.8,
+          "streak": 2
+        },
+        {
+          "name": "Kroger",
+          "ticker": "KR",
+          "ratio": 1.6,
+          "streak": 2
+        },
+        {
+          "name": "Jabil",
+          "ticker": "JBL",
+          "ratio": 1.6,
+          "streak": 2
+        },
+        {
+          "name": "Humana",
+          "ticker": "HUM",
+          "ratio": 1.5,
+          "streak": 2
+        },
+        {
+          "name": "Regions Financial Corporation",
+          "ticker": "RF",
+          "ratio": 1.5,
+          "streak": 2
+        },
+        {
+          "name": "DTE Energy",
+          "ticker": "DTE",
+          "ratio": 1.4,
+          "streak": 2
+        },
+        {
+          "name": "Eversource Energy",
+          "ticker": "ES",
+          "ratio": 1.4,
+          "streak": 2
+        },
+        {
+          "name": "W. W. Grainger",
+          "ticker": "GWW",
+          "ratio": 1.4,
+          "streak": 2
+        },
+        {
+          "name": "JPMorgan Chase",
+          "ticker": "JPM",
+          "ratio": 1.4,
+          "streak": 2
+        },
+        {
+          "name": "Trane Technologies",
+          "ticker": "TT",
+          "ratio": 1.3,
+          "streak": 2
+        }
+      ],
+      "3": [
+        {
+          "name": "Akamai Technologies",
+          "ticker": "AKAM",
+          "ratio": 1.6,
+          "streak": 3
+        },
+        {
+          "name": "Equifax",
+          "ticker": "EFX",
+          "ratio": 1.6,
+          "streak": 3
+        },
+        {
+          "name": "General Dynamics",
+          "ticker": "GD",
+          "ratio": 1.5,
+          "streak": 3
+        },
+        {
+          "name": "Federal Realty Investment Trust",
+          "ticker": "FRT",
+          "ratio": 1.5,
+          "streak": 3
+        },
+        {
+          "name": "Viatris",
+          "ticker": "VTRS",
+          "ratio": 1.5,
+          "streak": 3
+        },
+        {
+          "name": "Ameren",
+          "ticker": "AEE",
+          "ratio": 1.5,
+          "streak": 3
+        },
+        {
+          "name": "Globe Life",
+          "ticker": "GL",
+          "ratio": 1.3,
+          "streak": 3
+        },
+        {
+          "name": "Invesco",
+          "ticker": "IVZ",
+          "ratio": 1.3,
+          "streak": 3
+        },
+        {
+          "name": "Home Depot (The)",
+          "ticker": "HD",
+          "ratio": 1.2,
+          "streak": 3
+        }
+      ],
+      "4plus": [
+        {
+          "name": "MGM Resorts",
+          "ticker": "MGM",
+          "ratio": 2.4,
+          "streak": 5
+        },
+        {
+          "name": "Blackstone Inc.",
+          "ticker": "BX",
+          "ratio": 2.2,
+          "streak": 4
+        },
+        {
+          "name": "Gen Digital",
+          "ticker": "GEN",
+          "ratio": 2.0,
+          "streak": 5
+        },
+        {
+          "name": "Arm Holdings",
+          "ticker": "ARM",
+          "ratio": 1.7,
+          "streak": 8
+        },
+        {
+          "name": "Rollins, Inc.",
+          "ticker": "ROL",
+          "ratio": 1.6,
+          "streak": 4
+        },
+        {
+          "name": "Realty Income",
+          "ticker": "O",
+          "ratio": 1.3,
+          "streak": 4
+        },
+        {
+          "name": "CMS Energy",
+          "ticker": "CMS",
+          "ratio": 1.3,
+          "streak": 5
+        },
+        {
+          "name": "Camden Property Trust",
+          "ticker": "CPT",
+          "ratio": 1.3,
+          "streak": 4
+        }
+      ]
     }
   },
   "notes": [
     "한국 거래량은 정규장+시간외+넥스트레이드 통합 기준이며, 통합 이력이 쌓이는 중이라 일부 종목은 정규장 기준 자동 적용(약 한 달 내 완전 전환). 스팩·거래대금 10억 미만 제외.",
-    "미국은 S&P500+나스닥100 대상."
+    "미국은 S&P500+나스닥100 대상.",
+    "미국 종목의 거래소 표기는 실제 상장 거래소가 아니라 지수 구성 기준입니다(S&P500 편입=NYSE, 나스닥100 편입=NASDAQ으로 표시)."
   ]
 }
