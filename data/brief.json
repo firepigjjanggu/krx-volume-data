@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-08T04:26:17+09:00",
+  "generated_at": "2026-10-08T10:04:22+09:00",
   "status": "ok",
   "errors": [],
   "kr": {
@@ -1213,7 +1213,7 @@
     "age_days": 2,
     "has_exchange_split": true,
     "nyse": {
-      "over20_count": 36,
+      "over20_count": 41,
       "threshold": 20,
       "items": [
         {
@@ -1227,12 +1227,22 @@
           "streak": 8
         },
         {
+          "name": "Vistra Corp.",
+          "ticker": "VST",
+          "exchange": "NYSE",
+          "close": 160.5,
+          "change_pct": 10.77,
+          "volume": 18110600,
+          "ratio": 3.3,
+          "streak": 3
+        },
+        {
           "name": "Constellation Brands",
           "ticker": "STZ",
           "exchange": "NYSE",
           "close": 115.67,
           "change_pct": 2.08,
-          "volume": 6009600,
+          "volume": 6072600,
           "ratio": 2.6,
           "streak": 2
         },
@@ -1242,7 +1252,7 @@
           "exchange": "NYSE",
           "close": 443.65,
           "change_pct": 13.85,
-          "volume": 6382800,
+          "volume": 6396600,
           "ratio": 2.5,
           "streak": 1
         },
@@ -1277,6 +1287,16 @@
           "streak": 2
         },
         {
+          "name": "Corteva",
+          "ticker": "CTVA",
+          "exchange": "NYSE",
+          "close": 13.91,
+          "change_pct": 12.27,
+          "volume": 45132500,
+          "ratio": 2.1,
+          "streak": 4
+        },
+        {
           "name": "Charles River Laboratories",
           "ticker": "CRL",
           "exchange": "NYSE",
@@ -1284,6 +1304,16 @@
           "change_pct": -1.87,
           "volume": 1923100,
           "ratio": 1.9,
+          "streak": 2
+        },
+        {
+          "name": "Humana",
+          "ticker": "HUM",
+          "exchange": "NYSE",
+          "close": 404.27,
+          "change_pct": 0.05,
+          "volume": 1982900,
+          "ratio": 1.8,
           "streak": 2
         },
         {
@@ -1295,16 +1325,6 @@
           "volume": 13660900,
           "ratio": 1.8,
           "streak": 1
-        },
-        {
-          "name": "Humana",
-          "ticker": "HUM",
-          "exchange": "NYSE",
-          "close": 404.27,
-          "change_pct": 0.05,
-          "volume": 1982900,
-          "ratio": 1.8,
-          "streak": 2
         },
         {
           "name": "Procter & Gamble",
@@ -1377,6 +1397,16 @@
           "streak": 4
         },
         {
+          "name": "Arista Networks",
+          "ticker": "ANET",
+          "exchange": "NYSE",
+          "close": 215.36,
+          "change_pct": 4.09,
+          "volume": 6969400,
+          "ratio": 1.5,
+          "streak": 1
+        },
+        {
           "name": "Globe Life",
           "ticker": "GL",
           "exchange": "NYSE",
@@ -1397,22 +1427,22 @@
           "streak": 2
         },
         {
+          "name": "Skyworks Solutions",
+          "ticker": "SWKS",
+          "exchange": "NYSE",
+          "close": 82.79,
+          "change_pct": -1.33,
+          "volume": 12401400,
+          "ratio": 1.4,
+          "streak": 3
+        },
+        {
           "name": "Xylem Inc.",
           "ticker": "XYL",
           "exchange": "NYSE",
           "close": 104.57,
           "change_pct": 2.1,
           "volume": 4039600,
-          "ratio": 1.4,
-          "streak": 1
-        },
-        {
-          "name": "Fair Isaac",
-          "ticker": "FICO",
-          "exchange": "NYSE",
-          "close": 695.46,
-          "change_pct": 0.85,
-          "volume": 1375900,
           "ratio": 1.4,
           "streak": 1
         },
@@ -1427,14 +1457,14 @@
           "streak": 1
         },
         {
-          "name": "Skyworks Solutions",
-          "ticker": "SWKS",
+          "name": "Fair Isaac",
+          "ticker": "FICO",
           "exchange": "NYSE",
-          "close": 82.79,
-          "change_pct": -1.33,
-          "volume": 12401400,
+          "close": 695.46,
+          "change_pct": 0.85,
+          "volume": 1375900,
           "ratio": 1.4,
-          "streak": 3
+          "streak": 1
         },
         {
           "name": "Ameren",
@@ -1447,14 +1477,14 @@
           "streak": 9
         },
         {
-          "name": "MetLife",
-          "ticker": "MET",
+          "name": "Keysight Technologies",
+          "ticker": "KEYS",
           "exchange": "NYSE",
-          "close": 97.16,
-          "change_pct": 0.29,
-          "volume": 4300200,
+          "close": 388.03,
+          "change_pct": 1.0,
+          "volume": 1479700,
           "ratio": 1.4,
-          "streak": 2
+          "streak": 1
         },
         {
           "name": "Quanta Services",
@@ -1465,6 +1495,16 @@
           "volume": 1132300,
           "ratio": 1.4,
           "streak": 1
+        },
+        {
+          "name": "MetLife",
+          "ticker": "MET",
+          "exchange": "NYSE",
+          "close": 97.16,
+          "change_pct": 0.29,
+          "volume": 4300200,
+          "ratio": 1.4,
+          "streak": 2
         },
         {
           "name": "Trane Technologies",
@@ -1492,7 +1532,7 @@
           "exchange": "NYSE",
           "close": 86.43,
           "change_pct": -0.67,
-          "volume": 11024000,
+          "volume": 11038700,
           "ratio": 1.3,
           "streak": 3
         },
@@ -1547,6 +1587,16 @@
           "streak": 1
         },
         {
+          "name": "Moderna",
+          "ticker": "MRNA",
+          "exchange": "NYSE",
+          "close": 187.46,
+          "change_pct": -7.75,
+          "volume": 18794800,
+          "ratio": 1.3,
+          "streak": 2
+        },
+        {
           "name": "EchoStar",
           "ticker": "ECHO",
           "exchange": "NYSE",
@@ -1579,16 +1629,26 @@
       ]
     },
     "nasdaq": {
-      "over20_count": 8,
+      "over20_count": 13,
       "threshold": 20,
       "items": [
+        {
+          "name": "Constellation Energy",
+          "ticker": "CEG",
+          "exchange": "NASDAQ",
+          "close": 300.4,
+          "change_pct": 12.25,
+          "volume": 13482700,
+          "ratio": 4.4,
+          "streak": 1
+        },
         {
           "name": "Marvell Technology",
           "ticker": "MRVL",
           "exchange": "NASDAQ",
           "close": 287.01,
           "change_pct": 5.81,
-          "volume": 51160800,
+          "volume": 51285500,
           "ratio": 3.0,
           "streak": 1
         },
@@ -1598,8 +1658,8 @@
           "exchange": "NASDAQ",
           "close": 411.04,
           "change_pct": -6.93,
-          "volume": 14002200,
-          "ratio": 1.7,
+          "volume": 14044100,
+          "ratio": 1.8,
           "streak": 3
         },
         {
@@ -1608,9 +1668,19 @@
           "exchange": "NASDAQ",
           "close": 805.63,
           "change_pct": -9.18,
-          "volume": 7264600,
+          "volume": 7282800,
           "ratio": 1.6,
           "streak": 3
+        },
+        {
+          "name": "Astera Labs",
+          "ticker": "ALAB",
+          "exchange": "NASDAQ",
+          "close": 389.8,
+          "change_pct": 7.58,
+          "volume": 6510300,
+          "ratio": 1.6,
+          "streak": 1
         },
         {
           "name": "Xcel Energy",
@@ -1653,12 +1723,42 @@
           "streak": 1
         },
         {
+          "name": "Nebius Group",
+          "ticker": "NBIS",
+          "exchange": "NASDAQ",
+          "close": 249.87,
+          "change_pct": 7.44,
+          "volume": 21419200,
+          "ratio": 1.4,
+          "streak": 1
+        },
+        {
+          "name": "Ferrovial",
+          "ticker": "FER",
+          "exchange": "NASDAQ",
+          "close": 51.46,
+          "change_pct": -0.73,
+          "volume": 2483900,
+          "ratio": 1.4,
+          "streak": 2
+        },
+        {
+          "name": "Rocket Lab",
+          "ticker": "RKLB",
+          "exchange": "NASDAQ",
+          "close": 75.06,
+          "change_pct": 2.79,
+          "volume": 27029200,
+          "ratio": 1.3,
+          "streak": 1
+        },
+        {
           "name": "Broadcom",
           "ticker": "AVGO",
           "exchange": "NASDAQ",
           "close": 375.81,
           "change_pct": 3.67,
-          "volume": 30791100,
+          "volume": 30834300,
           "ratio": 1.3,
           "streak": 1
         }
@@ -1716,6 +1816,12 @@
           "streak": 2
         },
         {
+          "name": "Ferrovial",
+          "ticker": "FER",
+          "ratio": 1.4,
+          "streak": 2
+        },
+        {
           "name": "MetLife",
           "ticker": "MET",
           "ratio": 1.4,
@@ -1732,13 +1838,25 @@
           "ticker": "UAL",
           "ratio": 1.3,
           "streak": 2
+        },
+        {
+          "name": "Moderna",
+          "ticker": "MRNA",
+          "ratio": 1.3,
+          "streak": 2
         }
       ],
       "3": [
         {
+          "name": "Vistra Corp.",
+          "ticker": "VST",
+          "ratio": 3.3,
+          "streak": 3
+        },
+        {
           "name": "Western Digital",
           "ticker": "WDC",
-          "ratio": 1.7,
+          "ratio": 1.8,
           "streak": 3
         },
         {
@@ -1784,6 +1902,12 @@
           "ticker": "PEG",
           "ratio": 2.4,
           "streak": 5
+        },
+        {
+          "name": "Corteva",
+          "ticker": "CTVA",
+          "ratio": 2.1,
+          "streak": 4
         },
         {
           "name": "Incyte",
