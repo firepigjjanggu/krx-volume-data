@@ -1,17 +1,15 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-09T10:16:36+09:00",
+  "generated_at": "2026-10-10T03:36:18+09:00",
   "status": "ok",
   "errors": [],
   "kr": {
     "date": "2026-10-08",
-    "integrated_count": 4120,
-    "source": "repo+marcap",
-    "repo_days_used": [
-      "2026-10-08"
-    ],
+    "integrated_count": 0,
+    "source": "marcap_only",
+    "repo_days_used": [],
     "kospi": {
-      "over20_count": 160,
+      "over20_count": 154,
       "threshold": 265,
       "items": [
         {
@@ -21,7 +19,7 @@
           "close": 221000,
           "change_pct": 22.57,
           "volume_shown": 244960,
-          "amount_shown": 54136160000,
+          "amount_shown": 53194926900,
           "ratio": 109.0,
           "integrated": false
         },
@@ -29,10 +27,10 @@
           "name": "동양고속",
           "code": "084670",
           "grp": "코스피",
-          "close": 37200,
-          "change_pct": 27.18,
+          "close": 38000,
+          "change_pct": 29.91,
           "volume_shown": 1435338,
-          "amount_shown": 53394573600,
+          "amount_shown": 52451794875,
           "ratio": 103.1,
           "integrated": false
         },
@@ -40,10 +38,10 @@
           "name": "국제약품",
           "code": "002720",
           "grp": "코스피",
-          "close": 4235,
-          "change_pct": -4.4,
+          "close": 4270,
+          "change_pct": -3.61,
           "volume_shown": 21080777,
-          "amount_shown": 89277090595,
+          "amount_shown": 95367443116,
           "ratio": 63.1,
           "integrated": false
         },
@@ -51,10 +49,10 @@
           "name": "알루코",
           "code": "001780",
           "grp": "코스피",
-          "close": 1790,
-          "change_pct": 7.25,
+          "close": 1706,
+          "change_pct": 2.22,
           "volume_shown": 9989636,
-          "amount_shown": 17881448440,
+          "amount_shown": 18624071439,
           "ratio": 39.7,
           "integrated": false
         },
@@ -62,10 +60,10 @@
           "name": "한성기업",
           "code": "003680",
           "grp": "코스피",
-          "close": 4440,
-          "change_pct": 0.57,
+          "close": 4490,
+          "change_pct": 1.7,
           "volume_shown": 843031,
-          "amount_shown": 3743057640,
+          "amount_shown": 4067593398,
           "ratio": 11.7,
           "integrated": false
         },
@@ -73,10 +71,10 @@
           "name": "대성산업",
           "code": "128820",
           "grp": "코스피",
-          "close": 4555,
-          "change_pct": -8.9,
+          "close": 4610,
+          "change_pct": -7.8,
           "volume_shown": 4941243,
-          "amount_shown": 22507361865,
+          "amount_shown": 23857105188,
           "ratio": 10.3,
           "integrated": false
         },
@@ -87,7 +85,7 @@
           "close": 1086,
           "change_pct": 5.03,
           "volume_shown": 2340208,
-          "amount_shown": 2541465888,
+          "amount_shown": 2709278246,
           "ratio": 9.4,
           "integrated": false
         },
@@ -98,7 +96,7 @@
           "close": 2635,
           "change_pct": 29.8,
           "volume_shown": 5269290,
-          "amount_shown": 13884579150,
+          "amount_shown": 12987804141,
           "ratio": 7.5,
           "integrated": false
         },
@@ -106,10 +104,10 @@
           "name": "한미사이언스",
           "code": "008930",
           "grp": "코스피",
-          "close": 52000,
-          "change_pct": -10.5,
-          "volume_shown": 2886901,
-          "amount_shown": 150118852000,
+          "close": 54900,
+          "change_pct": -5.51,
+          "volume_shown": 1181941,
+          "amount_shown": 66957077550,
           "ratio": 4.4,
           "integrated": false
         },
@@ -117,27 +115,27 @@
           "name": "한일철강",
           "code": "002220",
           "grp": "코스피",
-          "close": 3030,
-          "change_pct": 4.66,
+          "close": 3020,
+          "change_pct": 4.32,
           "volume_shown": 444160,
-          "amount_shown": 1345804800,
+          "amount_shown": 1337575871,
           "ratio": 3.8,
           "integrated": false
         }
       ]
     },
     "kosdaq": {
-      "over20_count": 191,
+      "over20_count": 186,
       "threshold": 1275,
       "items": [
         {
           "name": "우양에이치씨",
           "code": "101970",
           "grp": "코스닥",
-          "close": 9720,
-          "change_pct": -3.67,
+          "close": 9680,
+          "change_pct": -4.06,
           "volume_shown": 134471,
-          "amount_shown": 1307058120,
+          "amount_shown": 1482142865,
           "ratio": 26.7,
           "integrated": false
         },
@@ -145,10 +143,10 @@
           "name": "쇼박스",
           "code": "086980",
           "grp": "코스닥",
-          "close": 1978,
-          "change_pct": 14.73,
+          "close": 1982,
+          "change_pct": 14.97,
           "volume_shown": 1878526,
-          "amount_shown": 3715724428,
+          "amount_shown": 3638265446,
           "ratio": 26.4,
           "integrated": false
         },
@@ -156,10 +154,10 @@
           "name": "우원개발",
           "code": "046940",
           "grp": "코스닥",
-          "close": 2810,
-          "change_pct": 2.37,
+          "close": 2835,
+          "change_pct": 3.28,
           "volume_shown": 1687900,
-          "amount_shown": 4742999000,
+          "amount_shown": 5021184860,
           "ratio": 25.2,
           "integrated": false
         },
@@ -167,10 +165,10 @@
           "name": "비아트론",
           "code": "141000",
           "grp": "코스닥",
-          "close": 13260,
-          "change_pct": 10.59,
+          "close": 13840,
+          "change_pct": 15.43,
           "volume_shown": 4474966,
-          "amount_shown": 59338049160,
+          "amount_shown": 62570409090,
           "ratio": 23.1,
           "integrated": false
         },
@@ -178,10 +176,10 @@
           "name": "국전",
           "code": "307750",
           "grp": "코스닥",
-          "close": 2920,
-          "change_pct": 5.42,
+          "close": 2975,
+          "change_pct": 7.4,
           "volume_shown": 18617274,
-          "amount_shown": 54362440080,
+          "amount_shown": 56500150934,
           "ratio": 19.7,
           "integrated": false
         },
@@ -189,10 +187,10 @@
           "name": "삼기",
           "code": "122350",
           "grp": "코스닥",
-          "close": 1733,
-          "change_pct": 7.98,
+          "close": 1720,
+          "change_pct": 7.17,
           "volume_shown": 20688161,
-          "amount_shown": 35852583013,
+          "amount_shown": 38094642107,
           "ratio": 19.1,
           "integrated": false
         },
@@ -200,10 +198,10 @@
           "name": "영우디에스피",
           "code": "143540",
           "grp": "코스닥",
-          "close": 1119,
-          "change_pct": 6.88,
+          "close": 1116,
+          "change_pct": 6.59,
           "volume_shown": 1456642,
-          "amount_shown": 1629982398,
+          "amount_shown": 1671132412,
           "ratio": 18.3,
           "integrated": false
         },
@@ -211,10 +209,10 @@
           "name": "헬릭스미스",
           "code": "084990",
           "grp": "코스닥",
-          "close": 4355,
-          "change_pct": 10.39,
+          "close": 4530,
+          "change_pct": 14.83,
           "volume_shown": 4217243,
-          "amount_shown": 18366093265,
+          "amount_shown": 19603327351,
           "ratio": 18.2,
           "integrated": false
         },
@@ -222,10 +220,10 @@
           "name": "빅텐츠",
           "code": "210120",
           "grp": "코스닥",
-          "close": 1552,
-          "change_pct": -14.06,
+          "close": 2345,
+          "change_pct": 29.84,
           "volume_shown": 2556963,
-          "amount_shown": 3968406576,
+          "amount_shown": 4950033563,
           "ratio": 16.3,
           "integrated": false
         },
@@ -236,7 +234,7 @@
           "close": 1774,
           "change_pct": 29.96,
           "volume_shown": 6719226,
-          "amount_shown": 11919906924,
+          "amount_shown": 11295214249,
           "ratio": 14.5,
           "integrated": false
         }
@@ -374,7 +372,7 @@
           "name": "HD한국조선해양",
           "code": "009540",
           "grp": "코스피",
-          "ratio": 2.1
+          "ratio": 2.2
         },
         {
           "name": "HD건설기계",
@@ -395,12 +393,6 @@
           "ratio": 2.0
         },
         {
-          "name": "삼진제약",
-          "code": "005500",
-          "grp": "코스피",
-          "ratio": 2.0
-        },
-        {
           "name": "리가켐바이오",
           "code": "141080",
           "grp": "코스닥",
@@ -416,6 +408,12 @@
           "name": "브이티",
           "code": "018290",
           "grp": "코스닥",
+          "ratio": 1.9
+        },
+        {
+          "name": "키움증권",
+          "code": "039490",
+          "grp": "코스피",
           "ratio": 1.9
         },
         {
@@ -467,21 +465,9 @@
           "ratio": 1.6
         },
         {
-          "name": "한국쉘석유",
-          "code": "002960",
-          "grp": "코스피",
-          "ratio": 1.6
-        },
-        {
           "name": "엘앤씨바이오",
           "code": "290650",
           "grp": "코스닥",
-          "ratio": 1.6
-        },
-        {
-          "name": "키움증권",
-          "code": "039490",
-          "grp": "코스피",
           "ratio": 1.6
         },
         {
@@ -521,6 +507,12 @@
           "ratio": 1.5
         },
         {
+          "name": "iM금융지주",
+          "code": "139130",
+          "grp": "코스피",
+          "ratio": 1.4
+        },
+        {
           "name": "케어젠",
           "code": "214370",
           "grp": "코스닥",
@@ -557,15 +549,15 @@
           "ratio": 1.3
         },
         {
-          "name": "대원제약",
-          "code": "003220",
-          "grp": "코스피",
-          "ratio": 1.3
-        },
-        {
           "name": "MSDI",
           "code": "123010",
           "grp": "코스닥",
+          "ratio": 1.3
+        },
+        {
+          "name": "HD현대중공업",
+          "code": "329180",
+          "grp": "코스피",
           "ratio": 1.3
         },
         {
@@ -584,12 +576,6 @@
           "name": "씨젠",
           "code": "096530",
           "grp": "코스닥",
-          "ratio": 1.2
-        },
-        {
-          "name": "HD현대중공업",
-          "code": "329180",
-          "grp": "코스피",
           "ratio": 1.2
         },
         {
@@ -808,12 +794,6 @@
           "name": "LG씨엔에스",
           "code": "064400",
           "grp": "코스피",
-          "ratio": 1.6
-        },
-        {
-          "name": "에스바이오메딕스",
-          "code": "304360",
-          "grp": "코스닥",
           "ratio": 1.6
         },
         {
@@ -1083,6 +1063,12 @@
           "ratio": 1.6
         },
         {
+          "name": "앤로보틱스",
+          "code": "138360",
+          "grp": "코스닥",
+          "ratio": 1.6
+        },
+        {
           "name": "신성이엔지",
           "code": "011930",
           "grp": "코스피",
@@ -1149,12 +1135,6 @@
           "ratio": 1.4
         },
         {
-          "name": "미래나노텍",
-          "code": "095500",
-          "grp": "코스닥",
-          "ratio": 1.4
-        },
-        {
           "name": "이랜텍",
           "code": "054210",
           "grp": "코스닥",
@@ -1164,12 +1144,6 @@
           "name": "한국콜마",
           "code": "161890",
           "grp": "코스피",
-          "ratio": 1.3
-        },
-        {
-          "name": "코오롱생명과학",
-          "code": "102940",
-          "grp": "코스닥",
           "ratio": 1.3
         },
         {
@@ -1191,7 +1165,7 @@
     "available": true,
     "omit_reason": null,
     "session": "2026-10-07",
-    "age_days": 2,
+    "age_days": 3,
     "has_exchange_split": true,
     "nyse": {
       "over20_count": 48,
@@ -1913,7 +1887,7 @@
   },
   "notes": [
     "한국 거래량은 정규장+시간외+넥스트레이드 통합 기준이며, 통합 이력이 쌓이는 중이라 일부 종목은 정규장 기준 자동 적용(약 한 달 내 완전 전환). 스팩·거래대금 10억 미만 제외.",
-    "미국은 S&P500+나스닥100 대상.",
+    "미국은 S&P500+나스닥100 대상. 한국 데이터는 저장소 CSV 없이 공개 데이터셋만 사용했습니다(2거래일 이상 전 데이터일 수 있음).",
     "미국 종목의 거래소 표기는 실제 상장 거래소가 아니라 지수 구성 기준입니다(S&P500 편입=NYSE, 나스닥100 편입=NASDAQ으로 표시)."
   ]
 }
