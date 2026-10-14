@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-14T04:56:33+09:00",
+  "generated_at": "2026-10-14T09:21:59+09:00",
   "status": "ok",
   "errors": [],
   "kr": {
@@ -1711,7 +1711,7 @@
           "exchange": "NYSE",
           "close": 30.4,
           "change_pct": -3.77,
-          "volume": 29147900,
+          "volume": 29168600,
           "ratio": 1.5,
           "streak": 1
         },
@@ -1907,8 +1907,8 @@
           "exchange": "NASDAQ",
           "close": 995.41,
           "change_pct": -9.78,
-          "volume": 6430600,
-          "ratio": 1.3,
+          "volume": 6455600,
+          "ratio": 1.4,
           "streak": 1
         },
         {
