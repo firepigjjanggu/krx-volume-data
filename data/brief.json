@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-20T04:12:03+09:00",
+  "generated_at": "2026-10-20T09:26:24+09:00",
   "status": "ok",
   "errors": [],
   "kr": {
@@ -918,7 +918,7 @@
     "age_days": 4,
     "has_exchange_split": true,
     "nyse": {
-      "over20_count": 95,
+      "over20_count": 98,
       "threshold": 105,
       "items": [
         {
@@ -927,7 +927,7 @@
           "exchange": "NYSE",
           "close": 288.89,
           "change_pct": -0.66,
-          "volume": 3400439,
+          "volume": 3400500,
           "ratio": 2.8,
           "streak": 2
         },
@@ -937,7 +937,7 @@
           "exchange": "NYSE",
           "close": 389.54,
           "change_pct": 1.47,
-          "volume": 3194578,
+          "volume": 3194800,
           "ratio": 2.6,
           "streak": 2
         },
@@ -947,7 +947,7 @@
           "exchange": "NYSE",
           "close": 27.45,
           "change_pct": 0.51,
-          "volume": 25973074,
+          "volume": 25973100,
           "ratio": 2.4,
           "streak": 2
         },
@@ -957,7 +957,7 @@
           "exchange": "NYSE",
           "close": 165.54,
           "change_pct": 0.06,
-          "volume": 2586132,
+          "volume": 2595700,
           "ratio": 2.3,
           "streak": 1
         },
@@ -967,7 +967,7 @@
           "exchange": "NYSE",
           "close": 238.97,
           "change_pct": -1.35,
-          "volume": 2522452,
+          "volume": 2546700,
           "ratio": 2.2,
           "streak": 1
         },
@@ -977,7 +977,7 @@
           "exchange": "NYSE",
           "close": 107.39,
           "change_pct": -0.39,
-          "volume": 3865245,
+          "volume": 3865300,
           "ratio": 2.2,
           "streak": 1
         },
@@ -987,7 +987,7 @@
           "exchange": "NYSE",
           "close": 63.36,
           "change_pct": -0.11,
-          "volume": 9412250,
+          "volume": 9450000,
           "ratio": 2.1,
           "streak": 1
         },
@@ -997,7 +997,7 @@
           "exchange": "NYSE",
           "close": 58.73,
           "change_pct": 2.33,
-          "volume": 17518827,
+          "volume": 17521600,
           "ratio": 2.1,
           "streak": 3
         },
@@ -1007,14 +1007,14 @@
           "exchange": "NYSE",
           "close": 248.51,
           "change_pct": 3.33,
-          "volume": 3371346,
+          "volume": 3371500,
           "ratio": 2.1,
           "streak": 3
         }
       ]
     },
     "nasdaq": {
-      "over20_count": 34,
+      "over20_count": 35,
       "threshold": 20,
       "items": [
         {
@@ -1023,7 +1023,7 @@
           "exchange": "NASDAQ",
           "close": 61.39,
           "change_pct": -11.91,
-          "volume": 94362732,
+          "volume": 94876600,
           "ratio": 2.5,
           "streak": 3
         },
@@ -1033,7 +1033,7 @@
           "exchange": "NASDAQ",
           "close": 27.87,
           "change_pct": 0.43,
-          "volume": 24458064,
+          "volume": 24458500,
           "ratio": 2.4,
           "streak": 2
         },
@@ -1043,7 +1043,7 @@
           "exchange": "NASDAQ",
           "close": 109.01,
           "change_pct": 1.04,
-          "volume": 3050421,
+          "volume": 3078600,
           "ratio": 2.1,
           "streak": 2
         },
@@ -1053,7 +1053,7 @@
           "exchange": "NASDAQ",
           "close": 73.85,
           "change_pct": -0.55,
-          "volume": 18575689,
+          "volume": 18577000,
           "ratio": 2.1,
           "streak": 3
         },
@@ -1063,7 +1063,7 @@
           "exchange": "NASDAQ",
           "close": 165.47,
           "change_pct": -12.18,
-          "volume": 34790499,
+          "volume": 34962100,
           "ratio": 1.9,
           "streak": 3
         },
@@ -1073,7 +1073,7 @@
           "exchange": "NASDAQ",
           "close": 354.72,
           "change_pct": -2.13,
-          "volume": 61706132,
+          "volume": 61855000,
           "ratio": 1.8,
           "streak": 1
         },
@@ -1083,7 +1083,7 @@
           "exchange": "NASDAQ",
           "close": 168.09,
           "change_pct": 3.05,
-          "volume": 5085672,
+          "volume": 5085800,
           "ratio": 1.6,
           "streak": 1
         },
@@ -1093,7 +1093,7 @@
           "exchange": "NASDAQ",
           "close": 343.46,
           "change_pct": 0.43,
-          "volume": 59852690,
+          "volume": 59895300,
           "ratio": 1.6,
           "streak": 1
         },
@@ -1103,18 +1103,8 @@
           "exchange": "NASDAQ",
           "close": 342.0,
           "change_pct": -7.63,
-          "volume": 8757393,
+          "volume": 8762600,
           "ratio": 1.6,
-          "streak": 1
-        },
-        {
-          "name": "CrowdStrike",
-          "ticker": "CRWD",
-          "exchange": "NASDAQ",
-          "close": 227.39,
-          "change_pct": -7.02,
-          "volume": 13814244,
-          "ratio": 1.5,
           "streak": 1
         },
         {
@@ -1123,7 +1113,17 @@
           "exchange": "NASDAQ",
           "close": 169.13,
           "change_pct": -7.03,
-          "volume": 5732468,
+          "volume": 5734700,
+          "ratio": 1.5,
+          "streak": 1
+        },
+        {
+          "name": "CrowdStrike",
+          "ticker": "CRWD",
+          "exchange": "NASDAQ",
+          "close": 227.39,
+          "change_pct": -7.02,
+          "volume": 13828100,
           "ratio": 1.5,
           "streak": 1
         },
@@ -1133,7 +1133,7 @@
           "exchange": "NASDAQ",
           "close": 169.52,
           "change_pct": -4.84,
-          "volume": 15097705,
+          "volume": 15244000,
           "ratio": 1.5,
           "streak": 1
         },
@@ -1143,7 +1143,7 @@
           "exchange": "NASDAQ",
           "close": 111.63,
           "change_pct": 0.77,
-          "volume": 5508722,
+          "volume": 5508800,
           "ratio": 1.5,
           "streak": 1
         },
@@ -1153,7 +1153,7 @@
           "exchange": "NASDAQ",
           "close": 395.44,
           "change_pct": -2.11,
-          "volume": 4761575,
+          "volume": 4768300,
           "ratio": 1.5,
           "streak": 3
         },
@@ -1163,7 +1163,7 @@
           "exchange": "NASDAQ",
           "close": 390.29,
           "change_pct": -6.45,
-          "volume": 1420073,
+          "volume": 1421200,
           "ratio": 1.4,
           "streak": 1
         },
@@ -1173,7 +1173,7 @@
           "exchange": "NASDAQ",
           "close": 136.83,
           "change_pct": -9.56,
-          "volume": 31774229,
+          "volume": 31826700,
           "ratio": 1.4,
           "streak": 1
         },
@@ -1183,7 +1183,7 @@
           "exchange": "NASDAQ",
           "close": 186.03,
           "change_pct": -7.22,
-          "volume": 33027354,
+          "volume": 33253300,
           "ratio": 1.4,
           "streak": 1
         },
@@ -1193,7 +1193,7 @@
           "exchange": "NASDAQ",
           "close": 165.74,
           "change_pct": -5.0,
-          "volume": 13104175,
+          "volume": 13112200,
           "ratio": 1.4,
           "streak": 3
         },
@@ -1203,7 +1203,7 @@
           "exchange": "NASDAQ",
           "close": 229.33,
           "change_pct": -0.76,
-          "volume": 4575275,
+          "volume": 4576000,
           "ratio": 1.4,
           "streak": 3
         },
@@ -1213,9 +1213,19 @@
           "exchange": "NASDAQ",
           "close": 276.48,
           "change_pct": -0.95,
-          "volume": 7924566,
+          "volume": 7949400,
           "ratio": 1.4,
           "streak": 1
+        },
+        {
+          "name": "Marriott International",
+          "ticker": "MAR",
+          "exchange": "NASDAQ",
+          "close": 388.05,
+          "change_pct": 0.61,
+          "volume": 1913000,
+          "ratio": 1.4,
+          "streak": 2
         },
         {
           "name": "Idexx Laboratories",
@@ -1223,7 +1233,7 @@
           "exchange": "NASDAQ",
           "close": 560.36,
           "change_pct": 2.41,
-          "volume": 708810,
+          "volume": 708800,
           "ratio": 1.3,
           "streak": 1
         },
@@ -1233,7 +1243,7 @@
           "exchange": "NASDAQ",
           "close": 156.19,
           "change_pct": -0.75,
-          "volume": 7762328,
+          "volume": 7770900,
           "ratio": 1.3,
           "streak": 2
         },
@@ -1243,7 +1253,17 @@
           "exchange": "NASDAQ",
           "close": 328.75,
           "change_pct": -4.52,
-          "volume": 29604273,
+          "volume": 29727900,
+          "ratio": 1.3,
+          "streak": 2
+        },
+        {
+          "name": "Mondelez International",
+          "ticker": "MDLZ",
+          "exchange": "NASDAQ",
+          "close": 63.91,
+          "change_pct": 1.4,
+          "volume": 10483400,
           "ratio": 1.3,
           "streak": 2
         },
@@ -1253,7 +1273,7 @@
           "exchange": "NASDAQ",
           "close": 409.29,
           "change_pct": -4.82,
-          "volume": 8499541,
+          "volume": 8536500,
           "ratio": 1.3,
           "streak": 4
         },
@@ -1263,7 +1283,7 @@
           "exchange": "NASDAQ",
           "close": 263.94,
           "change_pct": -4.87,
-          "volume": 11322879,
+          "volume": 11343000,
           "ratio": 1.3,
           "streak": 2
         },
@@ -1273,8 +1293,28 @@
           "exchange": "NASDAQ",
           "close": 247.11,
           "change_pct": -7.19,
-          "volume": 3747503,
+          "volume": 3748800,
           "ratio": 1.3,
+          "streak": 1
+        },
+        {
+          "name": "ASML Holding",
+          "ticker": "ASML",
+          "exchange": "NASDAQ",
+          "close": 1641.52,
+          "change_pct": -0.96,
+          "volume": 1887700,
+          "ratio": 1.2,
+          "streak": 3
+        },
+        {
+          "name": "Intuitive Surgical",
+          "ticker": "ISRG",
+          "exchange": "NASDAQ",
+          "close": 426.7,
+          "change_pct": -0.27,
+          "volume": 2609600,
+          "ratio": 1.2,
           "streak": 1
         },
         {
@@ -1283,17 +1323,7 @@
           "exchange": "NASDAQ",
           "close": 325.0,
           "change_pct": -5.31,
-          "volume": 3196303,
-          "ratio": 1.2,
-          "streak": 3
-        },
-        {
-          "name": "ASML Holding",
-          "ticker": "ASML",
-          "exchange": "NASDAQ",
-          "close": 1641.52,
-          "change_pct": -0.96,
-          "volume": 1885891,
+          "volume": 3204000,
           "ratio": 1.2,
           "streak": 3
         },
@@ -1303,29 +1333,9 @@
           "exchange": "NASDAQ",
           "close": 639.01,
           "change_pct": -7.5,
-          "volume": 6091195,
+          "volume": 6095300,
           "ratio": 1.2,
           "streak": 2
-        },
-        {
-          "name": "Monster Beverage",
-          "ticker": "MNST",
-          "exchange": "NASDAQ",
-          "close": 45.73,
-          "change_pct": 0.86,
-          "volume": 12343897,
-          "ratio": 1.2,
-          "streak": 1
-        },
-        {
-          "name": "Intuitive Surgical",
-          "ticker": "ISRG",
-          "exchange": "NASDAQ",
-          "close": 426.7,
-          "change_pct": -0.27,
-          "volume": 2575625,
-          "ratio": 1.2,
-          "streak": 1
         },
         {
           "name": "Fastenal",
@@ -1333,19 +1343,19 @@
           "exchange": "NASDAQ",
           "close": 51.02,
           "change_pct": 1.27,
-          "volume": 10471047,
+          "volume": 10471500,
           "ratio": 1.2,
           "streak": 4
         },
         {
-          "name": "Mondelez International",
-          "ticker": "MDLZ",
+          "name": "Monster Beverage",
+          "ticker": "MNST",
           "exchange": "NASDAQ",
-          "close": 63.91,
-          "change_pct": 1.4,
-          "volume": 10067806,
+          "close": 45.73,
+          "change_pct": 0.86,
+          "volume": 12345600,
           "ratio": 1.2,
-          "streak": 2
+          "streak": 1
         },
         {
           "name": "Keurig Dr Pepper",
@@ -1353,7 +1363,7 @@
           "exchange": "NASDAQ",
           "close": 34.62,
           "change_pct": 1.29,
-          "volume": 14272609,
+          "volume": 14273400,
           "ratio": 1.2,
           "streak": 2
         }
@@ -1429,6 +1439,12 @@
           "streak": 2
         },
         {
+          "name": "Cencora",
+          "ticker": "COR",
+          "ratio": 1.5,
+          "streak": 2
+        },
+        {
           "name": "Williams-Sonoma, Inc.",
           "ticker": "WSM",
           "ratio": 1.5,
@@ -1447,26 +1463,14 @@
           "streak": 2
         },
         {
-          "name": "Cencora",
-          "ticker": "COR",
-          "ratio": 1.5,
+          "name": "Coca-Cola Company (The)",
+          "ticker": "KO",
+          "ratio": 1.4,
           "streak": 2
         },
         {
           "name": "Genuine Parts Company",
           "ticker": "GPC",
-          "ratio": 1.4,
-          "streak": 2
-        },
-        {
-          "name": "McCormick & Company",
-          "ticker": "MKC",
-          "ratio": 1.4,
-          "streak": 2
-        },
-        {
-          "name": "Coca-Cola Company (The)",
-          "ticker": "KO",
           "ratio": 1.4,
           "streak": 2
         },
@@ -1477,15 +1481,21 @@
           "streak": 2
         },
         {
+          "name": "McCormick & Company",
+          "ticker": "MKC",
+          "ratio": 1.4,
+          "streak": 2
+        },
+        {
           "name": "Kinder Morgan",
           "ticker": "KMI",
           "ratio": 1.4,
           "streak": 2
         },
         {
-          "name": "Prudential Financial",
-          "ticker": "PRU",
-          "ratio": 1.3,
+          "name": "Marriott International",
+          "ticker": "MAR",
+          "ratio": 1.4,
           "streak": 2
         },
         {
@@ -1495,14 +1505,20 @@
           "streak": 2
         },
         {
-          "name": "Veralto",
-          "ticker": "VLTO",
+          "name": "Prudential Financial",
+          "ticker": "PRU",
           "ratio": 1.3,
           "streak": 2
         },
         {
           "name": "Vulcan Materials Company",
           "ticker": "VMC",
+          "ratio": 1.3,
+          "streak": 2
+        },
+        {
+          "name": "Veralto",
+          "ticker": "VLTO",
           "ratio": 1.3,
           "streak": 2
         },
@@ -1525,14 +1541,26 @@
           "streak": 2
         },
         {
+          "name": "Broadcom",
+          "ticker": "AVGO",
+          "ratio": 1.3,
+          "streak": 2
+        },
+        {
           "name": "Arista Networks",
           "ticker": "ANET",
           "ratio": 1.3,
           "streak": 2
         },
         {
-          "name": "Broadcom",
-          "ticker": "AVGO",
+          "name": "Mondelez International",
+          "ticker": "MDLZ",
+          "ratio": 1.3,
+          "streak": 2
+        },
+        {
+          "name": "Philip Morris International",
+          "ticker": "PM",
           "ratio": 1.3,
           "streak": 2
         },
@@ -1555,20 +1583,8 @@
           "streak": 2
         },
         {
-          "name": "Philip Morris International",
-          "ticker": "PM",
-          "ratio": 1.3,
-          "streak": 2
-        },
-        {
           "name": "Simon Property Group",
           "ticker": "SPG",
-          "ratio": 1.2,
-          "streak": 2
-        },
-        {
-          "name": "Seagate Technology",
-          "ticker": "STX",
           "ratio": 1.2,
           "streak": 2
         },
@@ -1579,14 +1595,20 @@
           "streak": 2
         },
         {
+          "name": "Seagate Technology",
+          "ticker": "STX",
+          "ratio": 1.2,
+          "streak": 2
+        },
+        {
           "name": "Southern Company",
           "ticker": "SO",
           "ratio": 1.2,
           "streak": 2
         },
         {
-          "name": "Mondelez International",
-          "ticker": "MDLZ",
+          "name": "Altria",
+          "ticker": "MO",
           "ratio": 1.2,
           "streak": 2
         },
@@ -1635,6 +1657,12 @@
           "streak": 3
         },
         {
+          "name": "Procter & Gamble",
+          "ticker": "PG",
+          "ratio": 1.6,
+          "streak": 3
+        },
+        {
           "name": "Charles Schwab Corporation",
           "ticker": "SCHW",
           "ratio": 1.5,
@@ -1659,14 +1687,14 @@
           "streak": 3
         },
         {
-          "name": "AES Corporation",
-          "ticker": "AES",
+          "name": "BNY Mellon",
+          "ticker": "BNY",
           "ratio": 1.4,
           "streak": 3
         },
         {
-          "name": "KLA Corporation",
-          "ticker": "KLAC",
+          "name": "AES Corporation",
+          "ticker": "AES",
           "ratio": 1.4,
           "streak": 3
         },
@@ -1677,14 +1705,14 @@
           "streak": 3
         },
         {
-          "name": "NXP Semiconductors",
-          "ticker": "NXPI",
+          "name": "KLA Corporation",
+          "ticker": "KLAC",
           "ratio": 1.4,
           "streak": 3
         },
         {
-          "name": "Procter & Gamble",
-          "ticker": "PG",
+          "name": "NXP Semiconductors",
+          "ticker": "NXPI",
           "ratio": 1.4,
           "streak": 3
         },
@@ -1695,20 +1723,14 @@
           "streak": 3
         },
         {
-          "name": "Blackstone Inc.",
-          "ticker": "BX",
-          "ratio": 1.3,
-          "streak": 3
-        },
-        {
           "name": "Williams Companies",
           "ticker": "WMB",
           "ratio": 1.3,
           "streak": 3
         },
         {
-          "name": "Vertiv",
-          "ticker": "VRT",
+          "name": "Blackstone Inc.",
+          "ticker": "BX",
           "ratio": 1.3,
           "streak": 3
         },
@@ -1719,9 +1741,9 @@
           "streak": 3
         },
         {
-          "name": "Teradyne",
-          "ticker": "TER",
-          "ratio": 1.2,
+          "name": "Vertiv",
+          "ticker": "VRT",
+          "ratio": 1.3,
           "streak": 3
         },
         {
@@ -1731,8 +1753,8 @@
           "streak": 3
         },
         {
-          "name": "BNY Mellon",
-          "ticker": "BNY",
+          "name": "Teradyne",
+          "ticker": "TER",
           "ratio": 1.2,
           "streak": 3
         },
@@ -1753,7 +1775,7 @@
         {
           "name": "BlackRock",
           "ticker": "BLK",
-          "ratio": 1.9,
+          "ratio": 2.0,
           "streak": 4
         },
         {
@@ -1787,16 +1809,22 @@
           "streak": 5
         },
         {
+          "name": "Kenvue",
+          "ticker": "KVUE",
+          "ratio": 1.4,
+          "streak": 4
+        },
+        {
           "name": "State Street Corporation",
           "ticker": "STT",
           "ratio": 1.4,
           "streak": 4
         },
         {
-          "name": "Kenvue",
-          "ticker": "KVUE",
+          "name": "KKR & Co.",
+          "ticker": "KKR",
           "ratio": 1.4,
-          "streak": 4
+          "streak": 5
         },
         {
           "name": "UnitedHealth Group",
