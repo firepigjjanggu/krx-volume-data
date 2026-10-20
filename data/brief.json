@@ -1,14 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-21T02:53:19+09:00",
-  "status": "partial",
-  "errors": [
-    {
-      "scope": "us",
-      "code": "US_STALE",
-      "message": "미국 데이터가 오래됨(2026-10-16)"
-    }
-  ],
+  "generated_at": "2026-10-21T08:57:53+09:00",
+  "status": "ok",
+  "errors": [],
   "kr": {
     "date": "2026-10-20",
     "integrated_count": 4135,
@@ -828,22 +822,454 @@
     }
   },
   "us": {
-    "available": false,
-    "omit_reason": "stale",
-    "session": "2026-10-16",
-    "age_days": 5,
-    "has_exchange_split": null,
-    "nyse": null,
-    "nasdaq": null,
+    "available": true,
+    "omit_reason": null,
+    "session": "2026-10-20",
+    "age_days": 1,
+    "has_exchange_split": true,
+    "nyse": {
+      "over20_count": 71,
+      "threshold": 125,
+      "items": [
+        {
+          "name": "Hasbro",
+          "ticker": "HAS",
+          "exchange": "NYSE",
+          "close": 109.52,
+          "change_pct": 11.2,
+          "volume": 8007351,
+          "ratio": 4.2,
+          "streak": 2
+        },
+        {
+          "name": "DaVita",
+          "ticker": "DVA",
+          "exchange": "NYSE",
+          "close": 175.35,
+          "change_pct": -6.23,
+          "volume": 2071205,
+          "ratio": 4.0,
+          "streak": 1
+        },
+        {
+          "name": "General Motors",
+          "ticker": "GM",
+          "exchange": "NYSE",
+          "close": 77.09,
+          "change_pct": -6.84,
+          "volume": 24626808,
+          "ratio": 3.6,
+          "streak": 1
+        },
+        {
+          "name": "Hilton Worldwide",
+          "ticker": "HLT",
+          "exchange": "NYSE",
+          "close": 359.29,
+          "change_pct": 3.83,
+          "volume": 3937765,
+          "ratio": 2.7,
+          "streak": 2
+        },
+        {
+          "name": "Teledyne Technologies",
+          "ticker": "TDY",
+          "exchange": "NYSE",
+          "close": 632.21,
+          "change_pct": 2.01,
+          "volume": 732520,
+          "ratio": 2.7,
+          "streak": 1
+        },
+        {
+          "name": "3M",
+          "ticker": "MMM",
+          "exchange": "NYSE",
+          "close": 171.37,
+          "change_pct": 5.78,
+          "volume": 7575579,
+          "ratio": 2.6,
+          "streak": 2
+        },
+        {
+          "name": "Genuine Parts Company",
+          "ticker": "GPC",
+          "exchange": "NYSE",
+          "close": 123.52,
+          "change_pct": -5.12,
+          "volume": 2168391,
+          "ratio": 2.6,
+          "streak": 4
+        },
+        {
+          "name": "MSCI",
+          "ticker": "MSCI",
+          "exchange": "NYSE",
+          "close": 591.69,
+          "change_pct": 5.0,
+          "volume": 1436460,
+          "ratio": 2.5,
+          "streak": 3
+        },
+        {
+          "name": "Gartner",
+          "ticker": "IT",
+          "exchange": "NYSE",
+          "close": 219.64,
+          "change_pct": 5.74,
+          "volume": 1910522,
+          "ratio": 2.3,
+          "streak": 1
+        },
+        {
+          "name": "RTX Corporation",
+          "ticker": "RTX",
+          "exchange": "NYSE",
+          "close": 193.34,
+          "change_pct": 0.64,
+          "volume": 9847112,
+          "ratio": 2.3,
+          "streak": 3
+        }
+      ]
+    },
+    "nasdaq": {
+      "over20_count": 12,
+      "threshold": 20,
+      "items": [
+        {
+          "name": "CoreWeave",
+          "ticker": "CRWV",
+          "exchange": "NASDAQ",
+          "close": 62.13,
+          "change_pct": 1.65,
+          "volume": 91559625,
+          "ratio": 2.1,
+          "streak": 5
+        },
+        {
+          "name": "Copart",
+          "ticker": "CPRT",
+          "exchange": "NASDAQ",
+          "close": 27.83,
+          "change_pct": 1.16,
+          "volume": 19140008,
+          "ratio": 1.9,
+          "streak": 4
+        },
+        {
+          "name": "Netflix",
+          "ticker": "NFLX",
+          "exchange": "NASDAQ",
+          "close": 68.69,
+          "change_pct": -1.66,
+          "volume": 62819587,
+          "ratio": 1.8,
+          "streak": 1
+        },
+        {
+          "name": "Keurig Dr Pepper",
+          "ticker": "KDP",
+          "exchange": "NASDAQ",
+          "close": 34.63,
+          "change_pct": 0.49,
+          "volume": 18644901,
+          "ratio": 1.6,
+          "streak": 1
+        },
+        {
+          "name": "Intuitive Surgical",
+          "ticker": "ISRG",
+          "exchange": "NASDAQ",
+          "close": 438.0,
+          "change_pct": 1.11,
+          "volume": 3140006,
+          "ratio": 1.6,
+          "streak": 3
+        },
+        {
+          "name": "Thomson Reuters",
+          "ticker": "TRI",
+          "exchange": "NASDAQ",
+          "close": 112.82,
+          "change_pct": 4.24,
+          "volume": 2061447,
+          "ratio": 1.5,
+          "streak": 4
+        },
+        {
+          "name": "Coca-Cola Europacific Partners",
+          "ticker": "CCEP",
+          "exchange": "NASDAQ",
+          "close": 113.41,
+          "change_pct": 1.38,
+          "volume": 2331894,
+          "ratio": 1.4,
+          "streak": 1
+        },
+        {
+          "name": "Automatic Data Processing",
+          "ticker": "ADP",
+          "exchange": "NASDAQ",
+          "close": 292.75,
+          "change_pct": 1.99,
+          "volume": 2458380,
+          "ratio": 1.4,
+          "streak": 1
+        },
+        {
+          "name": "KLA Corporation",
+          "ticker": "KLAC",
+          "exchange": "NASDAQ",
+          "close": 161.74,
+          "change_pct": -2.8,
+          "volume": 12610416,
+          "ratio": 1.4,
+          "streak": 5
+        },
+        {
+          "name": "Texas Instruments",
+          "ticker": "TXN",
+          "exchange": "NASDAQ",
+          "close": 277.78,
+          "change_pct": 0.59,
+          "volume": 7089193,
+          "ratio": 1.3,
+          "streak": 3
+        },
+        {
+          "name": "Axon Enterprise",
+          "ticker": "AXON",
+          "exchange": "NASDAQ",
+          "close": 392.64,
+          "change_pct": 2.49,
+          "volume": 1270452,
+          "ratio": 1.3,
+          "streak": 3
+        },
+        {
+          "name": "SpaceX",
+          "ticker": "SPCX",
+          "exchange": "NASDAQ",
+          "close": 147.79,
+          "change_pct": -0.11,
+          "volume": 99549776,
+          "ratio": 1.2,
+          "streak": 1
+        }
+      ]
+    },
     "all": null,
     "streaks": {
-      "2": [],
-      "3": [],
-      "4plus": []
+      "2": [
+        {
+          "name": "Hasbro",
+          "ticker": "HAS",
+          "ratio": 4.2,
+          "streak": 2
+        },
+        {
+          "name": "Hilton Worldwide",
+          "ticker": "HLT",
+          "ratio": 2.7,
+          "streak": 2
+        },
+        {
+          "name": "3M",
+          "ticker": "MMM",
+          "ratio": 2.6,
+          "streak": 2
+        },
+        {
+          "name": "GE Aerospace",
+          "ticker": "GE",
+          "ratio": 2.2,
+          "streak": 2
+        },
+        {
+          "name": "Fifth Third Bancorp",
+          "ticker": "FITB",
+          "ratio": 2.2,
+          "streak": 2
+        },
+        {
+          "name": "Halliburton",
+          "ticker": "HAL",
+          "ratio": 2.1,
+          "streak": 2
+        },
+        {
+          "name": "KeyCorp",
+          "ticker": "KEY",
+          "ratio": 2.0,
+          "streak": 2
+        },
+        {
+          "name": "Steel Dynamics",
+          "ticker": "STLD",
+          "ratio": 1.9,
+          "streak": 2
+        },
+        {
+          "name": "Tractor Supply",
+          "ticker": "TSCO",
+          "ratio": 1.9,
+          "streak": 2
+        },
+        {
+          "name": "Synchrony Financial",
+          "ticker": "SYF",
+          "ratio": 1.7,
+          "streak": 2
+        },
+        {
+          "name": "W. R. Berkley Corporation",
+          "ticker": "WRB",
+          "ratio": 1.7,
+          "streak": 2
+        },
+        {
+          "name": "CME Group",
+          "ticker": "CME",
+          "ratio": 1.6,
+          "streak": 2
+        },
+        {
+          "name": "Viatris",
+          "ticker": "VTRS",
+          "ratio": 1.5,
+          "streak": 2
+        },
+        {
+          "name": "Jacobs Solutions",
+          "ticker": "J",
+          "ratio": 1.5,
+          "streak": 2
+        },
+        {
+          "name": "Alexandria Real Estate Equities",
+          "ticker": "ARE",
+          "ratio": 1.5,
+          "streak": 2
+        },
+        {
+          "name": "Fox Corporation (Class A)",
+          "ticker": "FOXA",
+          "ratio": 1.3,
+          "streak": 2
+        }
+      ],
+      "3": [
+        {
+          "name": "MSCI",
+          "ticker": "MSCI",
+          "ratio": 2.5,
+          "streak": 3
+        },
+        {
+          "name": "RTX Corporation",
+          "ticker": "RTX",
+          "ratio": 2.3,
+          "streak": 3
+        },
+        {
+          "name": "Intuitive Surgical",
+          "ticker": "ISRG",
+          "ratio": 1.6,
+          "streak": 3
+        },
+        {
+          "name": "Packaging Corporation of America",
+          "ticker": "PKG",
+          "ratio": 1.4,
+          "streak": 3
+        },
+        {
+          "name": "Texas Instruments",
+          "ticker": "TXN",
+          "ratio": 1.3,
+          "streak": 3
+        },
+        {
+          "name": "Axon Enterprise",
+          "ticker": "AXON",
+          "ratio": 1.3,
+          "streak": 3
+        },
+        {
+          "name": "Snap-on",
+          "ticker": "SNA",
+          "ratio": 1.2,
+          "streak": 3
+        }
+      ],
+      "4plus": [
+        {
+          "name": "Genuine Parts Company",
+          "ticker": "GPC",
+          "ratio": 2.6,
+          "streak": 4
+        },
+        {
+          "name": "CoreWeave",
+          "ticker": "CRWV",
+          "ratio": 2.1,
+          "streak": 5
+        },
+        {
+          "name": "Copart",
+          "ticker": "CPRT",
+          "ratio": 1.9,
+          "streak": 4
+        },
+        {
+          "name": "Flex Ltd.",
+          "ticker": "FLEX",
+          "ratio": 1.8,
+          "streak": 6
+        },
+        {
+          "name": "Thomson Reuters",
+          "ticker": "TRI",
+          "ratio": 1.5,
+          "streak": 4
+        },
+        {
+          "name": "KLA Corporation",
+          "ticker": "KLAC",
+          "ratio": 1.4,
+          "streak": 5
+        },
+        {
+          "name": "Ecolab",
+          "ticker": "ECL",
+          "ratio": 1.4,
+          "streak": 4
+        },
+        {
+          "name": "Travelers Companies (The)",
+          "ticker": "TRV",
+          "ratio": 1.3,
+          "streak": 4
+        },
+        {
+          "name": "Eaton Corporation",
+          "ticker": "ETN",
+          "ratio": 1.3,
+          "streak": 5
+        },
+        {
+          "name": "Stryker Corporation",
+          "ticker": "SYK",
+          "ratio": 1.2,
+          "streak": 4
+        }
+      ]
     }
   },
   "notes": [
     "한국 거래량은 정규장+시간외+넥스트레이드 통합 기준이며, 통합 이력이 쌓이는 중이라 일부 종목은 정규장 기준 자동 적용(약 한 달 내 완전 전환). 스팩·거래대금 10억 미만 제외.",
-    "미국은 S&P500+나스닥100 대상."
+    "미국은 S&P500+나스닥100 대상.",
+    "미국 종목의 거래소 표기는 실제 상장 거래소가 아니라 지수 구성 기준입니다(S&P500 편입=NYSE, 나스닥100 편입=NASDAQ으로 표시)."
   ]
 }
