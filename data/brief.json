@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-22T03:04:58+09:00",
+  "generated_at": "2026-10-22T09:03:17+09:00",
   "status": "ok",
   "errors": [],
   "kr": {
@@ -702,8 +702,8 @@
     "age_days": 2,
     "has_exchange_split": true,
     "nyse": {
-      "over20_count": 71,
-      "threshold": 125,
+      "over20_count": 76,
+      "threshold": 130,
       "items": [
         {
           "name": "Hasbro",
@@ -711,7 +711,7 @@
           "exchange": "NYSE",
           "close": 109.52,
           "change_pct": 11.2,
-          "volume": 8007351,
+          "volume": 8008800,
           "ratio": 4.2,
           "streak": 2
         },
@@ -721,7 +721,7 @@
           "exchange": "NYSE",
           "close": 175.35,
           "change_pct": -6.23,
-          "volume": 2071205,
+          "volume": 2071500,
           "ratio": 4.0,
           "streak": 1
         },
@@ -731,7 +731,7 @@
           "exchange": "NYSE",
           "close": 77.09,
           "change_pct": -6.84,
-          "volume": 24626808,
+          "volume": 24697400,
           "ratio": 3.6,
           "streak": 1
         },
@@ -741,8 +741,8 @@
           "exchange": "NYSE",
           "close": 359.29,
           "change_pct": 3.83,
-          "volume": 3937765,
-          "ratio": 2.7,
+          "volume": 4052900,
+          "ratio": 2.8,
           "streak": 2
         },
         {
@@ -751,7 +751,7 @@
           "exchange": "NYSE",
           "close": 632.21,
           "change_pct": 2.01,
-          "volume": 732520,
+          "volume": 733400,
           "ratio": 2.7,
           "streak": 1
         },
@@ -761,7 +761,7 @@
           "exchange": "NYSE",
           "close": 171.37,
           "change_pct": 5.78,
-          "volume": 7575579,
+          "volume": 7680700,
           "ratio": 2.6,
           "streak": 2
         },
@@ -771,7 +771,7 @@
           "exchange": "NYSE",
           "close": 123.52,
           "change_pct": -5.12,
-          "volume": 2168391,
+          "volume": 2168400,
           "ratio": 2.6,
           "streak": 4
         },
@@ -781,34 +781,14 @@
           "exchange": "NYSE",
           "close": 591.69,
           "change_pct": 5.0,
-          "volume": 1436460,
+          "volume": 1437100,
           "ratio": 2.5,
-          "streak": 3
-        },
-        {
-          "name": "Gartner",
-          "ticker": "IT",
-          "exchange": "NYSE",
-          "close": 219.64,
-          "change_pct": 5.74,
-          "volume": 1910522,
-          "ratio": 2.3,
-          "streak": 1
-        },
-        {
-          "name": "RTX Corporation",
-          "ticker": "RTX",
-          "exchange": "NYSE",
-          "close": 193.34,
-          "change_pct": 0.64,
-          "volume": 9847112,
-          "ratio": 2.3,
           "streak": 3
         }
       ]
     },
     "nasdaq": {
-      "over20_count": 12,
+      "over20_count": 13,
       "threshold": 20,
       "items": [
         {
@@ -817,19 +797,9 @@
           "exchange": "NASDAQ",
           "close": 62.13,
           "change_pct": 1.65,
-          "volume": 91559625,
-          "ratio": 2.1,
+          "volume": 94778100,
+          "ratio": 2.2,
           "streak": 5
-        },
-        {
-          "name": "Copart",
-          "ticker": "CPRT",
-          "exchange": "NASDAQ",
-          "close": 27.83,
-          "change_pct": 1.16,
-          "volume": 19140008,
-          "ratio": 1.9,
-          "streak": 4
         },
         {
           "name": "Netflix",
@@ -837,19 +807,19 @@
           "exchange": "NASDAQ",
           "close": 68.69,
           "change_pct": -1.66,
-          "volume": 62819587,
-          "ratio": 1.8,
+          "volume": 67039300,
+          "ratio": 1.9,
           "streak": 1
         },
         {
-          "name": "Keurig Dr Pepper",
-          "ticker": "KDP",
+          "name": "Copart",
+          "ticker": "CPRT",
           "exchange": "NASDAQ",
-          "close": 34.63,
-          "change_pct": 0.49,
-          "volume": 18644901,
-          "ratio": 1.6,
-          "streak": 1
+          "close": 27.83,
+          "change_pct": 1.16,
+          "volume": 19142600,
+          "ratio": 1.9,
+          "streak": 4
         },
         {
           "name": "Intuitive Surgical",
@@ -857,9 +827,19 @@
           "exchange": "NASDAQ",
           "close": 438.0,
           "change_pct": 1.11,
-          "volume": 3140006,
-          "ratio": 1.6,
+          "volume": 3436400,
+          "ratio": 1.8,
           "streak": 3
+        },
+        {
+          "name": "Keurig Dr Pepper",
+          "ticker": "KDP",
+          "exchange": "NASDAQ",
+          "close": 34.63,
+          "change_pct": 0.49,
+          "volume": 18646100,
+          "ratio": 1.6,
+          "streak": 1
         },
         {
           "name": "Thomson Reuters",
@@ -867,9 +847,29 @@
           "exchange": "NASDAQ",
           "close": 112.82,
           "change_pct": 4.24,
-          "volume": 2061447,
+          "volume": 2139400,
           "ratio": 1.5,
           "streak": 4
+        },
+        {
+          "name": "SpaceX",
+          "ticker": "SPCX",
+          "exchange": "NASDAQ",
+          "close": 147.79,
+          "change_pct": -0.11,
+          "volume": 117204900,
+          "ratio": 1.4,
+          "streak": 1
+        },
+        {
+          "name": "Texas Instruments",
+          "ticker": "TXN",
+          "exchange": "NASDAQ",
+          "close": 277.78,
+          "change_pct": 0.59,
+          "volume": 7659700,
+          "ratio": 1.4,
+          "streak": 3
         },
         {
           "name": "Coca-Cola Europacific Partners",
@@ -877,7 +877,7 @@
           "exchange": "NASDAQ",
           "close": 113.41,
           "change_pct": 1.38,
-          "volume": 2331894,
+          "volume": 2343000,
           "ratio": 1.4,
           "streak": 1
         },
@@ -887,7 +887,7 @@
           "exchange": "NASDAQ",
           "close": 292.75,
           "change_pct": 1.99,
-          "volume": 2458380,
+          "volume": 2503100,
           "ratio": 1.4,
           "streak": 1
         },
@@ -897,19 +897,9 @@
           "exchange": "NASDAQ",
           "close": 161.74,
           "change_pct": -2.8,
-          "volume": 12610416,
+          "volume": 12670100,
           "ratio": 1.4,
           "streak": 5
-        },
-        {
-          "name": "Texas Instruments",
-          "ticker": "TXN",
-          "exchange": "NASDAQ",
-          "close": 277.78,
-          "change_pct": 0.59,
-          "volume": 7089193,
-          "ratio": 1.3,
-          "streak": 3
         },
         {
           "name": "Axon Enterprise",
@@ -917,17 +907,17 @@
           "exchange": "NASDAQ",
           "close": 392.64,
           "change_pct": 2.49,
-          "volume": 1270452,
+          "volume": 1317900,
           "ratio": 1.3,
           "streak": 3
         },
         {
-          "name": "SpaceX",
-          "ticker": "SPCX",
+          "name": "Alnylam Pharmaceuticals",
+          "ticker": "ALNY",
           "exchange": "NASDAQ",
-          "close": 147.79,
-          "change_pct": -0.11,
-          "volume": 99549776,
+          "close": 230.71,
+          "change_pct": -1.11,
+          "volume": 1505200,
           "ratio": 1.2,
           "streak": 1
         }
@@ -945,7 +935,7 @@
         {
           "name": "Hilton Worldwide",
           "ticker": "HLT",
-          "ratio": 2.7,
+          "ratio": 2.8,
           "streak": 2
         },
         {
@@ -957,7 +947,7 @@
         {
           "name": "GE Aerospace",
           "ticker": "GE",
-          "ratio": 2.2,
+          "ratio": 2.3,
           "streak": 2
         },
         {
@@ -991,14 +981,14 @@
           "streak": 2
         },
         {
-          "name": "Synchrony Financial",
-          "ticker": "SYF",
+          "name": "W. R. Berkley Corporation",
+          "ticker": "WRB",
           "ratio": 1.7,
           "streak": 2
         },
         {
-          "name": "W. R. Berkley Corporation",
-          "ticker": "WRB",
+          "name": "Synchrony Financial",
+          "ticker": "SYF",
           "ratio": 1.7,
           "streak": 2
         },
@@ -1049,19 +1039,19 @@
         {
           "name": "Intuitive Surgical",
           "ticker": "ISRG",
-          "ratio": 1.6,
+          "ratio": 1.8,
+          "streak": 3
+        },
+        {
+          "name": "Texas Instruments",
+          "ticker": "TXN",
+          "ratio": 1.4,
           "streak": 3
         },
         {
           "name": "Packaging Corporation of America",
           "ticker": "PKG",
           "ratio": 1.4,
-          "streak": 3
-        },
-        {
-          "name": "Texas Instruments",
-          "ticker": "TXN",
-          "ratio": 1.3,
           "streak": 3
         },
         {
@@ -1087,8 +1077,14 @@
         {
           "name": "CoreWeave",
           "ticker": "CRWV",
-          "ratio": 2.1,
+          "ratio": 2.2,
           "streak": 5
+        },
+        {
+          "name": "Flex Ltd.",
+          "ticker": "FLEX",
+          "ratio": 1.9,
+          "streak": 6
         },
         {
           "name": "Copart",
@@ -1097,15 +1093,15 @@
           "streak": 4
         },
         {
-          "name": "Flex Ltd.",
-          "ticker": "FLEX",
-          "ratio": 1.8,
-          "streak": 6
-        },
-        {
           "name": "Thomson Reuters",
           "ticker": "TRI",
           "ratio": 1.5,
+          "streak": 4
+        },
+        {
+          "name": "Ecolab",
+          "ticker": "ECL",
+          "ratio": 1.4,
           "streak": 4
         },
         {
@@ -1113,12 +1109,6 @@
           "ticker": "KLAC",
           "ratio": 1.4,
           "streak": 5
-        },
-        {
-          "name": "Ecolab",
-          "ticker": "ECL",
-          "ratio": 1.4,
-          "streak": 4
         },
         {
           "name": "Travelers Companies (The)",
@@ -1129,6 +1119,12 @@
         {
           "name": "Eaton Corporation",
           "ticker": "ETN",
+          "ratio": 1.3,
+          "streak": 5
+        },
+        {
+          "name": "Lockheed Martin",
+          "ticker": "LMT",
           "ratio": 1.3,
           "streak": 5
         },
