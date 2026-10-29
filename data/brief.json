@@ -1,243 +1,243 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-29T10:03:06+09:00",
+  "generated_at": "2026-10-30T03:57:19+09:00",
   "status": "ok",
   "errors": [],
   "kr": {
-    "date": "2026-10-28",
-    "integrated_count": 4128,
+    "date": "2026-10-29",
+    "integrated_count": 4114,
     "source": "repo+marcap",
     "repo_days_used": [
-      "2026-10-28"
+      "2026-10-29"
     ],
     "kospi": {
       "over20_count": 102,
-      "threshold": 240,
+      "threshold": 370,
       "items": [
+        {
+          "name": "대원제약",
+          "code": "003220",
+          "grp": "코스피",
+          "close": 9620,
+          "change_pct": 23.97,
+          "volume_shown": 3685972,
+          "amount_shown": 35459050640,
+          "ratio": 33.2,
+          "integrated": false
+        },
+        {
+          "name": "일성건설",
+          "code": "013360",
+          "grp": "코스피",
+          "close": 1295,
+          "change_pct": 0.7,
+          "volume_shown": 3852573,
+          "amount_shown": 4989082035,
+          "ratio": 21.2,
+          "integrated": false
+        },
         {
           "name": "씨티알모빌리티",
           "code": "308170",
           "grp": "코스피",
-          "close": 4030,
-          "change_pct": 15.8,
-          "volume_shown": 1566738,
-          "amount_shown": 6313954140,
-          "ratio": 64.9,
+          "close": 5110,
+          "change_pct": 29.86,
+          "volume_shown": 1830795,
+          "amount_shown": 9355362450,
+          "ratio": 17.9,
           "integrated": false
         },
         {
-          "name": "프레스티지바이오파마",
-          "code": "950210",
+          "name": "한화비전",
+          "code": "489790",
           "grp": "코스피",
-          "close": 4095,
-          "change_pct": -18.91,
-          "volume_shown": 701742,
-          "amount_shown": 2873633490,
-          "ratio": 21.6,
+          "close": 49150,
+          "change_pct": 22.26,
+          "volume_shown": 4598473,
+          "amount_shown": 226014947950,
+          "ratio": 14.4,
           "integrated": false
         },
         {
-          "name": "SBS",
-          "code": "034120",
+          "name": "광전자",
+          "code": "017900",
           "grp": "코스피",
-          "close": 11280,
-          "change_pct": 3.58,
-          "volume_shown": 366314,
-          "amount_shown": 4132021920,
-          "ratio": 11.7,
+          "close": 9710,
+          "change_pct": 21.53,
+          "volume_shown": 16250976,
+          "amount_shown": 157796976960,
+          "ratio": 12.4,
           "integrated": false
         },
         {
-          "name": "HD현대마린엔진",
-          "code": "071970",
+          "name": "대우건설",
+          "code": "047040",
           "grp": "코스피",
-          "close": 40600,
-          "change_pct": 14.21,
-          "volume_shown": 2635817,
-          "amount_shown": 107014170200,
-          "ratio": 8.7,
+          "close": 11480,
+          "change_pct": -19.55,
+          "volume_shown": 32828489,
+          "amount_shown": 376871053720,
+          "ratio": 8.6,
           "integrated": false
         },
         {
-          "name": "우성머티리얼스",
-          "code": "011300",
+          "name": "와이투솔루션",
+          "code": "011690",
           "grp": "코스피",
-          "close": 2170,
-          "change_pct": -8.82,
-          "volume_shown": 717874,
-          "amount_shown": 1557786580,
+          "close": 3190,
+          "change_pct": -20.55,
+          "volume_shown": 2643364,
+          "amount_shown": 8432331160,
           "ratio": 8.2,
           "integrated": false
         },
         {
-          "name": "SK디앤디",
-          "code": "210980",
+          "name": "송원산업",
+          "code": "004430",
           "grp": "코스피",
-          "close": 2500,
-          "change_pct": 6.61,
-          "volume_shown": 518932,
-          "amount_shown": 1297330000,
-          "ratio": 4.6,
+          "close": 10450,
+          "change_pct": 0.87,
+          "volume_shown": 623513,
+          "amount_shown": 6515710850,
+          "ratio": 7.4,
           "integrated": false
         },
         {
-          "name": "신원",
-          "code": "009270",
+          "name": "대신증권2우B",
+          "code": "003547",
           "grp": "코스피",
-          "close": 1025,
-          "change_pct": 6.0,
-          "volume_shown": 1572421,
-          "amount_shown": 1611731525,
-          "ratio": 4.5,
+          "close": 18270,
+          "change_pct": 0.05,
+          "volume_shown": 79393,
+          "amount_shown": 1450510110,
+          "ratio": 6.3,
           "integrated": false
         },
         {
-          "name": "엠씨넥스",
-          "code": "097520",
+          "name": "진양폴리",
+          "code": "010640",
           "grp": "코스피",
-          "close": 20250,
-          "change_pct": -5.59,
-          "volume_shown": 642268,
-          "amount_shown": 13005927000,
-          "ratio": 4.2,
-          "integrated": false
-        },
-        {
-          "name": "SK증권",
-          "code": "001510",
-          "grp": "코스피",
-          "close": 2025,
-          "change_pct": -2.88,
-          "volume_shown": 9265441,
-          "amount_shown": 18762518025,
-          "ratio": 3.7,
-          "integrated": false
-        },
-        {
-          "name": "STX엔진",
-          "code": "077970",
-          "grp": "코스피",
-          "close": 16540,
-          "change_pct": 2.41,
-          "volume_shown": 768517,
-          "amount_shown": 12711271180,
-          "ratio": 3.6,
+          "close": 2705,
+          "change_pct": 12.47,
+          "volume_shown": 2302618,
+          "amount_shown": 6228581690,
+          "ratio": 5.0,
           "integrated": false
         }
       ]
     },
     "kosdaq": {
-      "over20_count": 147,
-      "threshold": 1265,
+      "over20_count": 108,
+      "threshold": 1510,
       "items": [
         {
-          "name": "이지트로닉스",
-          "code": "377330",
+          "name": "상지건설",
+          "code": "042940",
           "grp": "코스닥",
-          "close": 3055,
-          "change_pct": -13.09,
-          "volume_shown": 1567570,
-          "amount_shown": 4788926350,
-          "ratio": 119.9,
+          "close": 6240,
+          "change_pct": 30.0,
+          "volume_shown": 1985928,
+          "amount_shown": 12392190720,
+          "ratio": 90.2,
           "integrated": false
         },
         {
-          "name": "휴림에이텍",
-          "code": "078590",
+          "name": "영화테크",
+          "code": "265560",
           "grp": "코스닥",
-          "close": 2765,
-          "change_pct": 17.16,
-          "volume_shown": 2387826,
-          "amount_shown": 6602338890,
-          "ratio": 72.1,
+          "close": 5710,
+          "change_pct": -0.52,
+          "volume_shown": 1624474,
+          "amount_shown": 9275746540,
+          "ratio": 81.1,
           "integrated": false
         },
         {
-          "name": "다보링크",
-          "code": "340360",
+          "name": "동신건설",
+          "code": "025950",
           "grp": "코스닥",
-          "close": 442,
-          "change_pct": -29.95,
-          "volume_shown": 16410068,
-          "amount_shown": 7253250056,
-          "ratio": 48.8,
+          "close": 9700,
+          "change_pct": 8.38,
+          "volume_shown": 1817289,
+          "amount_shown": 17627703300,
+          "ratio": 59.3,
           "integrated": false
         },
         {
-          "name": "자비스",
-          "code": "254120",
+          "name": "위더스제약",
+          "code": "330350",
           "grp": "코스닥",
-          "close": 3775,
-          "change_pct": 2.03,
-          "volume_shown": 361955,
-          "amount_shown": 1366380125,
-          "ratio": 48.1,
+          "close": 6320,
+          "change_pct": -2.02,
+          "volume_shown": 2335911,
+          "amount_shown": 14762957520,
+          "ratio": 50.1,
           "integrated": false
         },
         {
-          "name": "워트",
-          "code": "396470",
+          "name": "한울앤제주",
+          "code": "276730",
           "grp": "코스닥",
-          "close": 6530,
-          "change_pct": 8.11,
-          "volume_shown": 4689959,
-          "amount_shown": 30625432270,
-          "ratio": 40.0,
+          "close": 875,
+          "change_pct": 15.59,
+          "volume_shown": 5722955,
+          "amount_shown": 5007585625,
+          "ratio": 37.9,
           "integrated": false
         },
         {
-          "name": "캠시스",
-          "code": "050110",
+          "name": "우듬지팜",
+          "code": "403490",
           "grp": "코스닥",
-          "close": 6900,
-          "change_pct": -2.13,
-          "volume_shown": 1874461,
-          "amount_shown": 12933780900,
-          "ratio": 31.8,
+          "close": 2275,
+          "change_pct": 13.75,
+          "volume_shown": 594395,
+          "amount_shown": 1352248625,
+          "ratio": 29.2,
           "integrated": false
         },
         {
-          "name": "제닉스로보틱스",
-          "code": "381620",
+          "name": "한주라이트메탈",
+          "code": "198940",
           "grp": "코스닥",
-          "close": 5730,
-          "change_pct": 20.5,
-          "volume_shown": 1188253,
-          "amount_shown": 6808689690,
-          "ratio": 27.4,
+          "close": 1270,
+          "change_pct": 6.99,
+          "volume_shown": 1379992,
+          "amount_shown": 1752589840,
+          "ratio": 28.2,
+          "integrated": false
+        },
+        {
+          "name": "벡트로보틱스",
+          "code": "457600",
+          "grp": "코스닥",
+          "close": 2575,
+          "change_pct": -29.93,
+          "volume_shown": 2771861,
+          "amount_shown": 7137542075,
+          "ratio": 25.8,
           "integrated": false
         },
         {
           "name": "피앤에스로보틱스",
           "code": "460940",
           "grp": "코스닥",
-          "close": 5120,
-          "change_pct": 29.95,
-          "volume_shown": 772859,
-          "amount_shown": 3957038080,
-          "ratio": 20.5,
+          "close": 4775,
+          "change_pct": -6.74,
+          "volume_shown": 1843644,
+          "amount_shown": 8803400100,
+          "ratio": 24.7,
           "integrated": false
         },
         {
-          "name": "나무가",
-          "code": "190510",
+          "name": "에스피소프트",
+          "code": "443670",
           "grp": "코스닥",
-          "close": 18050,
-          "change_pct": 5.62,
-          "volume_shown": 8588148,
-          "amount_shown": 155016071400,
-          "ratio": 16.9,
-          "integrated": false
-        },
-        {
-          "name": "이엔셀",
-          "code": "456070",
-          "grp": "코스닥",
-          "close": 5010,
-          "change_pct": 9.15,
-          "volume_shown": 957926,
-          "amount_shown": 4799209260,
-          "ratio": 16.6,
+          "close": 5070,
+          "change_pct": 4.75,
+          "volume_shown": 11924212,
+          "amount_shown": 60455754840,
+          "ratio": 16.3,
           "integrated": false
         }
       ]
@@ -245,122 +245,406 @@
     "streaks": {
       "2": [
         {
-          "name": "자비스",
-          "code": "254120",
+          "name": "상지건설",
+          "code": "042940",
           "grp": "코스닥",
-          "ratio": 48.1
+          "ratio": 90.2
         },
         {
-          "name": "프레스티지바이오파마",
-          "code": "950210",
+          "name": "우듬지팜",
+          "code": "403490",
+          "grp": "코스닥",
+          "ratio": 29.2
+        },
+        {
+          "name": "벡트로보틱스",
+          "code": "457600",
+          "grp": "코스닥",
+          "ratio": 25.8
+        },
+        {
+          "name": "피앤에스로보틱스",
+          "code": "460940",
+          "grp": "코스닥",
+          "ratio": 24.7
+        },
+        {
+          "name": "에스피소프트",
+          "code": "443670",
+          "grp": "코스닥",
+          "ratio": 16.3
+        },
+        {
+          "name": "광전자",
+          "code": "017900",
           "grp": "코스피",
-          "ratio": 21.6
+          "ratio": 12.4
+        },
+        {
+          "name": "대우건설",
+          "code": "047040",
+          "grp": "코스피",
+          "ratio": 8.6
+        },
+        {
+          "name": "송원산업",
+          "code": "004430",
+          "grp": "코스피",
+          "ratio": 7.4
+        },
+        {
+          "name": "가비아",
+          "code": "079940",
+          "grp": "코스닥",
+          "ratio": 7.1
+        },
+        {
+          "name": "엘앤케이바이오",
+          "code": "156100",
+          "grp": "코스닥",
+          "ratio": 4.8
+        },
+        {
+          "name": "머큐리",
+          "code": "100590",
+          "grp": "코스닥",
+          "ratio": 4.0
+        },
+        {
+          "name": "지씨셀",
+          "code": "144510",
+          "grp": "코스닥",
+          "ratio": 3.4
+        },
+        {
+          "name": "대동기어",
+          "code": "008830",
+          "grp": "코스닥",
+          "ratio": 3.3
+        },
+        {
+          "name": "빛과전자",
+          "code": "069540",
+          "grp": "코스닥",
+          "ratio": 3.3
+        },
+        {
+          "name": "진양산업",
+          "code": "003780",
+          "grp": "코스피",
+          "ratio": 3.2
+        },
+        {
+          "name": "아스플로",
+          "code": "159010",
+          "grp": "코스닥",
+          "ratio": 2.8
+        },
+        {
+          "name": "빛샘전자",
+          "code": "072950",
+          "grp": "코스닥",
+          "ratio": 2.7
+        },
+        {
+          "name": "호텔신라",
+          "code": "008770",
+          "grp": "코스피",
+          "ratio": 2.7
+        },
+        {
+          "name": "삼성전자우",
+          "code": "005935",
+          "grp": "코스피",
+          "ratio": 2.4
+        },
+        {
+          "name": "한미글로벌",
+          "code": "053690",
+          "grp": "코스피",
+          "ratio": 2.4
+        },
+        {
+          "name": "삼익제약",
+          "code": "014950",
+          "grp": "코스닥",
+          "ratio": 2.4
+        },
+        {
+          "name": "맥쿼리인프라",
+          "code": "088980",
+          "grp": "코스피",
+          "ratio": 2.4
+        },
+        {
+          "name": "지니언스",
+          "code": "263860",
+          "grp": "코스닥",
+          "ratio": 2.4
+        },
+        {
+          "name": "원익홀딩스",
+          "code": "030530",
+          "grp": "코스닥",
+          "ratio": 2.3
+        },
+        {
+          "name": "한켐",
+          "code": "457370",
+          "grp": "코스닥",
+          "ratio": 2.2
+        },
+        {
+          "name": "해성디에스",
+          "code": "195870",
+          "grp": "코스피",
+          "ratio": 2.1
+        },
+        {
+          "name": "HD현대마린엔진",
+          "code": "071970",
+          "grp": "코스피",
+          "ratio": 2.1
+        },
+        {
+          "name": "자화전자",
+          "code": "033240",
+          "grp": "코스피",
+          "ratio": 2.0
+        },
+        {
+          "name": "에이팩트",
+          "code": "200470",
+          "grp": "코스닥",
+          "ratio": 2.0
+        },
+        {
+          "name": "OCI홀딩스",
+          "code": "010060",
+          "grp": "코스피",
+          "ratio": 2.0
+        },
+        {
+          "name": "삼성전기우",
+          "code": "009155",
+          "grp": "코스피",
+          "ratio": 1.9
+        },
+        {
+          "name": "서울반도체",
+          "code": "046890",
+          "grp": "코스닥",
+          "ratio": 1.9
+        },
+        {
+          "name": "오킨스전자",
+          "code": "080580",
+          "grp": "코스닥",
+          "ratio": 1.7
+        },
+        {
+          "name": "삼성생명",
+          "code": "032830",
+          "grp": "코스피",
+          "ratio": 1.7
+        },
+        {
+          "name": "LX하우시스",
+          "code": "108670",
+          "grp": "코스피",
+          "ratio": 1.7
+        },
+        {
+          "name": "세아베스틸지주",
+          "code": "001430",
+          "grp": "코스피",
+          "ratio": 1.6
+        },
+        {
+          "name": "엘티씨",
+          "code": "170920",
+          "grp": "코스닥",
+          "ratio": 1.6
+        },
+        {
+          "name": "삼성중공업",
+          "code": "010140",
+          "grp": "코스피",
+          "ratio": 1.6
+        },
+        {
+          "name": "디아이",
+          "code": "003160",
+          "grp": "코스피",
+          "ratio": 1.6
+        },
+        {
+          "name": "OCI",
+          "code": "456040",
+          "grp": "코스피",
+          "ratio": 1.6
+        },
+        {
+          "name": "두산우",
+          "code": "000155",
+          "grp": "코스피",
+          "ratio": 1.6
+        },
+        {
+          "name": "명인제약",
+          "code": "317450",
+          "grp": "코스피",
+          "ratio": 1.5
+        },
+        {
+          "name": "화신정공",
+          "code": "126640",
+          "grp": "코스닥",
+          "ratio": 1.5
+        },
+        {
+          "name": "클래시스",
+          "code": "214150",
+          "grp": "코스닥",
+          "ratio": 1.4
+        },
+        {
+          "name": "네오팜",
+          "code": "092730",
+          "grp": "코스닥",
+          "ratio": 1.4
+        },
+        {
+          "name": "대한광통신",
+          "code": "010170",
+          "grp": "코스닥",
+          "ratio": 1.4
+        },
+        {
+          "name": "엑시콘",
+          "code": "092870",
+          "grp": "코스닥",
+          "ratio": 1.4
+        },
+        {
+          "name": "하이브",
+          "code": "352820",
+          "grp": "코스피",
+          "ratio": 1.4
+        },
+        {
+          "name": "덕산네오룩스",
+          "code": "213420",
+          "grp": "코스닥",
+          "ratio": 1.4
+        },
+        {
+          "name": "앱클론",
+          "code": "174900",
+          "grp": "코스닥",
+          "ratio": 1.4
+        },
+        {
+          "name": "HD현대",
+          "code": "267250",
+          "grp": "코스피",
+          "ratio": 1.4
+        },
+        {
+          "name": "레인보우로보틱스",
+          "code": "277810",
+          "grp": "코스닥",
+          "ratio": 1.4
+        },
+        {
+          "name": "GS리테일",
+          "code": "007070",
+          "grp": "코스피",
+          "ratio": 1.3
+        },
+        {
+          "name": "미코",
+          "code": "059090",
+          "grp": "코스닥",
+          "ratio": 1.3
+        },
+        {
+          "name": "삼성전기",
+          "code": "009150",
+          "grp": "코스피",
+          "ratio": 1.3
+        },
+        {
+          "name": "SK하이닉스",
+          "code": "000660",
+          "grp": "코스피",
+          "ratio": 1.3
+        },
+        {
+          "name": "한국알콜",
+          "code": "017890",
+          "grp": "코스닥",
+          "ratio": 1.3
+        },
+        {
+          "name": "미래에셋생명",
+          "code": "085620",
+          "grp": "코스피",
+          "ratio": 1.3
+        },
+        {
+          "name": "KCC",
+          "code": "002380",
+          "grp": "코스피",
+          "ratio": 1.2
+        },
+        {
+          "name": "LG이노텍",
+          "code": "011070",
+          "grp": "코스피",
+          "ratio": 1.2
+        }
+      ],
+      "3": [
+        {
+          "name": "한울앤제주",
+          "code": "276730",
+          "grp": "코스닥",
+          "ratio": 37.9
+        },
+        {
+          "name": "콜마비앤에이치",
+          "code": "200130",
+          "grp": "코스닥",
+          "ratio": 14.1
         },
         {
           "name": "액스비스",
           "code": "0011A0",
           "grp": "코스닥",
-          "ratio": 11.6
+          "ratio": 14.1
         },
         {
-          "name": "안랩",
-          "code": "053800",
-          "grp": "코스닥",
-          "ratio": 5.0
-        },
-        {
-          "name": "에스티팜",
-          "code": "237690",
-          "grp": "코스닥",
-          "ratio": 4.0
-        },
-        {
-          "name": "티에프이",
-          "code": "425420",
-          "grp": "코스닥",
-          "ratio": 3.5
-        },
-        {
-          "name": "KH바텍",
-          "code": "060720",
+          "name": "RF머트리얼즈",
+          "code": "327260",
           "grp": "코스닥",
           "ratio": 3.1
         },
         {
-          "name": "아이엘",
-          "code": "307180",
-          "grp": "코스닥",
-          "ratio": 3.1
-        },
-        {
-          "name": "네오셈",
-          "code": "253590",
-          "grp": "코스닥",
-          "ratio": 2.9
-        },
-        {
-          "name": "한국타이어앤테크놀로지",
-          "code": "161390",
+          "name": "롯데정밀화학",
+          "code": "004000",
           "grp": "코스피",
-          "ratio": 2.5
-        },
-        {
-          "name": "기가비스",
-          "code": "420770",
-          "grp": "코스닥",
-          "ratio": 2.5
-        },
-        {
-          "name": "제일일렉트릭",
-          "code": "199820",
-          "grp": "코스닥",
           "ratio": 2.4
         },
         {
-          "name": "케이사인",
-          "code": "192250",
-          "grp": "코스닥",
-          "ratio": 2.4
-        },
-        {
-          "name": "대성하이텍",
-          "code": "129920",
+          "name": "코나아이",
+          "code": "052400",
           "grp": "코스닥",
           "ratio": 2.3
         },
         {
-          "name": "아이크래프트",
-          "code": "052460",
-          "grp": "코스닥",
-          "ratio": 2.2
-        },
-        {
-          "name": "SK케미칼",
-          "code": "285130",
-          "grp": "코스피",
-          "ratio": 2.1
-        },
-        {
-          "name": "마이크로컨텍솔",
-          "code": "098120",
-          "grp": "코스닥",
-          "ratio": 2.0
-        },
-        {
-          "name": "광주신세계",
-          "code": "037710",
-          "grp": "코스피",
-          "ratio": 1.9
-        },
-        {
-          "name": "샘씨엔에스",
-          "code": "252990",
-          "grp": "코스닥",
-          "ratio": 1.8
-        },
-        {
-          "name": "한양디지텍",
-          "code": "078350",
+          "name": "티에프이",
+          "code": "425420",
           "grp": "코스닥",
           "ratio": 1.8
         },
@@ -368,78 +652,48 @@
           "name": "뉴파워프라즈마",
           "code": "144960",
           "grp": "코스닥",
-          "ratio": 1.7
+          "ratio": 1.5
         },
         {
-          "name": "현대오토에버",
-          "code": "307950",
+          "name": "삼성화재",
+          "code": "000810",
           "grp": "코스피",
-          "ratio": 1.6
+          "ratio": 1.5
         },
         {
-          "name": "롯데정밀화학",
-          "code": "004000",
+          "name": "삼성카드",
+          "code": "029780",
           "grp": "코스피",
-          "ratio": 1.6
+          "ratio": 1.4
+        },
+        {
+          "name": "KH바텍",
+          "code": "060720",
+          "grp": "코스닥",
+          "ratio": 1.3
         },
         {
           "name": "SK스퀘어",
           "code": "402340",
           "grp": "코스피",
-          "ratio": 1.6
+          "ratio": 1.3
         },
         {
-          "name": "메지온",
-          "code": "140410",
+          "name": "기가비스",
+          "code": "420770",
           "grp": "코스닥",
-          "ratio": 1.6
+          "ratio": 1.3
         },
         {
-          "name": "현대그린푸드",
-          "code": "453340",
-          "grp": "코스피",
-          "ratio": 1.5
-        },
-        {
-          "name": "RF머트리얼즈",
-          "code": "327260",
+          "name": "아이엘",
+          "code": "307180",
           "grp": "코스닥",
-          "ratio": 1.5
+          "ratio": 1.3
         },
         {
-          "name": "ISC",
-          "code": "095340",
+          "name": "마이크로컨텍솔",
+          "code": "098120",
           "grp": "코스닥",
-          "ratio": 1.5
-        },
-        {
-          "name": "아이텍",
-          "code": "119830",
-          "grp": "코스닥",
-          "ratio": 1.4
-        },
-        {
-          "name": "대동",
-          "code": "000490",
-          "grp": "코스피",
-          "ratio": 1.4
-        },
-        {
-          "name": "현대바이오",
-          "code": "048410",
-          "grp": "코스닥",
-          "ratio": 1.4
-        },
-        {
-          "name": "코리안리",
-          "code": "003690",
-          "grp": "코스피",
-          "ratio": 1.4
-        },
-        {
-          "name": "메리츠금융지주",
-          "code": "138040",
-          "grp": "코스피",
           "ratio": 1.3
         },
         {
@@ -449,142 +703,160 @@
           "ratio": 1.3
         },
         {
-          "name": "코나아이",
-          "code": "052400",
+          "name": "ISC",
+          "code": "095340",
           "grp": "코스닥",
-          "ratio": 1.3
+          "ratio": 1.2
         },
         {
-          "name": "녹십자웰빙",
-          "code": "234690",
-          "grp": "코스닥",
-          "ratio": 1.3
-        },
-        {
-          "name": "전진건설로봇",
-          "code": "079900",
+          "name": "현대오토에버",
+          "code": "307950",
           "grp": "코스피",
-          "ratio": 1.3
+          "ratio": 1.2
         },
         {
-          "name": "삼성카드",
-          "code": "029780",
+          "name": "메리츠금융지주",
+          "code": "138040",
           "grp": "코스피",
           "ratio": 1.2
         }
       ],
-      "3": [
-        {
-          "name": "이지트로닉스",
-          "code": "377330",
-          "grp": "코스닥",
-          "ratio": 119.9
-        },
+      "4plus": [
         {
           "name": "씨티알모빌리티",
           "code": "308170",
           "grp": "코스피",
-          "ratio": 64.9
+          "ratio": 17.9
         },
         {
-          "name": "캠시스",
-          "code": "050110",
+          "name": "컨텍",
+          "code": "451760",
           "grp": "코스닥",
-          "ratio": 31.8
-        },
-        {
-          "name": "나무가",
-          "code": "190510",
-          "grp": "코스닥",
-          "ratio": 16.9
-        },
-        {
-          "name": "아이티엠반도체",
-          "code": "084850",
-          "grp": "코스닥",
-          "ratio": 10.7
-        },
-        {
-          "name": "우림피티에스",
-          "code": "101170",
-          "grp": "코스닥",
-          "ratio": 7.7
+          "ratio": 6.6
         },
         {
           "name": "SK디앤디",
           "code": "210980",
           "grp": "코스피",
-          "ratio": 4.6
+          "ratio": 4.1
         },
         {
-          "name": "엠씨넥스",
-          "code": "097520",
-          "grp": "코스피",
-          "ratio": 4.2
-        },
-        {
-          "name": "한국피아이엠",
-          "code": "448900",
+          "name": "JYP Ent.",
+          "code": "035900",
           "grp": "코스닥",
-          "ratio": 3.3
+          "ratio": 3.8
         },
         {
-          "name": "HD현대마린솔루션",
-          "code": "443060",
-          "grp": "코스피",
-          "ratio": 2.2
-        },
-        {
-          "name": "해치텍",
-          "code": "0155E0",
+          "name": "포메탈",
+          "code": "119500",
           "grp": "코스닥",
-          "ratio": 2.1
-        },
-        {
-          "name": "좋은사람들",
-          "code": "033340",
-          "grp": "코스닥",
-          "ratio": 2.1
-        },
-        {
-          "name": "씨어스",
-          "code": "458870",
-          "grp": "코스닥",
-          "ratio": 2.0
-        },
-        {
-          "name": "RFHIC",
-          "code": "218410",
-          "grp": "코스닥",
-          "ratio": 2.0
-        },
-        {
-          "name": "SK텔레콤",
-          "code": "017670",
-          "grp": "코스피",
-          "ratio": 1.8
-        },
-        {
-          "name": "유나이티드제약",
-          "code": "033270",
-          "grp": "코스피",
-          "ratio": 1.7
-        },
-        {
-          "name": "LG",
-          "code": "003550",
-          "grp": "코스피",
-          "ratio": 1.5
+          "ratio": 3.6
         },
         {
           "name": "루닛",
           "code": "328130",
           "grp": "코스닥",
+          "ratio": 3.2
+        },
+        {
+          "name": "다보링크",
+          "code": "340360",
+          "grp": "코스닥",
+          "ratio": 3.0
+        },
+        {
+          "name": "콜마홀딩스",
+          "code": "024720",
+          "grp": "코스피",
+          "ratio": 2.7
+        },
+        {
+          "name": "우림피티에스",
+          "code": "101170",
+          "grp": "코스닥",
+          "ratio": 2.7
+        },
+        {
+          "name": "캠시스",
+          "code": "050110",
+          "grp": "코스닥",
+          "ratio": 2.5
+        },
+        {
+          "name": "나무가",
+          "code": "190510",
+          "grp": "코스닥",
+          "ratio": 2.4
+        },
+        {
+          "name": "LG씨엔에스",
+          "code": "064400",
+          "grp": "코스피",
+          "ratio": 2.1
+        },
+        {
+          "name": "코오롱인더",
+          "code": "120110",
+          "grp": "코스피",
+          "ratio": 1.8
+        },
+        {
+          "name": "IPARK현대산업개발",
+          "code": "294870",
+          "grp": "코스피",
+          "ratio": 1.7
+        },
+        {
+          "name": "아이패밀리에스씨",
+          "code": "114840",
+          "grp": "코스닥",
+          "ratio": 1.7
+        },
+        {
+          "name": "한국카본",
+          "code": "017960",
+          "grp": "코스피",
+          "ratio": 1.7
+        },
+        {
+          "name": "엠씨넥스",
+          "code": "097520",
+          "grp": "코스피",
+          "ratio": 1.6
+        },
+        {
+          "name": "씨어스",
+          "code": "458870",
+          "grp": "코스닥",
+          "ratio": 1.6
+        },
+        {
+          "name": "알멕",
+          "code": "354320",
+          "grp": "코스닥",
+          "ratio": 1.5
+        },
+        {
+          "name": "HD현대중공업",
+          "code": "329180",
+          "grp": "코스피",
+          "ratio": 1.5
+        },
+        {
+          "name": "좋은사람들",
+          "code": "033340",
+          "grp": "코스닥",
           "ratio": 1.4
         },
         {
-          "name": "HD건설기계",
-          "code": "267270",
+          "name": "와이바이오로직스",
+          "code": "338840",
+          "grp": "코스닥",
+          "ratio": 1.4
+        },
+        {
+          "name": "LG",
+          "code": "003550",
           "grp": "코스피",
           "ratio": 1.4
         },
@@ -592,193 +864,11 @@
           "name": "HD현대에너지솔루션",
           "code": "322000",
           "grp": "코스피",
-          "ratio": 1.4
-        },
-        {
-          "name": "NICE평가정보",
-          "code": "030190",
-          "grp": "코스피",
           "ratio": 1.3
-        },
-        {
-          "name": "알트",
-          "code": "459550",
-          "grp": "코스닥",
-          "ratio": 1.3
-        },
-        {
-          "name": "JYP Ent.",
-          "code": "035900",
-          "grp": "코스닥",
-          "ratio": 1.3
-        },
-        {
-          "name": "한솔테크닉스",
-          "code": "004710",
-          "grp": "코스피",
-          "ratio": 1.2
-        }
-      ],
-      "4plus": [
-        {
-          "name": "다보링크",
-          "code": "340360",
-          "grp": "코스닥",
-          "ratio": 48.8
-        },
-        {
-          "name": "우성머티리얼스",
-          "code": "011300",
-          "grp": "코스피",
-          "ratio": 8.2
-        },
-        {
-          "name": "모니터랩",
-          "code": "434480",
-          "grp": "코스닥",
-          "ratio": 7.9
         },
         {
           "name": "노을",
           "code": "376930",
-          "grp": "코스닥",
-          "ratio": 6.2
-        },
-        {
-          "name": "샌즈랩",
-          "code": "411080",
-          "grp": "코스닥",
-          "ratio": 5.9
-        },
-        {
-          "name": "SK증권",
-          "code": "001510",
-          "grp": "코스피",
-          "ratio": 3.7
-        },
-        {
-          "name": "컨텍",
-          "code": "451760",
-          "grp": "코스닥",
-          "ratio": 2.9
-        },
-        {
-          "name": "아이패밀리에스씨",
-          "code": "114840",
-          "grp": "코스닥",
-          "ratio": 2.8
-        },
-        {
-          "name": "아이씨에이치",
-          "code": "368600",
-          "grp": "코스닥",
-          "ratio": 2.7
-        },
-        {
-          "name": "알멕",
-          "code": "354320",
-          "grp": "코스닥",
-          "ratio": 2.5
-        },
-        {
-          "name": "앤로보틱스",
-          "code": "138360",
-          "grp": "코스닥",
-          "ratio": 2.4
-        },
-        {
-          "name": "코세스",
-          "code": "089890",
-          "grp": "코스닥",
-          "ratio": 2.1
-        },
-        {
-          "name": "HD현대중공업",
-          "code": "329180",
-          "grp": "코스피",
-          "ratio": 2.1
-        },
-        {
-          "name": "한국카본",
-          "code": "017960",
-          "grp": "코스피",
-          "ratio": 2.1
-        },
-        {
-          "name": "모두투어",
-          "code": "080160",
-          "grp": "코스닥",
-          "ratio": 2.0
-        },
-        {
-          "name": "LG씨엔에스",
-          "code": "064400",
-          "grp": "코스피",
-          "ratio": 2.0
-        },
-        {
-          "name": "CJ",
-          "code": "001040",
-          "grp": "코스피",
-          "ratio": 1.6
-        },
-        {
-          "name": "LF",
-          "code": "093050",
-          "grp": "코스피",
-          "ratio": 1.5
-        },
-        {
-          "name": "코오롱인더",
-          "code": "120110",
-          "grp": "코스피",
-          "ratio": 1.5
-        },
-        {
-          "name": "지투지바이오",
-          "code": "456160",
-          "grp": "코스닥",
-          "ratio": 1.5
-        },
-        {
-          "name": "와이바이오로직스",
-          "code": "338840",
-          "grp": "코스닥",
-          "ratio": 1.5
-        },
-        {
-          "name": "삼성E&A",
-          "code": "028050",
-          "grp": "코스피",
-          "ratio": 1.4
-        },
-        {
-          "name": "퓨쳐켐",
-          "code": "220100",
-          "grp": "코스닥",
-          "ratio": 1.4
-        },
-        {
-          "name": "파인엠텍",
-          "code": "441270",
-          "grp": "코스닥",
-          "ratio": 1.4
-        },
-        {
-          "name": "에브리봇",
-          "code": "270660",
-          "grp": "코스닥",
-          "ratio": 1.4
-        },
-        {
-          "name": "IPARK현대산업개발",
-          "code": "294870",
-          "grp": "코스피",
-          "ratio": 1.4
-        },
-        {
-          "name": "에이전트AI",
-          "code": "060900",
           "grp": "코스닥",
           "ratio": 1.3
         },
@@ -789,15 +879,21 @@
           "ratio": 1.3
         },
         {
-          "name": "SKAI",
-          "code": "357880",
+          "name": "퓨쳐켐",
+          "code": "220100",
           "grp": "코스닥",
+          "ratio": 1.3
+        },
+        {
+          "name": "HD건설기계",
+          "code": "267270",
+          "grp": "코스피",
           "ratio": 1.2
         },
         {
-          "name": "유니드",
-          "code": "014830",
-          "grp": "코스피",
+          "name": "RFHIC",
+          "code": "218410",
+          "grp": "코스닥",
           "ratio": 1.2
         }
       ]
@@ -807,7 +903,7 @@
     "available": true,
     "omit_reason": null,
     "session": "2026-10-27",
-    "age_days": 2,
+    "age_days": 3,
     "has_exchange_split": true,
     "nyse": {
       "over20_count": 76,
