@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-04T05:09:38+09:00",
+  "generated_at": "2026-11-04T10:28:37+09:00",
   "status": "ok",
   "errors": [],
   "kr": {
@@ -764,7 +764,7 @@
       ]
     },
     "nasdaq": {
-      "over20_count": 55,
+      "over20_count": 56,
       "threshold": 85,
       "items": [
         {
@@ -793,8 +793,8 @@
           "exchange": "NASDAQ",
           "close": 684.4,
           "change_pct": -18.59,
-          "volume": 15257200,
-          "ratio": 2.9,
+          "volume": 15343000,
+          "ratio": 3.0,
           "streak": 3
         },
         {
@@ -803,7 +803,7 @@
           "exchange": "NASDAQ",
           "close": 171.41,
           "change_pct": -12.72,
-          "volume": 61258300,
+          "volume": 61467100,
           "ratio": 2.7,
           "streak": 3
         },
@@ -833,7 +833,7 @@
           "exchange": "NASDAQ",
           "close": 36.82,
           "change_pct": 2.73,
-          "volume": 32028700,
+          "volume": 32048500,
           "ratio": 2.3,
           "streak": 2
         },
@@ -863,7 +863,7 @@
           "exchange": "NASDAQ",
           "close": 59.97,
           "change_pct": -8.8,
-          "volume": 229466700,
+          "volume": 230689500,
           "ratio": 2.0,
           "streak": 3
         }
@@ -953,7 +953,7 @@
         {
           "name": "Shopify",
           "ticker": "SHOP",
-          "ratio": 1.7,
+          "ratio": 1.8,
           "streak": 2
         },
         {
@@ -969,14 +969,14 @@
           "streak": 2
         },
         {
-          "name": "Targa Resources",
-          "ticker": "TRGP",
+          "name": "AbbVie",
+          "ticker": "ABBV",
           "ratio": 1.7,
           "streak": 2
         },
         {
-          "name": "AbbVie",
-          "ticker": "ABBV",
+          "name": "Targa Resources",
+          "ticker": "TRGP",
           "ratio": 1.7,
           "streak": 2
         },
@@ -1005,8 +1005,8 @@
           "streak": 2
         },
         {
-          "name": "Intuitive Surgical",
-          "ticker": "ISRG",
+          "name": "Apple Inc.",
+          "ticker": "AAPL",
           "ratio": 1.6,
           "streak": 2
         },
@@ -1023,8 +1023,8 @@
           "streak": 2
         },
         {
-          "name": "Apple Inc.",
-          "ticker": "AAPL",
+          "name": "Intuitive Surgical",
+          "ticker": "ISRG",
           "ratio": 1.6,
           "streak": 2
         },
@@ -1041,6 +1041,12 @@
           "streak": 2
         },
         {
+          "name": "Advanced Micro Devices",
+          "ticker": "AMD",
+          "ratio": 1.6,
+          "streak": 2
+        },
+        {
           "name": "Texas Pacific Land Corporation",
           "ticker": "TPL",
           "ratio": 1.6,
@@ -1049,12 +1055,6 @@
         {
           "name": "Analog Devices",
           "ticker": "ADI",
-          "ratio": 1.6,
-          "streak": 2
-        },
-        {
-          "name": "Advanced Micro Devices",
-          "ticker": "AMD",
           "ratio": 1.6,
           "streak": 2
         },
@@ -1197,6 +1197,12 @@
           "streak": 2
         },
         {
+          "name": "Coinbase",
+          "ticker": "COIN",
+          "ratio": 1.3,
+          "streak": 2
+        },
+        {
           "name": "FactSet",
           "ticker": "FDS",
           "ratio": 1.3,
@@ -1217,12 +1223,6 @@
         {
           "name": "Arm Holdings",
           "ticker": "ARM",
-          "ratio": 1.3,
-          "streak": 2
-        },
-        {
-          "name": "Coinbase",
-          "ticker": "COIN",
           "ratio": 1.3,
           "streak": 2
         },
@@ -1257,14 +1257,20 @@
           "streak": 2
         },
         {
+          "name": "Chevron Corporation",
+          "ticker": "CVX",
+          "ratio": 1.2,
+          "streak": 2
+        },
+        {
           "name": "Amgen",
           "ticker": "AMGN",
           "ratio": 1.2,
           "streak": 2
         },
         {
-          "name": "Chevron Corporation",
-          "ticker": "CVX",
+          "name": "Sandisk",
+          "ticker": "SNDK",
           "ratio": 1.2,
           "streak": 2
         },
@@ -1281,20 +1287,14 @@
           "streak": 2
         },
         {
-          "name": "Hormel Foods",
-          "ticker": "HRL",
-          "ratio": 1.2,
-          "streak": 2
-        },
-        {
           "name": "LyondellBasell",
           "ticker": "LYB",
           "ratio": 1.2,
           "streak": 2
         },
         {
-          "name": "Sandisk",
-          "ticker": "SNDK",
+          "name": "Hormel Foods",
+          "ticker": "HRL",
           "ratio": 1.2,
           "streak": 2
         }
@@ -1315,7 +1315,7 @@
         {
           "name": "Lumentum",
           "ticker": "LITE",
-          "ratio": 2.9,
+          "ratio": 3.0,
           "streak": 3
         },
         {
@@ -1591,16 +1591,16 @@
           "streak": 5
         },
         {
-          "name": "Digital Realty",
-          "ticker": "DLR",
-          "ratio": 1.7,
-          "streak": 6
-        },
-        {
           "name": "FedEx Freight",
           "ticker": "FDXF",
           "ratio": 1.7,
           "streak": 4
+        },
+        {
+          "name": "Digital Realty",
+          "ticker": "DLR",
+          "ratio": 1.7,
+          "streak": 6
         },
         {
           "name": "Tyler Technologies",
@@ -1615,16 +1615,16 @@
           "streak": 6
         },
         {
-          "name": "Dover Corporation",
-          "ticker": "DOV",
-          "ratio": 1.6,
-          "streak": 4
-        },
-        {
           "name": "Phillips 66",
           "ticker": "PSX",
           "ratio": 1.6,
           "streak": 5
+        },
+        {
+          "name": "Dover Corporation",
+          "ticker": "DOV",
+          "ratio": 1.6,
+          "streak": 4
         },
         {
           "name": "Microsoft",
@@ -1687,16 +1687,16 @@
           "streak": 4
         },
         {
-          "name": "MGM Resorts",
-          "ticker": "MGM",
-          "ratio": 1.4,
-          "streak": 4
-        },
-        {
           "name": "Fortive",
           "ticker": "FTV",
           "ratio": 1.4,
           "streak": 8
+        },
+        {
+          "name": "MGM Resorts",
+          "ticker": "MGM",
+          "ratio": 1.4,
+          "streak": 4
         },
         {
           "name": "Amphenol",
@@ -1789,14 +1789,14 @@
           "streak": 8
         },
         {
-          "name": "Carrier Global",
-          "ticker": "CARR",
+          "name": "Boston Scientific",
+          "ticker": "BSX",
           "ratio": 1.2,
           "streak": 4
         },
         {
-          "name": "Boston Scientific",
-          "ticker": "BSX",
+          "name": "Carrier Global",
+          "ticker": "CARR",
           "ratio": 1.2,
           "streak": 4
         }
