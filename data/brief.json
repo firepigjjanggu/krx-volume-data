@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-07T05:03:19+09:00",
+  "generated_at": "2026-11-07T09:59:00+09:00",
   "status": "ok",
   "errors": [],
   "kr": {
@@ -1544,208 +1544,378 @@
   "us": {
     "available": true,
     "omit_reason": null,
-    "session": "2026-11-04",
-    "age_days": 3,
+    "session": "2026-11-06",
+    "age_days": 1,
     "has_exchange_split": true,
     "nyse": {
-      "over20_count": 289,
-      "threshold": 220,
+      "over20_count": 101,
+      "threshold": 115,
       "items": [
         {
-          "name": "Fidelity National Information Services",
-          "ticker": "FIS",
+          "name": "Fox Corporation (Class A)",
+          "ticker": "FOXA",
           "exchange": "NYSE",
-          "close": 29.76,
-          "change_pct": -23.67,
-          "volume": 37111800,
-          "ratio": 6.1,
-          "streak": 2
+          "close": 66.64,
+          "change_pct": -1.52,
+          "volume": 19576649,
+          "ratio": 3.5,
+          "streak": 6
         },
         {
-          "name": "Stanley Black & Decker",
-          "ticker": "SWK",
+          "name": "Live Nation Entertainment",
+          "ticker": "LYV",
           "exchange": "NYSE",
-          "close": 118.33,
-          "change_pct": 13.1,
-          "volume": 6473600,
-          "ratio": 4.2,
+          "close": 175.25,
+          "change_pct": -3.31,
+          "volume": 5811456,
+          "ratio": 2.7,
           "streak": 5
         },
         {
-          "name": "Block, Inc.",
-          "ticker": "XYZ",
+          "name": "Solventum",
+          "ticker": "SOLV",
           "exchange": "NYSE",
-          "close": 87.63,
-          "change_pct": 15.3,
-          "volume": 20762500,
-          "ratio": 4.1,
-          "streak": 4
-        },
-        {
-          "name": "CVS Health",
-          "ticker": "CVS",
-          "exchange": "NYSE",
-          "close": 79.96,
-          "change_pct": -12.53,
-          "volume": 34289800,
-          "ratio": 4.0,
-          "streak": 2
-        },
-        {
-          "name": "First Solar",
-          "ticker": "FSLR",
-          "exchange": "NYSE",
-          "close": 194.51,
-          "change_pct": 4.63,
-          "volume": 8777400,
-          "ratio": 3.9,
-          "streak": 4
-        },
-        {
-          "name": "Texas Pacific Land Corporation",
-          "ticker": "TPL",
-          "exchange": "NYSE",
-          "close": 287.65,
-          "change_pct": -13.36,
-          "volume": 1177500,
-          "ratio": 3.9,
-          "streak": 4
-        },
-        {
-          "name": "Trimble Inc.",
-          "ticker": "TRMB",
-          "exchange": "NYSE",
-          "close": 54.25,
-          "change_pct": -17.31,
-          "volume": 6877200,
-          "ratio": 3.9,
+          "close": 90.38,
+          "change_pct": 3.67,
+          "volume": 3168916,
+          "ratio": 2.6,
           "streak": 3
         },
         {
-          "name": "Sempra",
-          "ticker": "SRE",
+          "name": "PPL Corporation",
+          "ticker": "PPL",
           "exchange": "NYSE",
-          "close": 82.9,
-          "change_pct": -2.88,
-          "volume": 11663900,
-          "ratio": 3.7,
+          "close": 35.8,
+          "change_pct": -0.56,
+          "volume": 18188721,
+          "ratio": 2.5,
           "streak": 3
         },
         {
           "name": "NRG Energy",
           "ticker": "NRG",
           "exchange": "NYSE",
-          "close": 83.25,
-          "change_pct": -13.52,
-          "volume": 10356900,
-          "ratio": 3.3,
+          "close": 88.29,
+          "change_pct": 9.61,
+          "volume": 8714849,
+          "ratio": 2.4,
+          "streak": 4
+        },
+        {
+          "name": "Charter Communications",
+          "ticker": "CHTR",
+          "exchange": "NYSE",
+          "close": 118.07,
+          "change_pct": -6.19,
+          "volume": 6463152,
+          "ratio": 2.4,
           "streak": 2
         },
         {
-          "name": "Southern Company",
-          "ticker": "SO",
+          "name": "Expedia Group",
+          "ticker": "EXPE",
           "exchange": "NYSE",
-          "close": 93.12,
-          "change_pct": -0.67,
-          "volume": 18715400,
-          "ratio": 3.3,
-          "streak": 1
+          "close": 259.24,
+          "change_pct": -4.86,
+          "volume": 4163888,
+          "ratio": 2.3,
+          "streak": 6
+        },
+        {
+          "name": "Rockwell Automation",
+          "ticker": "ROK",
+          "exchange": "NYSE",
+          "close": 375.86,
+          "change_pct": -1.36,
+          "volume": 2200104,
+          "ratio": 2.2,
+          "streak": 3
+        },
+        {
+          "name": "Wynn Resorts",
+          "ticker": "WYNN",
+          "exchange": "NYSE",
+          "close": 83.11,
+          "change_pct": 4.78,
+          "volume": 5045637,
+          "ratio": 2.2,
+          "streak": 3
         }
       ]
     },
     "nasdaq": {
-      "over20_count": 67,
-      "threshold": 110,
+      "over20_count": 27,
+      "threshold": 20,
       "items": [
         {
-          "name": "Datadog",
-          "ticker": "DDOG",
+          "name": "Axon Enterprise",
+          "ticker": "AXON",
           "exchange": "NASDAQ",
-          "close": 188.72,
-          "change_pct": -14.42,
-          "volume": 13201400,
-          "ratio": 4.0,
-          "streak": 5
+          "close": 313.0,
+          "change_pct": -18.18,
+          "volume": 5222609,
+          "ratio": 5.0,
+          "streak": 2
+        },
+        {
+          "name": "Microchip Technology",
+          "ticker": "MCHP",
+          "exchange": "NASDAQ",
+          "close": 58.35,
+          "change_pct": -10.02,
+          "volume": 47389996,
+          "ratio": 3.6,
+          "streak": 3
+        },
+        {
+          "name": "Airbnb",
+          "ticker": "ABNB",
+          "exchange": "NASDAQ",
+          "close": 189.99,
+          "change_pct": 11.67,
+          "volume": 12197700,
+          "ratio": 3.2,
+          "streak": 3
         },
         {
           "name": "AppLovin",
           "ticker": "APP",
           "exchange": "NASDAQ",
-          "close": 271.75,
-          "change_pct": 10.69,
-          "volume": 14528300,
-          "ratio": 3.8,
-          "streak": 4
-        },
-        {
-          "name": "GE HealthCare",
-          "ticker": "GEHC",
-          "exchange": "NASDAQ",
-          "close": 85.81,
-          "change_pct": 6.38,
-          "volume": 9603800,
-          "ratio": 2.4,
-          "streak": 3
+          "close": 391.22,
+          "change_pct": 9.86,
+          "volume": 11569425,
+          "ratio": 2.2,
+          "streak": 6
         },
         {
           "name": "Advanced Micro Devices",
           "ticker": "AMD",
           "exchange": "NASDAQ",
-          "close": 488.78,
-          "change_pct": 1.01,
-          "volume": 50984800,
-          "ratio": 2.3,
-          "streak": 4
+          "close": 449.04,
+          "change_pct": 11.04,
+          "volume": 45607871,
+          "ratio": 1.8,
+          "streak": 6
         },
         {
-          "name": "Microsoft",
-          "ticker": "MSFT",
+          "name": "Sandisk",
+          "ticker": "SNDK",
           "exchange": "NASDAQ",
-          "close": 555.8,
-          "change_pct": 6.68,
-          "volume": 50807800,
-          "ratio": 2.3,
-          "streak": 1
+          "close": 835.06,
+          "change_pct": 3.55,
+          "volume": 17644533,
+          "ratio": 1.7,
+          "streak": 3
         },
         {
-          "name": "Autodesk",
-          "ticker": "ADSK",
+          "name": "Monster Beverage",
+          "ticker": "MNST",
           "exchange": "NASDAQ",
-          "close": 270.09,
-          "change_pct": 7.04,
-          "volume": 3831400,
-          "ratio": 2.2,
+          "close": 45.72,
+          "change_pct": -4.41,
+          "volume": 15679139,
+          "ratio": 1.6,
+          "streak": 3
+        },
+        {
+          "name": "Nvidia",
+          "ticker": "NVDA",
+          "exchange": "NASDAQ",
+          "close": 186.64,
+          "change_pct": 2.78,
+          "volume": 179308722,
+          "ratio": 1.6,
+          "streak": 3
+        },
+        {
+          "name": "Constellation Energy",
+          "ticker": "CEG",
+          "exchange": "NASDAQ",
+          "close": 249.95,
+          "change_pct": 4.3,
+          "volume": 5562111,
+          "ratio": 1.5,
+          "streak": 3
+        },
+        {
+          "name": "Qualcomm",
+          "ticker": "QCOM",
+          "exchange": "NASDAQ",
+          "close": 165.41,
+          "change_pct": 5.52,
+          "volume": 19671665,
+          "ratio": 1.5,
+          "streak": 3
+        },
+        {
+          "name": "Micron Technology",
+          "ticker": "MU",
+          "exchange": "NASDAQ",
+          "close": 690.0,
+          "change_pct": 5.12,
+          "volume": 44672754,
+          "ratio": 1.5,
+          "streak": 3
+        },
+        {
+          "name": "Analog Devices",
+          "ticker": "ADI",
+          "exchange": "NASDAQ",
+          "close": 363.56,
+          "change_pct": 0.71,
+          "volume": 6867375,
+          "ratio": 1.5,
+          "streak": 3
+        },
+        {
+          "name": "Baker Hughes",
+          "ticker": "BKR",
+          "exchange": "NASDAQ",
+          "close": 47.87,
+          "change_pct": 3.61,
+          "volume": 12646723,
+          "ratio": 1.5,
+          "streak": 3
+        },
+        {
+          "name": "Astera Labs",
+          "ticker": "ALAB",
+          "exchange": "NASDAQ",
+          "close": 190.71,
+          "change_pct": 6.26,
+          "volume": 6627414,
+          "ratio": 1.4,
+          "streak": 6
+        },
+        {
+          "name": "Lam Research",
+          "ticker": "LRCX",
+          "exchange": "NASDAQ",
+          "close": 200.44,
+          "change_pct": 8.23,
+          "volume": 17928636,
+          "ratio": 1.4,
+          "streak": 3
+        },
+        {
+          "name": "Seagate Technology",
+          "ticker": "STX",
+          "exchange": "NASDAQ",
+          "close": 460.99,
+          "change_pct": -1.19,
+          "volume": 8268427,
+          "ratio": 1.4,
+          "streak": 3
+        },
+        {
+          "name": "Broadcom",
+          "ticker": "AVGO",
+          "exchange": "NASDAQ",
+          "close": 293.69,
+          "change_pct": 0.74,
+          "volume": 32321600,
+          "ratio": 1.4,
           "streak": 2
         },
         {
-          "name": "Amazon",
-          "ticker": "AMZN",
+          "name": "Datadog",
+          "ticker": "DDOG",
           "exchange": "NASDAQ",
-          "close": 266.03,
-          "change_pct": 6.12,
-          "volume": 93162200,
-          "ratio": 2.2,
-          "streak": 1
+          "close": 179.04,
+          "change_pct": 2.54,
+          "volume": 5936631,
+          "ratio": 1.4,
+          "streak": 7
         },
         {
-          "name": "O'Reilly Automotive",
-          "ticker": "ORLY",
+          "name": "Fortinet",
+          "ticker": "FTNT",
           "exchange": "NASDAQ",
-          "close": 92.34,
-          "change_pct": 2.61,
-          "volume": 12773500,
-          "ratio": 2.1,
-          "streak": 1
+          "close": 118.84,
+          "change_pct": -3.0,
+          "volume": 8023894,
+          "ratio": 1.4,
+          "streak": 2
         },
         {
-          "name": "Idexx Laboratories",
-          "ticker": "IDXX",
+          "name": "NXP Semiconductors",
+          "ticker": "NXPI",
           "exchange": "NASDAQ",
-          "close": 698.55,
-          "change_pct": 3.94,
-          "volume": 1398900,
-          "ratio": 2.1,
-          "streak": 4
+          "close": 248.29,
+          "change_pct": 1.58,
+          "volume": 7134292,
+          "ratio": 1.4,
+          "streak": 2
+        },
+        {
+          "name": "Mercado Libre",
+          "ticker": "MELI",
+          "exchange": "NASDAQ",
+          "close": 1510.0,
+          "change_pct": -1.33,
+          "volume": 881500,
+          "ratio": 1.4,
+          "streak": 3
+        },
+        {
+          "name": "Western Digital",
+          "ticker": "WDC",
+          "exchange": "NASDAQ",
+          "close": 263.78,
+          "change_pct": -1.44,
+          "volume": 12092388,
+          "ratio": 1.3,
+          "streak": 2
+        },
+        {
+          "name": "Old Dominion",
+          "ticker": "ODFL",
+          "exchange": "NASDAQ",
+          "close": 164.92,
+          "change_pct": -3.31,
+          "volume": 2570610,
+          "ratio": 1.3,
+          "streak": 2
+        },
+        {
+          "name": "Intel",
+          "ticker": "INTC",
+          "exchange": "NASDAQ",
+          "close": 56.28,
+          "change_pct": 7.71,
+          "volume": 173312671,
+          "ratio": 1.2,
+          "streak": 7
+        },
+        {
+          "name": "Teradyne",
+          "ticker": "TER",
+          "exchange": "NASDAQ",
+          "close": 218.21,
+          "change_pct": 2.57,
+          "volume": 5273522,
+          "ratio": 1.2,
+          "streak": 2
+        },
+        {
+          "name": "Cisco",
+          "ticker": "CSCO",
+          "exchange": "NASDAQ",
+          "close": 93.85,
+          "change_pct": -1.95,
+          "volume": 22354259,
+          "ratio": 1.2,
+          "streak": 6
+        },
+        {
+          "name": "Regeneron Pharmaceuticals",
+          "ticker": "REGN",
+          "exchange": "NASDAQ",
+          "close": 904.35,
+          "change_pct": 0.16,
+          "volume": 1119227,
+          "ratio": 1.2,
+          "streak": 7
         }
       ]
     },
@@ -1753,788 +1923,764 @@
     "streaks": {
       "2": [
         {
-          "name": "Fidelity National Information Services",
-          "ticker": "FIS",
-          "ratio": 6.1,
+          "name": "Axon Enterprise",
+          "ticker": "AXON",
+          "ratio": 5.0,
           "streak": 2
         },
         {
-          "name": "CVS Health",
-          "ticker": "CVS",
-          "ratio": 4.0,
-          "streak": 2
-        },
-        {
-          "name": "NRG Energy",
-          "ticker": "NRG",
-          "ratio": 3.3,
-          "streak": 2
-        },
-        {
-          "name": "Leidos",
-          "ticker": "LDOS",
-          "ratio": 2.8,
-          "streak": 2
-        },
-        {
-          "name": "Becton Dickinson",
-          "ticker": "BDX",
-          "ratio": 2.8,
-          "streak": 2
-        },
-        {
-          "name": "Amcor",
-          "ticker": "AMCR",
-          "ratio": 2.6,
-          "streak": 2
-        },
-        {
-          "name": "Cummins",
-          "ticker": "CMI",
-          "ratio": 2.5,
-          "streak": 2
-        },
-        {
-          "name": "W. W. Grainger",
-          "ticker": "GWW",
-          "ratio": 2.5,
-          "streak": 2
-        },
-        {
-          "name": "Williams Companies",
-          "ticker": "WMB",
-          "ratio": 2.5,
-          "streak": 2
-        },
-        {
-          "name": "Supermicro",
-          "ticker": "SMCI",
+          "name": "Charter Communications",
+          "ticker": "CHTR",
           "ratio": 2.4,
           "streak": 2
         },
         {
-          "name": "Uber",
-          "ticker": "UBER",
-          "ratio": 2.2,
-          "streak": 2
-        },
-        {
-          "name": "Autodesk",
-          "ticker": "ADSK",
-          "ratio": 2.2,
-          "streak": 2
-        },
-        {
-          "name": "CDW Corporation",
-          "ticker": "CDW",
-          "ratio": 2.1,
-          "streak": 2
-        },
-        {
-          "name": "Prudential Financial",
-          "ticker": "PRU",
-          "ratio": 2.1,
-          "streak": 2
-        },
-        {
-          "name": "Iron Mountain",
-          "ticker": "IRM",
+          "name": "Akamai Technologies",
+          "ticker": "AKAM",
           "ratio": 2.0,
           "streak": 2
         },
         {
-          "name": "EOG Resources",
-          "ticker": "EOG",
-          "ratio": 1.9,
+          "name": "Camden Property Trust",
+          "ticker": "CPT",
+          "ratio": 2.0,
           "streak": 2
         },
         {
-          "name": "Motorola Solutions",
-          "ticker": "MSI",
-          "ratio": 1.9,
-          "streak": 2
-        },
-        {
-          "name": "TKO Group Holdings",
-          "ticker": "TKO",
-          "ratio": 1.9,
-          "streak": 2
-        },
-        {
-          "name": "D. R. Horton",
-          "ticker": "DHI",
-          "ratio": 1.8,
-          "streak": 2
-        },
-        {
-          "name": "Tyson Foods",
-          "ticker": "TSN",
-          "ratio": 1.8,
-          "streak": 2
-        },
-        {
-          "name": "Walt Disney Company (The)",
-          "ticker": "DIS",
+          "name": "Mettler Toledo",
+          "ticker": "MTD",
           "ratio": 1.7,
           "streak": 2
         },
         {
-          "name": "Cigna",
-          "ticker": "CI",
+          "name": "Viatris",
+          "ticker": "VTRS",
+          "ratio": 1.7,
+          "streak": 2
+        },
+        {
+          "name": "Ferguson Enterprises",
+          "ticker": "FERG",
           "ratio": 1.6,
           "streak": 2
         },
         {
-          "name": "Emerson Electric",
-          "ticker": "EMR",
-          "ratio": 1.6,
-          "streak": 2
-        },
-        {
-          "name": "Bio-Techne",
-          "ticker": "TECH",
-          "ratio": 1.5,
-          "streak": 2
-        },
-        {
-          "name": "General Dynamics",
-          "ticker": "GD",
+          "name": "Broadcom",
+          "ticker": "AVGO",
           "ratio": 1.4,
           "streak": 2
         },
         {
-          "name": "Coca-Cola Europacific Partners",
-          "ticker": "CCEP",
+          "name": "U.S. Bancorp",
+          "ticker": "USB",
           "ratio": 1.4,
           "streak": 2
         },
         {
-          "name": "American International Group",
-          "ticker": "AIG",
+          "name": "Teledyne Technologies",
+          "ticker": "TDY",
           "ratio": 1.4,
           "streak": 2
         },
         {
-          "name": "Honeywell Technologies",
-          "ticker": "HON",
+          "name": "Fortinet",
+          "ticker": "FTNT",
           "ratio": 1.4,
           "streak": 2
         },
         {
-          "name": "Expand Energy",
-          "ticker": "EXE",
+          "name": "Freeport-McMoRan",
+          "ticker": "FCX",
           "ratio": 1.4,
           "streak": 2
         },
         {
-          "name": "Paccar",
-          "ticker": "PCAR",
+          "name": "NXP Semiconductors",
+          "ticker": "NXPI",
+          "ratio": 1.4,
+          "streak": 2
+        },
+        {
+          "name": "Hubbell Incorporated",
+          "ticker": "HUBB",
+          "ratio": 1.4,
+          "streak": 2
+        },
+        {
+          "name": "Western Digital",
+          "ticker": "WDC",
           "ratio": 1.3,
           "streak": 2
         },
         {
-          "name": "Simon Property Group",
-          "ticker": "SPG",
+          "name": "Republic Services",
+          "ticker": "RSG",
           "ratio": 1.3,
           "streak": 2
         },
         {
-          "name": "Verisign",
-          "ticker": "VRSN",
+          "name": "Jabil",
+          "ticker": "JBL",
           "ratio": 1.3,
           "streak": 2
         },
         {
-          "name": "Rollins, Inc.",
-          "ticker": "ROL",
+          "name": "ON Semiconductor",
+          "ticker": "ON",
           "ratio": 1.3,
+          "streak": 2
+        },
+        {
+          "name": "Old Dominion",
+          "ticker": "ODFL",
+          "ratio": 1.3,
+          "streak": 2
+        },
+        {
+          "name": "Teradyne",
+          "ticker": "TER",
+          "ratio": 1.2,
           "streak": 2
         }
       ],
       "3": [
         {
-          "name": "Trimble Inc.",
-          "ticker": "TRMB",
-          "ratio": 3.9,
+          "name": "Microchip Technology",
+          "ticker": "MCHP",
+          "ratio": 3.6,
           "streak": 3
         },
         {
-          "name": "Sempra",
-          "ticker": "SRE",
-          "ratio": 3.7,
+          "name": "Airbnb",
+          "ticker": "ABNB",
+          "ratio": 3.2,
           "streak": 3
         },
         {
-          "name": "Henry Schein",
-          "ticker": "HSIC",
-          "ratio": 2.8,
+          "name": "Solventum",
+          "ticker": "SOLV",
+          "ratio": 2.6,
           "streak": 3
         },
         {
-          "name": "Public Storage",
-          "ticker": "PSA",
-          "ratio": 2.7,
+          "name": "PPL Corporation",
+          "ticker": "PPL",
+          "ratio": 2.5,
           "streak": 3
         },
         {
-          "name": "Cencora",
-          "ticker": "COR",
-          "ratio": 2.4,
-          "streak": 3
-        },
-        {
-          "name": "GE HealthCare",
-          "ticker": "GEHC",
-          "ratio": 2.4,
-          "streak": 3
-        },
-        {
-          "name": "Broadridge Financial Solutions",
-          "ticker": "BR",
-          "ratio": 2.3,
-          "streak": 3
-        },
-        {
-          "name": "Live Nation Entertainment",
-          "ticker": "LYV",
+          "name": "Rockwell Automation",
+          "ticker": "ROK",
           "ratio": 2.2,
           "streak": 3
         },
         {
-          "name": "Pinnacle West Capital",
-          "ticker": "PNW",
+          "name": "Wynn Resorts",
+          "ticker": "WYNN",
+          "ratio": 2.2,
+          "streak": 3
+        },
+        {
+          "name": "Corpay",
+          "ticker": "CPAY",
           "ratio": 2.1,
           "streak": 3
         },
         {
-          "name": "Sysco",
-          "ticker": "SYY",
+          "name": "Devon Energy",
+          "ticker": "DVN",
           "ratio": 2.0,
           "streak": 3
         },
         {
-          "name": "Marathon Petroleum",
-          "ticker": "MPC",
+          "name": "GE Vernova",
+          "ticker": "GEV",
+          "ratio": 2.0,
+          "streak": 3
+        },
+        {
+          "name": "APA Corporation",
+          "ticker": "APA",
+          "ratio": 2.0,
+          "streak": 3
+        },
+        {
+          "name": "Coherent Corp.",
+          "ticker": "COHR",
           "ratio": 1.9,
           "streak": 3
         },
         {
-          "name": "Tapestry, Inc.",
-          "ticker": "TPR",
+          "name": "Emcor",
+          "ticker": "EME",
           "ratio": 1.9,
           "streak": 3
         },
         {
-          "name": "Aptiv",
-          "ticker": "APTV",
+          "name": "Franklin Resources",
+          "ticker": "BEN",
+          "ratio": 1.9,
+          "streak": 3
+        },
+        {
+          "name": "Ameren",
+          "ticker": "AEE",
           "ratio": 1.8,
           "streak": 3
         },
         {
-          "name": "Jack Henry & Associates",
-          "ticker": "JKHY",
+          "name": "Vistra Corp.",
+          "ticker": "VST",
           "ratio": 1.8,
           "streak": 3
         },
         {
-          "name": "Packaging Corporation of America",
-          "ticker": "PKG",
+          "name": "Sandisk",
+          "ticker": "SNDK",
           "ratio": 1.7,
           "streak": 3
         },
         {
-          "name": "Diamondback Energy",
-          "ticker": "FANG",
+          "name": "Quanta Services",
+          "ticker": "PWR",
           "ratio": 1.7,
           "streak": 3
         },
         {
-          "name": "Smurfit Westrock",
-          "ticker": "SW",
+          "name": "Regency Centers",
+          "ticker": "REG",
           "ratio": 1.7,
           "streak": 3
         },
         {
-          "name": "Yum! Brands",
-          "ticker": "YUM",
+          "name": "Steris",
+          "ticker": "STE",
+          "ratio": 1.7,
+          "streak": 3
+        },
+        {
+          "name": "Align Technology",
+          "ticker": "ALGN",
+          "ratio": 1.7,
+          "streak": 3
+        },
+        {
+          "name": "Monster Beverage",
+          "ticker": "MNST",
           "ratio": 1.6,
           "streak": 3
         },
         {
-          "name": "Gartner",
-          "ticker": "IT",
+          "name": "Evergy",
+          "ticker": "EVRG",
           "ratio": 1.6,
           "streak": 3
         },
         {
-          "name": "Berkshire Hathaway",
-          "ticker": "BRK-B",
+          "name": "American Water Works",
+          "ticker": "AWK",
+          "ratio": 1.6,
+          "streak": 3
+        },
+        {
+          "name": "Comfort Systems USA",
+          "ticker": "FIX",
+          "ratio": 1.6,
+          "streak": 3
+        },
+        {
+          "name": "Nvidia",
+          "ticker": "NVDA",
+          "ratio": 1.6,
+          "streak": 3
+        },
+        {
+          "name": "Hershey Company (The)",
+          "ticker": "HSY",
+          "ratio": 1.6,
+          "streak": 3
+        },
+        {
+          "name": "Ralph Lauren Corporation",
+          "ticker": "RL",
           "ratio": 1.5,
           "streak": 3
         },
         {
-          "name": "Host Hotels & Resorts",
-          "ticker": "HST",
+          "name": "Keysight Technologies",
+          "ticker": "KEYS",
           "ratio": 1.5,
           "streak": 3
         },
         {
-          "name": "Howmet Aerospace",
-          "ticker": "HWM",
+          "name": "Constellation Energy",
+          "ticker": "CEG",
+          "ratio": 1.5,
+          "streak": 3
+        },
+        {
+          "name": "Qualcomm",
+          "ticker": "QCOM",
+          "ratio": 1.5,
+          "streak": 3
+        },
+        {
+          "name": "Micron Technology",
+          "ticker": "MU",
+          "ratio": 1.5,
+          "streak": 3
+        },
+        {
+          "name": "CenterPoint Energy",
+          "ticker": "CNP",
+          "ratio": 1.5,
+          "streak": 3
+        },
+        {
+          "name": "Analog Devices",
+          "ticker": "ADI",
+          "ratio": 1.5,
+          "streak": 3
+        },
+        {
+          "name": "Carrier Global",
+          "ticker": "CARR",
+          "ratio": 1.5,
+          "streak": 3
+        },
+        {
+          "name": "Baker Hughes",
+          "ticker": "BKR",
+          "ratio": 1.5,
+          "streak": 3
+        },
+        {
+          "name": "Ciena",
+          "ticker": "CIEN",
           "ratio": 1.4,
           "streak": 3
         },
         {
-          "name": "Loews Corporation",
-          "ticker": "L",
+          "name": "Lam Research",
+          "ticker": "LRCX",
           "ratio": 1.4,
           "streak": 3
         },
         {
-          "name": "Healthpeak Properties",
-          "ticker": "DOC",
+          "name": "Vivmark Residential",
+          "ticker": "VMRK",
           "ratio": 1.4,
           "streak": 3
         },
         {
-          "name": "Palantir Technologies",
-          "ticker": "PLTR",
+          "name": "Seagate Technology",
+          "ticker": "STX",
           "ratio": 1.4,
+          "streak": 3
+        },
+        {
+          "name": "Norfolk Southern",
+          "ticker": "NSC",
+          "ratio": 1.4,
+          "streak": 3
+        },
+        {
+          "name": "Duke Energy",
+          "ticker": "DUK",
+          "ratio": 1.4,
+          "streak": 3
+        },
+        {
+          "name": "Mercado Libre",
+          "ticker": "MELI",
+          "ratio": 1.4,
+          "streak": 3
+        },
+        {
+          "name": "Ecolab",
+          "ticker": "ECL",
+          "ratio": 1.4,
+          "streak": 3
+        },
+        {
+          "name": "Dollar Tree",
+          "ticker": "DLTR",
+          "ratio": 1.4,
+          "streak": 3
+        },
+        {
+          "name": "WEC Energy Group",
+          "ticker": "WEC",
+          "ratio": 1.3,
+          "streak": 3
+        },
+        {
+          "name": "Bloom Energy",
+          "ticker": "BE",
+          "ratio": 1.3,
+          "streak": 3
+        },
+        {
+          "name": "Zoetis",
+          "ticker": "ZTS",
+          "ratio": 1.3,
+          "streak": 3
+        },
+        {
+          "name": "Caterpillar Inc.",
+          "ticker": "CAT",
+          "ratio": 1.3,
+          "streak": 3
+        },
+        {
+          "name": "Mid-America Apartment Communities",
+          "ticker": "MAA",
+          "ratio": 1.3,
+          "streak": 3
+        },
+        {
+          "name": "DTE Energy",
+          "ticker": "DTE",
+          "ratio": 1.3,
+          "streak": 3
+        },
+        {
+          "name": "Lilly (Eli)",
+          "ticker": "LLY",
+          "ratio": 1.3,
+          "streak": 3
+        },
+        {
+          "name": "Visa Inc.",
+          "ticker": "V",
+          "ratio": 1.3,
+          "streak": 3
+        },
+        {
+          "name": "Johnson Controls",
+          "ticker": "JCI",
+          "ratio": 1.3,
+          "streak": 3
+        },
+        {
+          "name": "Stryker Corporation",
+          "ticker": "SYK",
+          "ratio": 1.2,
+          "streak": 3
+        },
+        {
+          "name": "Allstate",
+          "ticker": "ALL",
+          "ratio": 1.2,
+          "streak": 3
+        },
+        {
+          "name": "Parker Hannifin",
+          "ticker": "PH",
+          "ratio": 1.2,
+          "streak": 3
+        },
+        {
+          "name": "United Parcel Service",
+          "ticker": "UPS",
+          "ratio": 1.2,
+          "streak": 3
+        },
+        {
+          "name": "Assurant",
+          "ticker": "AIZ",
+          "ratio": 1.2,
+          "streak": 3
+        },
+        {
+          "name": "Trane Technologies",
+          "ticker": "TT",
+          "ratio": 1.2,
+          "streak": 3
+        },
+        {
+          "name": "Kraft Heinz",
+          "ticker": "KHC",
+          "ratio": 1.2,
+          "streak": 3
+        },
+        {
+          "name": "Jacobs Solutions",
+          "ticker": "J",
+          "ratio": 1.2,
           "streak": 3
         }
       ],
       "4plus": [
         {
-          "name": "Stanley Black & Decker",
-          "ticker": "SWK",
-          "ratio": 4.2,
-          "streak": 5
-        },
-        {
-          "name": "Block, Inc.",
-          "ticker": "XYZ",
-          "ratio": 4.1,
-          "streak": 4
-        },
-        {
-          "name": "Datadog",
-          "ticker": "DDOG",
-          "ratio": 4.0,
-          "streak": 5
-        },
-        {
-          "name": "First Solar",
-          "ticker": "FSLR",
-          "ratio": 3.9,
-          "streak": 4
-        },
-        {
-          "name": "Texas Pacific Land Corporation",
-          "ticker": "TPL",
-          "ratio": 3.9,
-          "streak": 4
-        },
-        {
-          "name": "AppLovin",
-          "ticker": "APP",
-          "ratio": 3.8,
-          "streak": 4
-        },
-        {
-          "name": "Oracle Corporation",
-          "ticker": "ORCL",
-          "ratio": 3.0,
+          "name": "Fox Corporation (Class A)",
+          "ticker": "FOXA",
+          "ratio": 3.5,
           "streak": 6
         },
         {
-          "name": "Zimmer Biomet",
-          "ticker": "ZBH",
-          "ratio": 3.0,
+          "name": "Live Nation Entertainment",
+          "ticker": "LYV",
+          "ratio": 2.7,
+          "streak": 5
+        },
+        {
+          "name": "NRG Energy",
+          "ticker": "NRG",
+          "ratio": 2.4,
           "streak": 4
         },
         {
           "name": "Expedia Group",
           "ticker": "EXPE",
-          "ratio": 2.9,
-          "streak": 4
-        },
-        {
-          "name": "Arista Networks",
-          "ticker": "ANET",
-          "ratio": 2.9,
-          "streak": 4
-        },
-        {
-          "name": "FactSet",
-          "ticker": "FDS",
-          "ratio": 2.7,
-          "streak": 4
-        },
-        {
-          "name": "DuPont",
-          "ticker": "DD",
-          "ratio": 2.6,
-          "streak": 4
-        },
-        {
-          "name": "Fiserv",
-          "ticker": "FISV",
-          "ratio": 2.6,
-          "streak": 5
-        },
-        {
-          "name": "Digital Realty",
-          "ticker": "DLR",
-          "ratio": 2.6,
-          "streak": 8
-        },
-        {
-          "name": "Kimberly-Clark",
-          "ticker": "KMB",
-          "ratio": 2.4,
-          "streak": 4
-        },
-        {
-          "name": "International Flavors & Fragrances",
-          "ticker": "IFF",
-          "ratio": 2.4,
-          "streak": 7
-        },
-        {
-          "name": "Advanced Micro Devices",
-          "ticker": "AMD",
           "ratio": 2.3,
-          "streak": 4
+          "streak": 6
         },
         {
-          "name": "Entergy",
-          "ticker": "ETR",
-          "ratio": 2.3,
-          "streak": 4
-        },
-        {
-          "name": "Eaton Corporation",
-          "ticker": "ETN",
+          "name": "AppLovin",
+          "ticker": "APP",
           "ratio": 2.2,
-          "streak": 4
+          "streak": 6
         },
         {
-          "name": "Expeditors International",
-          "ticker": "EXPD",
+          "name": "Targa Resources",
+          "ticker": "TRGP",
+          "ratio": 2.1,
+          "streak": 6
+        },
+        {
+          "name": "Sysco",
+          "ticker": "SYY",
           "ratio": 2.1,
           "streak": 5
-        },
-        {
-          "name": "Idexx Laboratories",
-          "ticker": "IDXX",
-          "ratio": 2.1,
-          "streak": 4
-        },
-        {
-          "name": "Apple Inc.",
-          "ticker": "AAPL",
-          "ratio": 2.1,
-          "streak": 4
-        },
-        {
-          "name": "Booking Holdings",
-          "ticker": "BKNG",
-          "ratio": 2.0,
-          "streak": 4
-        },
-        {
-          "name": "Equinix",
-          "ticker": "EQIX",
-          "ratio": 2.0,
-          "streak": 8
         },
         {
           "name": "News Corp (Class B)",
           "ticker": "NWS",
-          "ratio": 2.0,
-          "streak": 4
-        },
-        {
-          "name": "Apollo Global Management",
-          "ticker": "APO",
-          "ratio": 2.0,
-          "streak": 4
-        },
-        {
-          "name": "Fortive",
-          "ticker": "FTV",
-          "ratio": 2.0,
-          "streak": 9
-        },
-        {
-          "name": "Xcel Energy",
-          "ticker": "XEL",
-          "ratio": 2.0,
-          "streak": 5
-        },
-        {
-          "name": "Ametek",
-          "ticker": "AME",
-          "ratio": 2.0,
-          "streak": 5
-        },
-        {
-          "name": "Astera Labs",
-          "ticker": "ALAB",
-          "ratio": 1.9,
-          "streak": 4
+          "ratio": 2.1,
+          "streak": 6
         },
         {
           "name": "News Corp (Class A)",
           "ticker": "NWSA",
           "ratio": 1.9,
-          "streak": 4
+          "streak": 6
         },
         {
-          "name": "Bunge Global",
-          "ticker": "BG",
+          "name": "Texas Pacific Land Corporation",
+          "ticker": "TPL",
           "ratio": 1.9,
-          "streak": 5
-        },
-        {
-          "name": "Marvell Technology",
-          "ticker": "MRVL",
-          "ratio": 1.9,
-          "streak": 5
-        },
-        {
-          "name": "Edwards Lifesciences",
-          "ticker": "EW",
-          "ratio": 1.9,
-          "streak": 5
-        },
-        {
-          "name": "Global Payments",
-          "ticker": "GPN",
-          "ratio": 1.9,
-          "streak": 4
-        },
-        {
-          "name": "ConocoPhillips",
-          "ticker": "COP",
-          "ratio": 1.9,
-          "streak": 4
-        },
-        {
-          "name": "Cisco",
-          "ticker": "CSCO",
-          "ratio": 1.8,
-          "streak": 4
-        },
-        {
-          "name": "Archer Daniels Midland",
-          "ticker": "ADM",
-          "ratio": 1.8,
-          "streak": 4
-        },
-        {
-          "name": "DoorDash",
-          "ticker": "DASH",
-          "ratio": 1.8,
-          "streak": 5
-        },
-        {
-          "name": "Targa Resources",
-          "ticker": "TRGP",
-          "ratio": 1.8,
-          "streak": 4
-        },
-        {
-          "name": "FedEx",
-          "ticker": "FDX",
-          "ratio": 1.8,
-          "streak": 7
-        },
-        {
-          "name": "Qnity Electronics",
-          "ticker": "Q",
-          "ratio": 1.8,
-          "streak": 5
+          "streak": 6
         },
         {
           "name": "Fox Corporation (Class B)",
           "ticker": "FOX",
           "ratio": 1.8,
-          "streak": 4
-        },
-        {
-          "name": "Clorox",
-          "ticker": "CLX",
-          "ratio": 1.8,
-          "streak": 5
-        },
-        {
-          "name": "Keurig Dr Pepper",
-          "ticker": "KDP",
-          "ratio": 1.8,
-          "streak": 4
-        },
-        {
-          "name": "Roper Technologies",
-          "ticker": "ROP",
-          "ratio": 1.7,
-          "streak": 9
-        },
-        {
-          "name": "Regeneron Pharmaceuticals",
-          "ticker": "REGN",
-          "ratio": 1.7,
-          "streak": 5
-        },
-        {
-          "name": "ResMed",
-          "ticker": "RMD",
-          "ratio": 1.7,
-          "streak": 5
-        },
-        {
-          "name": "Kimco Realty",
-          "ticker": "KIM",
-          "ratio": 1.7,
           "streak": 6
         },
         {
-          "name": "Zebra Technologies",
-          "ticker": "ZBRA",
-          "ratio": 1.6,
+          "name": "Advanced Micro Devices",
+          "ticker": "AMD",
+          "ratio": 1.8,
+          "streak": 6
+        },
+        {
+          "name": "Iron Mountain",
+          "ticker": "IRM",
+          "ratio": 1.7,
           "streak": 4
         },
         {
-          "name": "Lumentum",
-          "ticker": "LITE",
-          "ratio": 1.6,
+          "name": "Sempra",
+          "ticker": "SRE",
+          "ratio": 1.7,
           "streak": 5
         },
         {
-          "name": "Ball Corporation",
-          "ticker": "BALL",
+          "name": "Bunge Global",
+          "ticker": "BG",
+          "ratio": 1.6,
+          "streak": 7
+        },
+        {
+          "name": "Motorola Solutions",
+          "ticker": "MSI",
           "ratio": 1.6,
           "streak": 4
         },
         {
-          "name": "Revvity",
-          "ticker": "RVTY",
+          "name": "EOG Resources",
+          "ticker": "EOG",
           "ratio": 1.6,
           "streak": 4
+        },
+        {
+          "name": "Cummins",
+          "ticker": "CMI",
+          "ratio": 1.6,
+          "streak": 4
+        },
+        {
+          "name": "Arista Networks",
+          "ticker": "ANET",
+          "ratio": 1.6,
+          "streak": 6
+        },
+        {
+          "name": "Cigna",
+          "ticker": "CI",
+          "ratio": 1.5,
+          "streak": 4
+        },
+        {
+          "name": "TKO Group Holdings",
+          "ticker": "TKO",
+          "ratio": 1.5,
+          "streak": 4
+        },
+        {
+          "name": "First Solar",
+          "ticker": "FSLR",
+          "ratio": 1.5,
+          "streak": 6
+        },
+        {
+          "name": "Eaton Corporation",
+          "ticker": "ETN",
+          "ratio": 1.4,
+          "streak": 6
+        },
+        {
+          "name": "Trimble Inc.",
+          "ticker": "TRMB",
+          "ratio": 1.4,
+          "streak": 5
         },
         {
           "name": "Pfizer",
           "ticker": "PFE",
-          "ratio": 1.6,
+          "ratio": 1.4,
+          "streak": 6
+        },
+        {
+          "name": "Astera Labs",
+          "ticker": "ALAB",
+          "ratio": 1.4,
+          "streak": 6
+        },
+        {
+          "name": "Datadog",
+          "ticker": "DDOG",
+          "ratio": 1.4,
+          "streak": 7
+        },
+        {
+          "name": "Fiserv",
+          "ticker": "FISV",
+          "ratio": 1.4,
+          "streak": 7
+        },
+        {
+          "name": "Fidelity National Information Services",
+          "ticker": "FIS",
+          "ratio": 1.4,
           "streak": 4
         },
         {
-          "name": "Amphenol",
-          "ticker": "APH",
-          "ratio": 1.6,
-          "streak": 7
+          "name": "Aptiv",
+          "ticker": "APTV",
+          "ratio": 1.4,
+          "streak": 5
+        },
+        {
+          "name": "Simon Property Group",
+          "ticker": "SPG",
+          "ratio": 1.4,
+          "streak": 4
+        },
+        {
+          "name": "Pinnacle West Capital",
+          "ticker": "PNW",
+          "ratio": 1.3,
+          "streak": 5
+        },
+        {
+          "name": "CVS Health",
+          "ticker": "CVS",
+          "ratio": 1.3,
+          "streak": 4
+        },
+        {
+          "name": "Block, Inc.",
+          "ticker": "XYZ",
+          "ratio": 1.3,
+          "streak": 6
+        },
+        {
+          "name": "Entergy",
+          "ticker": "ETR",
+          "ratio": 1.3,
+          "streak": 6
         },
         {
           "name": "Intel",
           "ticker": "INTC",
-          "ratio": 1.5,
+          "ratio": 1.2,
+          "streak": 7
+        },
+        {
+          "name": "Broadridge Financial Solutions",
+          "ticker": "BR",
+          "ratio": 1.2,
           "streak": 5
         },
         {
-          "name": "Baxter International",
-          "ticker": "BAX",
-          "ratio": 1.5,
-          "streak": 6
-        },
-        {
-          "name": "West Pharmaceutical Services",
-          "ticker": "WST",
-          "ratio": 1.5,
-          "streak": 9
-        },
-        {
-          "name": "Alnylam Pharmaceuticals",
-          "ticker": "ALNY",
-          "ratio": 1.5,
-          "streak": 7
-        },
-        {
-          "name": "Shopify",
-          "ticker": "SHOP",
-          "ratio": 1.5,
-          "streak": 4
-        },
-        {
-          "name": "MGM Resorts",
-          "ticker": "MGM",
-          "ratio": 1.4,
-          "streak": 6
-        },
-        {
-          "name": "Charles River Laboratories",
-          "ticker": "CRL",
-          "ratio": 1.4,
-          "streak": 4
-        },
-        {
-          "name": "Cincinnati Financial",
-          "ticker": "CINF",
-          "ratio": 1.4,
-          "streak": 8
-        },
-        {
-          "name": "Willis Towers Watson",
-          "ticker": "WTW",
-          "ratio": 1.4,
-          "streak": 7
-        },
-        {
-          "name": "Monolithic Power Systems",
-          "ticker": "MPWR",
-          "ratio": 1.4,
-          "streak": 4
-        },
-        {
-          "name": "Arthur J. Gallagher & Co.",
-          "ticker": "AJG",
-          "ratio": 1.3,
-          "streak": 7
-        },
-        {
-          "name": "Everest Group",
-          "ticker": "EG",
-          "ratio": 1.3,
+          "name": "Jack Henry & Associates",
+          "ticker": "JKHY",
+          "ratio": 1.2,
           "streak": 5
         },
         {
-          "name": "Texas Instruments",
-          "ticker": "TXN",
-          "ratio": 1.3,
-          "streak": 4
+          "name": "Expeditors International",
+          "ticker": "EXPD",
+          "ratio": 1.2,
+          "streak": 7
         },
         {
-          "name": "Estée Lauder Companies (The)",
-          "ticker": "EL",
-          "ratio": 1.3,
-          "streak": 4
-        },
-        {
-          "name": "Tyler Technologies",
-          "ticker": "TYL",
-          "ratio": 1.3,
+          "name": "Cisco",
+          "ticker": "CSCO",
+          "ratio": 1.2,
           "streak": 6
+        },
+        {
+          "name": "Qnity Electronics",
+          "ticker": "Q",
+          "ratio": 1.2,
+          "streak": 7
+        },
+        {
+          "name": "Tapestry, Inc.",
+          "ticker": "TPR",
+          "ratio": 1.2,
+          "streak": 5
         },
         {
           "name": "J.M. Smucker Company (The)",
           "ticker": "SJM",
-          "ratio": 1.3,
-          "streak": 4
+          "ratio": 1.2,
+          "streak": 6
         },
         {
-          "name": "Fox Corporation (Class A)",
-          "ticker": "FOXA",
+          "name": "Regeneron Pharmaceuticals",
+          "ticker": "REGN",
           "ratio": 1.2,
-          "streak": 4
+          "streak": 7
+        },
+        {
+          "name": "Amphenol",
+          "ticker": "APH",
+          "ratio": 1.2,
+          "streak": 9
         }
       ]
     }
