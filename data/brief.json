@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-11T05:23:26+09:00",
+  "generated_at": "2026-11-11T10:18:00+09:00",
   "status": "ok",
   "errors": [],
   "kr": {
@@ -936,7 +936,7 @@
     "age_days": 2,
     "has_exchange_split": true,
     "nyse": {
-      "over20_count": 86,
+      "over20_count": 87,
       "threshold": 70,
       "items": [
         {
@@ -1025,7 +1025,7 @@
           "exchange": "NYSE",
           "close": 225.19,
           "change_pct": 16.79,
-          "volume": 14957100,
+          "volume": 15015900,
           "ratio": 1.7,
           "streak": 4
         }
@@ -1041,7 +1041,7 @@
           "exchange": "NASDAQ",
           "close": 178.67,
           "change_pct": -4.27,
-          "volume": 459116500,
+          "volume": 462719300,
           "ratio": 3.9,
           "streak": 4
         },
@@ -1061,7 +1061,7 @@
           "exchange": "NASDAQ",
           "close": 207.4,
           "change_pct": -3.48,
-          "volume": 6018700,
+          "volume": 6053500,
           "ratio": 2.2,
           "streak": 4
         },
@@ -1081,7 +1081,7 @@
           "exchange": "NASDAQ",
           "close": 508.58,
           "change_pct": 13.26,
-          "volume": 50987800,
+          "volume": 51261000,
           "ratio": 1.9,
           "streak": 7
         },
@@ -1101,7 +1101,7 @@
           "exchange": "NASDAQ",
           "close": 58.86,
           "change_pct": 10.91,
-          "volume": 31355900,
+          "volume": 31996800,
           "ratio": 1.6,
           "streak": 1
         },
@@ -1131,7 +1131,7 @@
           "exchange": "NASDAQ",
           "close": 319.48,
           "change_pct": 8.78,
-          "volume": 36603900,
+          "volume": 36685300,
           "ratio": 1.5,
           "streak": 3
         },
@@ -1151,7 +1151,7 @@
           "exchange": "NASDAQ",
           "close": 216.87,
           "change_pct": 13.72,
-          "volume": 7174900,
+          "volume": 7187800,
           "ratio": 1.5,
           "streak": 7
         },
@@ -1196,22 +1196,22 @@
           "streak": 1
         },
         {
-          "name": "Airbnb",
-          "ticker": "ABNB",
-          "exchange": "NASDAQ",
-          "close": 190.29,
-          "change_pct": 0.16,
-          "volume": 5886500,
-          "ratio": 1.4,
-          "streak": 4
-        },
-        {
           "name": "Analog Devices",
           "ticker": "ADI",
           "exchange": "NASDAQ",
           "close": 394.66,
           "change_pct": 8.55,
           "volume": 6542200,
+          "ratio": 1.4,
+          "streak": 4
+        },
+        {
+          "name": "Airbnb",
+          "ticker": "ABNB",
+          "exchange": "NASDAQ",
+          "close": 190.29,
+          "change_pct": 0.16,
+          "volume": 5886500,
           "ratio": 1.4,
           "streak": 4
         },
@@ -1241,7 +1241,7 @@
           "exchange": "NASDAQ",
           "close": 370.55,
           "change_pct": 11.37,
-          "volume": 10988300,
+          "volume": 11002700,
           "ratio": 1.3,
           "streak": 1
         },
@@ -1251,7 +1251,7 @@
           "exchange": "NASDAQ",
           "close": 886.51,
           "change_pct": 6.16,
-          "volume": 13848800,
+          "volume": 13983800,
           "ratio": 1.3,
           "streak": 4
         },
@@ -1281,7 +1281,7 @@
           "exchange": "NASDAQ",
           "close": 221.31,
           "change_pct": 10.41,
-          "volume": 16744100,
+          "volume": 16756700,
           "ratio": 1.3,
           "streak": 4
         },
@@ -1291,7 +1291,7 @@
           "exchange": "NASDAQ",
           "close": 171.47,
           "change_pct": 3.66,
-          "volume": 16485600,
+          "volume": 16502800,
           "ratio": 1.2,
           "streak": 4
         },
@@ -1403,14 +1403,14 @@
           "streak": 4
         },
         {
-          "name": "Align Technology",
-          "ticker": "ALGN",
+          "name": "Take-Two Interactive",
+          "ticker": "TTWO",
           "ratio": 2.2,
           "streak": 4
         },
         {
-          "name": "Take-Two Interactive",
-          "ticker": "TTWO",
+          "name": "Align Technology",
+          "ticker": "ALGN",
           "ratio": 2.2,
           "streak": 4
         },
@@ -1475,14 +1475,14 @@
           "streak": 4
         },
         {
-          "name": "Targa Resources",
-          "ticker": "TRGP",
+          "name": "First Solar",
+          "ticker": "FSLR",
           "ratio": 1.5,
           "streak": 7
         },
         {
-          "name": "First Solar",
-          "ticker": "FSLR",
+          "name": "Targa Resources",
+          "ticker": "TRGP",
           "ratio": 1.5,
           "streak": 7
         },
@@ -1595,6 +1595,12 @@
           "streak": 4
         },
         {
+          "name": "Analog Devices",
+          "ticker": "ADI",
+          "ratio": 1.4,
+          "streak": 4
+        },
+        {
           "name": "Airbnb",
           "ticker": "ABNB",
           "ratio": 1.4,
@@ -1605,12 +1611,6 @@
           "ticker": "ANET",
           "ratio": 1.4,
           "streak": 7
-        },
-        {
-          "name": "Analog Devices",
-          "ticker": "ADI",
-          "ratio": 1.4,
-          "streak": 4
         },
         {
           "name": "AppLovin",
@@ -1661,6 +1661,12 @@
           "streak": 6
         },
         {
+          "name": "Sandisk",
+          "ticker": "SNDK",
+          "ratio": 1.3,
+          "streak": 4
+        },
+        {
           "name": "Hershey Company (The)",
           "ticker": "HSY",
           "ratio": 1.3,
@@ -1673,26 +1679,20 @@
           "streak": 9
         },
         {
-          "name": "Sandisk",
-          "ticker": "SNDK",
-          "ratio": 1.3,
-          "streak": 4
-        },
-        {
           "name": "Fox Corporation (Class A)",
           "ticker": "FOXA",
           "ratio": 1.3,
           "streak": 7
         },
         {
-          "name": "Baker Hughes",
-          "ticker": "BKR",
+          "name": "Ameren",
+          "ticker": "AEE",
           "ratio": 1.3,
           "streak": 4
         },
         {
-          "name": "Ameren",
-          "ticker": "AEE",
+          "name": "Baker Hughes",
+          "ticker": "BKR",
           "ratio": 1.3,
           "streak": 4
         },
