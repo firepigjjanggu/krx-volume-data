@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-20T06:25:42+09:00",
+  "generated_at": "2026-11-20T11:24:24+09:00",
   "status": "ok",
   "errors": [],
   "kr": {
@@ -908,166 +908,176 @@
   "us": {
     "available": true,
     "omit_reason": null,
-    "session": "2026-11-18",
-    "age_days": 2,
+    "session": "2026-11-19",
+    "age_days": 1,
     "has_exchange_split": true,
     "nyse": {
-      "over20_count": 59,
-      "threshold": 90,
+      "over20_count": 51,
+      "threshold": 60,
       "items": [
         {
-          "name": "AES Corporation",
-          "ticker": "AES",
+          "name": "Williams-Sonoma, Inc.",
+          "ticker": "WSM",
           "exchange": "NYSE",
-          "close": 15.02,
-          "change_pct": 0.33,
-          "volume": 97619400,
-          "ratio": 10.9,
+          "close": 220.66,
+          "change_pct": -15.16,
+          "volume": 4463100,
+          "ratio": 4.5,
           "streak": 2
         },
         {
           "name": "UnitedHealth Group",
           "ticker": "UNH",
           "exchange": "NYSE",
-          "close": 349.91,
-          "change_pct": -10.21,
-          "volume": 17360600,
+          "close": 330.48,
+          "change_pct": -5.55,
+          "volume": 19823000,
           "ratio": 3.5,
-          "streak": 2
-        },
-        {
-          "name": "Target Corporation",
-          "ticker": "TGT",
-          "exchange": "NYSE",
-          "close": 165.93,
-          "change_pct": 4.01,
-          "volume": 12213100,
-          "ratio": 3.1,
           "streak": 3
         },
         {
-          "name": "TJX Companies",
-          "ticker": "TJX",
+          "name": "Cigna",
+          "ticker": "CI",
           "exchange": "NYSE",
-          "close": 140.3,
-          "change_pct": 8.05,
-          "volume": 18048200,
-          "ratio": 2.8,
-          "streak": 4
-        },
-        {
-          "name": "Humana",
-          "ticker": "HUM",
-          "exchange": "NYSE",
-          "close": 385.78,
-          "change_pct": -12.98,
-          "volume": 4155400,
-          "ratio": 2.7,
+          "close": 273.04,
+          "change_pct": -4.32,
+          "volume": 3650400,
+          "ratio": 2.1,
           "streak": 2
         },
         {
-          "name": "Everpure",
-          "ticker": "P",
+          "name": "Philip Morris International",
+          "ticker": "PM",
           "exchange": "NYSE",
-          "close": 100.74,
-          "change_pct": -1.03,
-          "volume": 6799100,
-          "ratio": 2.3,
-          "streak": 1
+          "close": 186.43,
+          "change_pct": -3.27,
+          "volume": 9817000,
+          "ratio": 2.0,
+          "streak": 3
+        },
+        {
+          "name": "Elevance Health",
+          "ticker": "ELV",
+          "exchange": "NYSE",
+          "close": 390.16,
+          "change_pct": -2.66,
+          "volume": 2733900,
+          "ratio": 2.0,
+          "streak": 2
         },
         {
           "name": "Freeport-McMoRan",
           "ticker": "FCX",
           "exchange": "NYSE",
-          "close": 51.45,
-          "change_pct": -6.96,
-          "volume": 28462000,
-          "ratio": 2.2,
-          "streak": 1
+          "close": 49.12,
+          "change_pct": -4.53,
+          "volume": 26741000,
+          "ratio": 1.9,
+          "streak": 2
         },
         {
-          "name": "Veeva Systems",
-          "ticker": "VEEV",
+          "name": "AES Corporation",
+          "ticker": "AES",
           "exchange": "NYSE",
-          "close": 277.2,
-          "change_pct": -3.89,
-          "volume": 2746700,
-          "ratio": 2.1,
-          "streak": 1
+          "close": 15.02,
+          "change_pct": 0.0,
+          "volume": 25175500,
+          "ratio": 1.9,
+          "streak": 3
         },
         {
-          "name": "Williams-Sonoma, Inc.",
-          "ticker": "WSM",
+          "name": "Snap-on",
+          "ticker": "SNA",
           "exchange": "NYSE",
-          "close": 260.09,
-          "change_pct": 4.02,
-          "volume": 1934200,
-          "ratio": 2.0,
-          "streak": 1
+          "close": 357.22,
+          "change_pct": -1.31,
+          "volume": 924100,
+          "ratio": 1.9,
+          "streak": 2
+        },
+        {
+          "name": "Expeditors International",
+          "ticker": "EXPD",
+          "exchange": "NYSE",
+          "close": 193.14,
+          "change_pct": 2.26,
+          "volume": 2520600,
+          "ratio": 1.7,
+          "streak": 2
         },
         {
           "name": "Walt Disney Company (The)",
           "ticker": "DIS",
           "exchange": "NYSE",
-          "close": 122.36,
-          "change_pct": 4.63,
-          "volume": 17589300,
-          "ratio": 2.0,
-          "streak": 3
+          "close": 120.25,
+          "change_pct": -1.72,
+          "volume": 15011900,
+          "ratio": 1.6,
+          "streak": 4
         }
       ]
     },
     "nasdaq": {
-      "over20_count": 9,
+      "over20_count": 10,
       "threshold": 20,
       "items": [
         {
           "name": "Take-Two Interactive",
           "ticker": "TTWO",
           "exchange": "NASDAQ",
-          "close": 216.61,
-          "change_pct": 6.22,
-          "volume": 12032400,
-          "ratio": 3.2,
-          "streak": 3
+          "close": 208.65,
+          "change_pct": -3.67,
+          "volume": 8283100,
+          "ratio": 1.9,
+          "streak": 4
         },
         {
-          "name": "Palo Alto Networks",
-          "ticker": "PANW",
+          "name": "Advanced Micro Devices",
+          "ticker": "AMD",
           "exchange": "NASDAQ",
-          "close": 339.92,
-          "change_pct": 9.9,
-          "volume": 16971000,
-          "ratio": 2.7,
+          "close": 489.19,
+          "change_pct": -7.72,
+          "volume": 71098300,
+          "ratio": 1.9,
+          "streak": 1
+        },
+        {
+          "name": "Intuit",
+          "ticker": "INTU",
+          "exchange": "NASDAQ",
+          "close": 310.02,
+          "change_pct": -1.03,
+          "volume": 4401800,
+          "ratio": 1.6,
+          "streak": 1
+        },
+        {
+          "name": "Starbucks",
+          "ticker": "SBUX",
+          "exchange": "NASDAQ",
+          "close": 104.47,
+          "change_pct": -4.25,
+          "volume": 12072000,
+          "ratio": 1.5,
+          "streak": 1
+        },
+        {
+          "name": "Walmart",
+          "ticker": "WMT",
+          "exchange": "NASDAQ",
+          "close": 126.04,
+          "change_pct": -1.04,
+          "volume": 32258900,
+          "ratio": 1.4,
           "streak": 2
         },
         {
-          "name": "Nvidia",
-          "ticker": "NVDA",
+          "name": "Mondelez International",
+          "ticker": "MDLZ",
           "exchange": "NASDAQ",
-          "close": 150.96,
-          "change_pct": -2.89,
-          "volume": 345169600,
-          "ratio": 1.5,
-          "streak": 9
-        },
-        {
-          "name": "MicroStrategy",
-          "ticker": "MSTR",
-          "exchange": "NASDAQ",
-          "close": 90.32,
-          "change_pct": -6.4,
-          "volume": 25481800,
-          "ratio": 1.4,
-          "streak": 3
-        },
-        {
-          "name": "Diamondback Energy",
-          "ticker": "FANG",
-          "exchange": "NASDAQ",
-          "close": 174.32,
-          "change_pct": -1.55,
-          "volume": 2889400,
+          "close": 65.69,
+          "change_pct": -1.32,
+          "volume": 11679300,
           "ratio": 1.4,
           "streak": 1
         },
@@ -1075,40 +1085,40 @@
           "name": "Ross Stores",
           "ticker": "ROST",
           "exchange": "NASDAQ",
-          "close": 227.64,
-          "change_pct": 3.26,
-          "volume": 2920300,
+          "close": 219.88,
+          "change_pct": -3.41,
+          "volume": 3035000,
           "ratio": 1.4,
-          "streak": 2
+          "streak": 3
         },
         {
-          "name": "Honeywell Technologies",
-          "ticker": "HON",
+          "name": "MicroStrategy",
+          "ticker": "MSTR",
           "exchange": "NASDAQ",
-          "close": 222.7,
-          "change_pct": 1.71,
-          "volume": 3833200,
+          "close": 86.13,
+          "change_pct": -4.64,
+          "volume": 23775500,
           "ratio": 1.3,
-          "streak": 2
+          "streak": 4
         },
         {
-          "name": "CrowdStrike",
-          "ticker": "CRWD",
+          "name": "Nvidia",
+          "ticker": "NVDA",
           "exchange": "NASDAQ",
-          "close": 237.03,
-          "change_pct": 7.95,
-          "volume": 11941300,
+          "close": 145.98,
+          "change_pct": -3.3,
+          "volume": 320588100,
           "ratio": 1.3,
-          "streak": 1
+          "streak": 9
         },
         {
-          "name": "Walmart",
-          "ticker": "WMT",
+          "name": "Mercado Libre",
+          "ticker": "MELI",
           "exchange": "NASDAQ",
-          "close": 127.36,
-          "change_pct": -0.13,
-          "volume": 27925200,
-          "ratio": 1.3,
+          "close": 1355.49,
+          "change_pct": -4.75,
+          "volume": 930900,
+          "ratio": 1.2,
           "streak": 1
         }
       ]
@@ -1117,187 +1127,175 @@
     "streaks": {
       "2": [
         {
-          "name": "AES Corporation",
-          "ticker": "AES",
-          "ratio": 10.9,
+          "name": "Williams-Sonoma, Inc.",
+          "ticker": "WSM",
+          "ratio": 4.5,
           "streak": 2
         },
         {
-          "name": "UnitedHealth Group",
-          "ticker": "UNH",
-          "ratio": 3.5,
+          "name": "Cigna",
+          "ticker": "CI",
+          "ratio": 2.1,
           "streak": 2
         },
         {
-          "name": "Palo Alto Networks",
-          "ticker": "PANW",
-          "ratio": 2.7,
+          "name": "Elevance Health",
+          "ticker": "ELV",
+          "ratio": 2.0,
           "streak": 2
         },
         {
-          "name": "Humana",
-          "ticker": "HUM",
-          "ratio": 2.7,
+          "name": "Freeport-McMoRan",
+          "ticker": "FCX",
+          "ratio": 1.9,
           "streak": 2
         },
         {
-          "name": "Dominion Energy",
-          "ticker": "D",
+          "name": "Snap-on",
+          "ticker": "SNA",
+          "ratio": 1.9,
+          "streak": 2
+        },
+        {
+          "name": "Expeditors International",
+          "ticker": "EXPD",
           "ratio": 1.7,
           "streak": 2
         },
         {
-          "name": "Lowe's",
-          "ticker": "LOW",
-          "ratio": 1.5,
+          "name": "Globe Life",
+          "ticker": "GL",
+          "ratio": 1.6,
           "streak": 2
         },
         {
-          "name": "CVS Health",
-          "ticker": "CVS",
-          "ratio": 1.5,
-          "streak": 2
-        },
-        {
-          "name": "Salesforce",
-          "ticker": "CRM",
-          "ratio": 1.5,
-          "streak": 2
-        },
-        {
-          "name": "Capital One",
-          "ticker": "COF",
+          "name": "Walmart",
+          "ticker": "WMT",
           "ratio": 1.4,
           "streak": 2
         },
         {
-          "name": "Huntington Bancshares",
-          "ticker": "HBAN",
+          "name": "DaVita",
+          "ticker": "DVA",
           "ratio": 1.4,
           "streak": 2
         },
         {
-          "name": "Ross Stores",
-          "ticker": "ROST",
+          "name": "Darden Restaurants",
+          "ticker": "DRI",
           "ratio": 1.4,
           "streak": 2
         },
         {
-          "name": "Vylor",
-          "ticker": "VYLR",
-          "ratio": 1.4,
-          "streak": 2
-        },
-        {
-          "name": "MetLife",
-          "ticker": "MET",
+          "name": "Newmont",
+          "ticker": "NEM",
           "ratio": 1.3,
           "streak": 2
         },
         {
-          "name": "Honeywell Technologies",
-          "ticker": "HON",
+          "name": "Generac",
+          "ticker": "GNRC",
           "ratio": 1.3,
           "streak": 2
         },
         {
-          "name": "Chubb Limited",
-          "ticker": "CB",
+          "name": "CME Group",
+          "ticker": "CME",
           "ratio": 1.3,
           "streak": 2
         },
         {
-          "name": "Best Buy",
-          "ticker": "BBY",
-          "ratio": 1.3,
+          "name": "Kroger",
+          "ticker": "KR",
+          "ratio": 1.2,
           "streak": 2
         },
         {
-          "name": "FirstEnergy",
-          "ticker": "FE",
-          "ratio": 1.3,
-          "streak": 2
-        },
-        {
-          "name": "Philip Morris International",
-          "ticker": "PM",
-          "ratio": 1.3,
-          "streak": 2
-        },
-        {
-          "name": "Agilent Technologies",
-          "ticker": "A",
+          "name": "LyondellBasell",
+          "ticker": "LYB",
           "ratio": 1.2,
           "streak": 2
         }
       ],
       "3": [
         {
-          "name": "Take-Two Interactive",
-          "ticker": "TTWO",
-          "ratio": 3.2,
+          "name": "UnitedHealth Group",
+          "ticker": "UNH",
+          "ratio": 3.5,
           "streak": 3
         },
         {
-          "name": "Target Corporation",
-          "ticker": "TGT",
-          "ratio": 3.1,
-          "streak": 3
-        },
-        {
-          "name": "Walt Disney Company (The)",
-          "ticker": "DIS",
+          "name": "Philip Morris International",
+          "ticker": "PM",
           "ratio": 2.0,
           "streak": 3
         },
         {
-          "name": "MicroStrategy",
-          "ticker": "MSTR",
+          "name": "AES Corporation",
+          "ticker": "AES",
+          "ratio": 1.9,
+          "streak": 3
+        },
+        {
+          "name": "Capital One",
+          "ticker": "COF",
+          "ratio": 1.5,
+          "streak": 3
+        },
+        {
+          "name": "Dominion Energy",
+          "ticker": "D",
           "ratio": 1.4,
           "streak": 3
         },
         {
-          "name": "C.H. Robinson",
-          "ticker": "CHRW",
+          "name": "Ross Stores",
+          "ticker": "ROST",
           "ratio": 1.4,
           "streak": 3
         },
         {
-          "name": "Consolidated Edison",
-          "ticker": "ED",
-          "ratio": 1.4,
-          "streak": 3
-        },
-        {
-          "name": "Charles Schwab Corporation",
-          "ticker": "SCHW",
-          "ratio": 1.3,
-          "streak": 3
-        },
-        {
-          "name": "Devon Energy",
-          "ticker": "DVN",
+          "name": "CVS Health",
+          "ticker": "CVS",
           "ratio": 1.3,
           "streak": 3
         }
       ],
       "4plus": [
         {
-          "name": "TJX Companies",
-          "ticker": "TJX",
-          "ratio": 2.8,
+          "name": "Take-Two Interactive",
+          "ticker": "TTWO",
+          "ratio": 1.9,
           "streak": 4
         },
         {
-          "name": "Duke Energy",
-          "ticker": "DUK",
+          "name": "Walt Disney Company (The)",
+          "ticker": "DIS",
           "ratio": 1.6,
+          "streak": 4
+        },
+        {
+          "name": "TJX Companies",
+          "ticker": "TJX",
+          "ratio": 1.6,
+          "streak": 5
+        },
+        {
+          "name": "Target Corporation",
+          "ticker": "TGT",
+          "ratio": 1.3,
+          "streak": 4
+        },
+        {
+          "name": "MicroStrategy",
+          "ticker": "MSTR",
+          "ratio": 1.3,
           "streak": 4
         },
         {
           "name": "Nvidia",
           "ticker": "NVDA",
-          "ratio": 1.5,
+          "ratio": 1.3,
           "streak": 9
         }
       ]
