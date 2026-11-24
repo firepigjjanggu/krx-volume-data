@@ -1,27 +1,31 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-21T11:28:26+09:00",
-  "status": "ok",
-  "errors": [],
+  "generated_at": "2026-11-24T09:30:32+09:00",
+  "status": "partial",
+  "errors": [
+    {
+      "scope": "us",
+      "code": "US_STALE",
+      "message": "미국 데이터가 오래됨(2026-11-19)"
+    }
+  ],
   "kr": {
     "date": "2026-11-20",
-    "integrated_count": 4154,
-    "source": "repo+marcap",
-    "repo_days_used": [
-      "2026-11-20"
-    ],
+    "integrated_count": 0,
+    "source": "marcap_only",
+    "repo_days_used": [],
     "kospi": {
-      "over20_count": 68,
-      "threshold": 155,
+      "over20_count": 64,
+      "threshold": 150,
       "items": [
         {
           "name": "한국화장품",
           "code": "123690",
           "grp": "코스피",
-          "close": 6290,
-          "change_pct": -2.63,
+          "close": 6460,
+          "change_pct": 0.0,
           "volume_shown": 6524057,
-          "amount_shown": 41036318530,
+          "amount_shown": 46118156220,
           "ratio": 53.3,
           "integrated": false
         },
@@ -29,10 +33,10 @@
           "name": "삼익악기",
           "code": "002450",
           "grp": "코스피",
-          "close": 997,
-          "change_pct": 5.39,
+          "close": 1000,
+          "change_pct": 5.71,
           "volume_shown": 2388999,
-          "amount_shown": 2381832003,
+          "amount_shown": 2372723843,
           "ratio": 13.4,
           "integrated": false
         },
@@ -40,10 +44,10 @@
           "name": "토니모리",
           "code": "214420",
           "grp": "코스피",
-          "close": 4680,
-          "change_pct": 1.74,
+          "close": 4740,
+          "change_pct": 3.04,
           "volume_shown": 1063460,
-          "amount_shown": 4976992800,
+          "amount_shown": 5091570387,
           "ratio": 10.0,
           "integrated": false
         },
@@ -51,21 +55,10 @@
           "name": "YG PLUS",
           "code": "037270",
           "grp": "코스피",
-          "close": 3205,
-          "change_pct": -6.42,
+          "close": 3270,
+          "change_pct": -4.53,
           "volume_shown": 5210264,
-          "amount_shown": 16698896120,
-          "ratio": 3.6,
-          "integrated": false
-        },
-        {
-          "name": "잇츠한불",
-          "code": "226320",
-          "grp": "코스피",
-          "close": 9960,
-          "change_pct": -4.05,
-          "volume_shown": 241663,
-          "amount_shown": 2406963480,
+          "amount_shown": 17963365574,
           "ratio": 3.6,
           "integrated": false
         },
@@ -73,10 +66,10 @@
           "name": "동아제약",
           "code": "000640",
           "grp": "코스피",
-          "close": 92300,
-          "change_pct": 1.21,
-          "volume_shown": 41862,
-          "amount_shown": 3863862600,
+          "close": 92100,
+          "change_pct": 0.99,
+          "volume_shown": 36600,
+          "amount_shown": 3408189850,
           "ratio": 3.2,
           "integrated": false
         },
@@ -84,10 +77,10 @@
           "name": "한국화장품제조",
           "code": "003350",
           "grp": "코스피",
-          "close": 11700,
-          "change_pct": -7.87,
+          "close": 12300,
+          "change_pct": -3.15,
           "volume_shown": 2116129,
-          "amount_shown": 24758709300,
+          "amount_shown": 26927772475,
           "ratio": 2.9,
           "integrated": false
         },
@@ -95,10 +88,10 @@
           "name": "키다리스튜디오",
           "code": "020120",
           "grp": "코스피",
-          "close": 3245,
-          "change_pct": -1.22,
+          "close": 3290,
+          "change_pct": 0.15,
           "volume_shown": 2315301,
-          "amount_shown": 7513151745,
+          "amount_shown": 7846676698,
           "ratio": 2.9,
           "integrated": false
         },
@@ -106,38 +99,49 @@
           "name": "하나투어",
           "code": "039130",
           "grp": "코스피",
-          "close": 33800,
-          "change_pct": -5.85,
-          "volume_shown": 756543,
-          "amount_shown": 25571153400,
+          "close": 34550,
+          "change_pct": -3.76,
+          "volume_shown": 286195,
+          "amount_shown": 10054923925,
           "ratio": 2.7,
           "integrated": false
         },
         {
-          "name": "SBS",
-          "code": "034120",
+          "name": "HD건설기계",
+          "code": "267270",
           "grp": "코스피",
-          "close": 12970,
-          "change_pct": -0.77,
-          "volume_shown": 127351,
-          "amount_shown": 1651742470,
-          "ratio": 2.6,
+          "close": 79600,
+          "change_pct": -12.81,
+          "volume_shown": 836549,
+          "amount_shown": 68090485850,
+          "ratio": 2.7,
+          "integrated": false
+        },
+        {
+          "name": "롯데손해보험",
+          "code": "000400",
+          "grp": "코스피",
+          "close": 2515,
+          "change_pct": 1.41,
+          "volume_shown": 1592256,
+          "amount_shown": 4000385124,
+          "ratio": 2.5,
           "integrated": false
         }
       ]
     },
     "kosdaq": {
-      "over20_count": 89,
+      "over20_count": 90,
       "threshold": 1120,
       "items": [
         {
           "name": "미스터블루",
           "code": "207760",
           "grp": "코스닥",
-          "close": 1941,
-          "change_pct": 4.86,
+          "close": 1961,
+          "change_pct": 5.94,
           "volume_shown": 2655395,
-          "amount_shown": 5154121695,
+          "amount_shown": 5738118279,
           "ratio": 170.8,
           "integrated": false
         },
@@ -145,10 +149,10 @@
           "name": "아우딘퓨쳐스",
           "code": "227610",
           "grp": "코스닥",
-          "close": 853,
-          "change_pct": -3.83,
+          "close": 899,
+          "change_pct": 1.35,
           "volume_shown": 3681312,
-          "amount_shown": 3140159136,
+          "amount_shown": 3894473318,
           "ratio": 102.6,
           "integrated": false
         },
@@ -156,10 +160,10 @@
           "name": "케이엘넷",
           "code": "039420",
           "grp": "코스닥",
-          "close": 2525,
-          "change_pct": 7.45,
+          "close": 2600,
+          "change_pct": 10.64,
           "volume_shown": 1065980,
-          "amount_shown": 2691599500,
+          "amount_shown": 2772731000,
           "ratio": 55.8,
           "integrated": false
         },
@@ -167,10 +171,10 @@
           "name": "마녀공장",
           "code": "439090",
           "grp": "코스닥",
-          "close": 17100,
-          "change_pct": 18.18,
-          "volume_shown": 9242728,
-          "amount_shown": 158050648800,
+          "close": 17170,
+          "change_pct": 18.66,
+          "volume_shown": 3691917,
+          "amount_shown": 63635857745,
           "ratio": 30.6,
           "integrated": false
         },
@@ -181,7 +185,7 @@
           "close": 7810,
           "change_pct": 29.95,
           "volume_shown": 756491,
-          "amount_shown": 5908194710,
+          "amount_shown": 5792302925,
           "ratio": 30.4,
           "integrated": false
         },
@@ -192,7 +196,7 @@
           "close": 2650,
           "change_pct": 15.97,
           "volume_shown": 6695069,
-          "amount_shown": 17741932850,
+          "amount_shown": 18377401565,
           "ratio": 27.2,
           "integrated": false
         },
@@ -200,10 +204,10 @@
           "name": "동일스틸럭스",
           "code": "023790",
           "grp": "코스닥",
-          "close": 1376,
-          "change_pct": 12.51,
+          "close": 1540,
+          "change_pct": 25.92,
           "volume_shown": 1696956,
-          "amount_shown": 2335011456,
+          "amount_shown": 2523830459,
           "ratio": 18.8,
           "integrated": false
         },
@@ -211,10 +215,10 @@
           "name": "뷰티스킨",
           "code": "406820",
           "grp": "코스닥",
-          "close": 1896,
-          "change_pct": -5.44,
+          "close": 1870,
+          "change_pct": -6.73,
           "volume_shown": 2226684,
-          "amount_shown": 4221792864,
+          "amount_shown": 4476701710,
           "ratio": 18.8,
           "integrated": false
         },
@@ -222,10 +226,10 @@
           "name": "바이오니아",
           "code": "064550",
           "grp": "코스닥",
-          "close": 7280,
-          "change_pct": 12.52,
-          "volume_shown": 8069384,
-          "amount_shown": 58745115520,
+          "close": 7770,
+          "change_pct": 20.09,
+          "volume_shown": 3740140,
+          "amount_shown": 27994136240,
           "ratio": 15.5,
           "integrated": false
         },
@@ -233,10 +237,10 @@
           "name": "에이스토리",
           "code": "241840",
           "grp": "코스닥",
-          "close": 1991,
-          "change_pct": -27.07,
+          "close": 2035,
+          "change_pct": -25.46,
           "volume_shown": 1976572,
-          "amount_shown": 3935354852,
+          "amount_shown": 4393047841,
           "ratio": 13.9,
           "integrated": false
         }
@@ -255,6 +259,12 @@
           "code": "191410",
           "grp": "코스닥",
           "ratio": 6.3
+        },
+        {
+          "name": "LB세미콘",
+          "code": "061970",
+          "grp": "코스닥",
+          "ratio": 5.5
         },
         {
           "name": "클리오",
@@ -371,12 +381,6 @@
           "ratio": 1.3
         },
         {
-          "name": "에이블씨엔씨",
-          "code": "078520",
-          "grp": "코스피",
-          "ratio": 1.3
-        },
-        {
           "name": "테스",
           "code": "095610",
           "grp": "코스닥",
@@ -469,6 +473,12 @@
           "ratio": 4.4
         },
         {
+          "name": "큐리언트",
+          "code": "115180",
+          "grp": "코스닥",
+          "ratio": 4.2
+        },
+        {
           "name": "노머스",
           "code": "473980",
           "grp": "코스닥",
@@ -483,12 +493,6 @@
         {
           "name": "YG PLUS",
           "code": "037270",
-          "grp": "코스피",
-          "ratio": 3.6
-        },
-        {
-          "name": "잇츠한불",
-          "code": "226320",
           "grp": "코스피",
           "ratio": 3.6
         },
@@ -511,22 +515,10 @@
           "ratio": 2.9
         },
         {
-          "name": "큐리언트",
-          "code": "115180",
-          "grp": "코스닥",
-          "ratio": 2.9
-        },
-        {
           "name": "하나투어",
           "code": "039130",
           "grp": "코스피",
           "ratio": 2.7
-        },
-        {
-          "name": "SBS",
-          "code": "034120",
-          "grp": "코스피",
-          "ratio": 2.6
         },
         {
           "name": "GST",
@@ -577,6 +569,12 @@
           "ratio": 1.4
         },
         {
+          "name": "아모레퍼시픽",
+          "code": "090430",
+          "grp": "코스피",
+          "ratio": 1.4
+        },
+        {
           "name": "CJ",
           "code": "001040",
           "grp": "코스피",
@@ -598,12 +596,6 @@
           "name": "레인보우로보틱스",
           "code": "277810",
           "grp": "코스닥",
-          "ratio": 1.3
-        },
-        {
-          "name": "아모레퍼시픽",
-          "code": "090430",
-          "grp": "코스피",
           "ratio": 1.3
         },
         {
@@ -810,484 +802,22 @@
     }
   },
   "us": {
-    "available": true,
-    "omit_reason": null,
+    "available": false,
+    "omit_reason": "stale",
     "session": "2026-11-19",
-    "age_days": 2,
-    "has_exchange_split": true,
-    "nyse": {
-      "over20_count": 59,
-      "threshold": 75,
-      "items": [
-        {
-          "name": "Williams-Sonoma, Inc.",
-          "ticker": "WSM",
-          "exchange": "NYSE",
-          "close": 220.66,
-          "change_pct": -15.16,
-          "volume": 4463100,
-          "ratio": 4.5,
-          "streak": 2
-        },
-        {
-          "name": "UnitedHealth Group",
-          "ticker": "UNH",
-          "exchange": "NYSE",
-          "close": 330.48,
-          "change_pct": -5.55,
-          "volume": 19837200,
-          "ratio": 3.5,
-          "streak": 3
-        },
-        {
-          "name": "Everpure",
-          "ticker": "P",
-          "exchange": "NYSE",
-          "close": 105.5,
-          "change_pct": 4.73,
-          "volume": 8230300,
-          "ratio": 2.6,
-          "streak": 2
-        },
-        {
-          "name": "Veeva Systems",
-          "ticker": "VEEV",
-          "exchange": "NYSE",
-          "close": 262.92,
-          "change_pct": -5.15,
-          "volume": 2985900,
-          "ratio": 2.1,
-          "streak": 2
-        },
-        {
-          "name": "Cigna",
-          "ticker": "CI",
-          "exchange": "NYSE",
-          "close": 273.04,
-          "change_pct": -4.32,
-          "volume": 3650400,
-          "ratio": 2.1,
-          "streak": 2
-        },
-        {
-          "name": "Philip Morris International",
-          "ticker": "PM",
-          "exchange": "NYSE",
-          "close": 186.43,
-          "change_pct": -3.27,
-          "volume": 9817000,
-          "ratio": 2.0,
-          "streak": 3
-        },
-        {
-          "name": "Elevance Health",
-          "ticker": "ELV",
-          "exchange": "NYSE",
-          "close": 390.16,
-          "change_pct": -2.66,
-          "volume": 2733900,
-          "ratio": 2.0,
-          "streak": 2
-        },
-        {
-          "name": "Freeport-McMoRan",
-          "ticker": "FCX",
-          "exchange": "NYSE",
-          "close": 49.12,
-          "change_pct": -4.53,
-          "volume": 26741000,
-          "ratio": 1.9,
-          "streak": 2
-        },
-        {
-          "name": "AES Corporation",
-          "ticker": "AES",
-          "exchange": "NYSE",
-          "close": 15.02,
-          "change_pct": 0.0,
-          "volume": 25175500,
-          "ratio": 1.9,
-          "streak": 3
-        },
-        {
-          "name": "Snap-on",
-          "ticker": "SNA",
-          "exchange": "NYSE",
-          "close": 357.22,
-          "change_pct": -1.31,
-          "volume": 924100,
-          "ratio": 1.9,
-          "streak": 2
-        }
-      ]
-    },
-    "nasdaq": {
-      "over20_count": 15,
-      "threshold": 20,
-      "items": [
-        {
-          "name": "PDD Holdings",
-          "ticker": "PDD",
-          "exchange": "NASDAQ",
-          "close": 86.0,
-          "change_pct": 11.04,
-          "volume": 23414100,
-          "ratio": 4.1,
-          "streak": 1
-        },
-        {
-          "name": "Palo Alto Networks",
-          "ticker": "PANW",
-          "exchange": "NASDAQ",
-          "close": 361.73,
-          "change_pct": 6.42,
-          "volume": 19184200,
-          "ratio": 2.8,
-          "streak": 3
-        },
-        {
-          "name": "Take-Two Interactive",
-          "ticker": "TTWO",
-          "exchange": "NASDAQ",
-          "close": 208.65,
-          "change_pct": -3.67,
-          "volume": 8298000,
-          "ratio": 2.0,
-          "streak": 4
-        },
-        {
-          "name": "Advanced Micro Devices",
-          "ticker": "AMD",
-          "exchange": "NASDAQ",
-          "close": 489.19,
-          "change_pct": -7.72,
-          "volume": 71660700,
-          "ratio": 1.9,
-          "streak": 1
-        },
-        {
-          "name": "Intuit",
-          "ticker": "INTU",
-          "exchange": "NASDAQ",
-          "close": 310.02,
-          "change_pct": -1.03,
-          "volume": 4448100,
-          "ratio": 1.6,
-          "streak": 1
-        },
-        {
-          "name": "Starbucks",
-          "ticker": "SBUX",
-          "exchange": "NASDAQ",
-          "close": 104.47,
-          "change_pct": -4.25,
-          "volume": 12072000,
-          "ratio": 1.5,
-          "streak": 1
-        },
-        {
-          "name": "Diamondback Energy",
-          "ticker": "FANG",
-          "exchange": "NASDAQ",
-          "close": 176.77,
-          "change_pct": 1.41,
-          "volume": 3181400,
-          "ratio": 1.5,
-          "streak": 2
-        },
-        {
-          "name": "Walmart",
-          "ticker": "WMT",
-          "exchange": "NASDAQ",
-          "close": 126.04,
-          "change_pct": -1.04,
-          "volume": 32289300,
-          "ratio": 1.4,
-          "streak": 2
-        },
-        {
-          "name": "Mondelez International",
-          "ticker": "MDLZ",
-          "exchange": "NASDAQ",
-          "close": 65.69,
-          "change_pct": -1.32,
-          "volume": 11679300,
-          "ratio": 1.4,
-          "streak": 1
-        },
-        {
-          "name": "Ross Stores",
-          "ticker": "ROST",
-          "exchange": "NASDAQ",
-          "close": 219.88,
-          "change_pct": -3.41,
-          "volume": 3035000,
-          "ratio": 1.4,
-          "streak": 3
-        },
-        {
-          "name": "Nebius Group",
-          "ticker": "NBIS",
-          "exchange": "NASDAQ",
-          "close": 96.92,
-          "change_pct": -9.39,
-          "volume": 38216900,
-          "ratio": 1.3,
-          "streak": 1
-        },
-        {
-          "name": "MicroStrategy",
-          "ticker": "MSTR",
-          "exchange": "NASDAQ",
-          "close": 86.13,
-          "change_pct": -4.64,
-          "volume": 24014500,
-          "ratio": 1.3,
-          "streak": 4
-        },
-        {
-          "name": "Nvidia",
-          "ticker": "NVDA",
-          "exchange": "NASDAQ",
-          "close": 145.98,
-          "change_pct": -3.3,
-          "volume": 322940100,
-          "ratio": 1.3,
-          "streak": 9
-        },
-        {
-          "name": "CrowdStrike",
-          "ticker": "CRWD",
-          "exchange": "NASDAQ",
-          "close": 243.46,
-          "change_pct": 2.71,
-          "volume": 11597300,
-          "ratio": 1.3,
-          "streak": 2
-        },
-        {
-          "name": "Mercado Libre",
-          "ticker": "MELI",
-          "exchange": "NASDAQ",
-          "close": 1355.49,
-          "change_pct": -4.75,
-          "volume": 930900,
-          "ratio": 1.2,
-          "streak": 1
-        }
-      ]
-    },
+    "age_days": 5,
+    "has_exchange_split": null,
+    "nyse": null,
+    "nasdaq": null,
     "all": null,
     "streaks": {
-      "2": [
-        {
-          "name": "Williams-Sonoma, Inc.",
-          "ticker": "WSM",
-          "ratio": 4.5,
-          "streak": 2
-        },
-        {
-          "name": "Everpure",
-          "ticker": "P",
-          "ratio": 2.6,
-          "streak": 2
-        },
-        {
-          "name": "Veeva Systems",
-          "ticker": "VEEV",
-          "ratio": 2.1,
-          "streak": 2
-        },
-        {
-          "name": "Cigna",
-          "ticker": "CI",
-          "ratio": 2.1,
-          "streak": 2
-        },
-        {
-          "name": "Elevance Health",
-          "ticker": "ELV",
-          "ratio": 2.0,
-          "streak": 2
-        },
-        {
-          "name": "Freeport-McMoRan",
-          "ticker": "FCX",
-          "ratio": 1.9,
-          "streak": 2
-        },
-        {
-          "name": "Snap-on",
-          "ticker": "SNA",
-          "ratio": 1.9,
-          "streak": 2
-        },
-        {
-          "name": "Expeditors International",
-          "ticker": "EXPD",
-          "ratio": 1.7,
-          "streak": 2
-        },
-        {
-          "name": "Globe Life",
-          "ticker": "GL",
-          "ratio": 1.6,
-          "streak": 2
-        },
-        {
-          "name": "Diamondback Energy",
-          "ticker": "FANG",
-          "ratio": 1.5,
-          "streak": 2
-        },
-        {
-          "name": "Walmart",
-          "ticker": "WMT",
-          "ratio": 1.4,
-          "streak": 2
-        },
-        {
-          "name": "DaVita",
-          "ticker": "DVA",
-          "ratio": 1.4,
-          "streak": 2
-        },
-        {
-          "name": "Darden Restaurants",
-          "ticker": "DRI",
-          "ratio": 1.4,
-          "streak": 2
-        },
-        {
-          "name": "Newmont",
-          "ticker": "NEM",
-          "ratio": 1.3,
-          "streak": 2
-        },
-        {
-          "name": "Generac",
-          "ticker": "GNRC",
-          "ratio": 1.3,
-          "streak": 2
-        },
-        {
-          "name": "CME Group",
-          "ticker": "CME",
-          "ratio": 1.3,
-          "streak": 2
-        },
-        {
-          "name": "CrowdStrike",
-          "ticker": "CRWD",
-          "ratio": 1.3,
-          "streak": 2
-        },
-        {
-          "name": "Kroger",
-          "ticker": "KR",
-          "ratio": 1.2,
-          "streak": 2
-        },
-        {
-          "name": "LyondellBasell",
-          "ticker": "LYB",
-          "ratio": 1.2,
-          "streak": 2
-        }
-      ],
-      "3": [
-        {
-          "name": "UnitedHealth Group",
-          "ticker": "UNH",
-          "ratio": 3.5,
-          "streak": 3
-        },
-        {
-          "name": "Palo Alto Networks",
-          "ticker": "PANW",
-          "ratio": 2.8,
-          "streak": 3
-        },
-        {
-          "name": "Philip Morris International",
-          "ticker": "PM",
-          "ratio": 2.0,
-          "streak": 3
-        },
-        {
-          "name": "AES Corporation",
-          "ticker": "AES",
-          "ratio": 1.9,
-          "streak": 3
-        },
-        {
-          "name": "Capital One",
-          "ticker": "COF",
-          "ratio": 1.5,
-          "streak": 3
-        },
-        {
-          "name": "Ross Stores",
-          "ticker": "ROST",
-          "ratio": 1.4,
-          "streak": 3
-        },
-        {
-          "name": "Dominion Energy",
-          "ticker": "D",
-          "ratio": 1.4,
-          "streak": 3
-        },
-        {
-          "name": "CVS Health",
-          "ticker": "CVS",
-          "ratio": 1.3,
-          "streak": 3
-        }
-      ],
-      "4plus": [
-        {
-          "name": "Take-Two Interactive",
-          "ticker": "TTWO",
-          "ratio": 2.0,
-          "streak": 4
-        },
-        {
-          "name": "Walt Disney Company (The)",
-          "ticker": "DIS",
-          "ratio": 1.6,
-          "streak": 4
-        },
-        {
-          "name": "TJX Companies",
-          "ticker": "TJX",
-          "ratio": 1.6,
-          "streak": 5
-        },
-        {
-          "name": "Target Corporation",
-          "ticker": "TGT",
-          "ratio": 1.3,
-          "streak": 4
-        },
-        {
-          "name": "MicroStrategy",
-          "ticker": "MSTR",
-          "ratio": 1.3,
-          "streak": 4
-        },
-        {
-          "name": "Nvidia",
-          "ticker": "NVDA",
-          "ratio": 1.3,
-          "streak": 9
-        }
-      ]
+      "2": [],
+      "3": [],
+      "4plus": []
     }
   },
   "notes": [
     "한국 거래량은 정규장+시간외+넥스트레이드 통합 기준이며, 통합 이력이 쌓이는 중이라 일부 종목은 정규장 기준 자동 적용(약 한 달 내 완전 전환). 스팩·거래대금 10억 미만 제외.",
-    "미국은 S&P500+나스닥100 대상.",
-    "미국 종목의 거래소 표기는 실제 상장 거래소가 아니라 지수 구성 기준입니다(S&P500 편입=NYSE, 나스닥100 편입=NASDAQ으로 표시)."
+    "미국은 S&P500+나스닥100 대상. 한국 데이터는 저장소 CSV 없이 공개 데이터셋만 사용했습니다(2거래일 이상 전 데이터일 수 있음)."
   ]
 }
