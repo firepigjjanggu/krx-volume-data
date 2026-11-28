@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-28T07:00:33+09:00",
+  "generated_at": "2026-11-28T12:21:39+09:00",
   "status": "ok",
   "errors": [],
   "kr": {
@@ -1124,393 +1124,46 @@
   "us": {
     "available": true,
     "omit_reason": null,
-    "session": "2026-11-25",
-    "age_days": 3,
+    "session": "2026-11-27",
+    "age_days": 1,
     "has_exchange_split": true,
     "nyse": {
-      "over20_count": 62,
-      "threshold": 70,
+      "over20_count": 1,
+      "threshold": 20,
       "items": [
         {
-          "name": "Dell Technologies",
-          "ticker": "DELL",
+          "name": "Verisign",
+          "ticker": "VRSN",
           "exchange": "NYSE",
-          "close": 297.06,
-          "change_pct": 0.6,
-          "volume": 26690500,
-          "ratio": 2.9,
-          "streak": 4
-        },
-        {
-          "name": "HP Inc.",
-          "ticker": "HPQ",
-          "exchange": "NYSE",
-          "close": 31.15,
-          "change_pct": 11.49,
-          "volume": 39105300,
-          "ratio": 2.7,
-          "streak": 2
-        },
-        {
-          "name": "Cigna",
-          "ticker": "CI",
-          "exchange": "NYSE",
-          "close": 271.42,
-          "change_pct": -1.3,
-          "volume": 4483400,
-          "ratio": 2.3,
-          "streak": 1
-        },
-        {
-          "name": "Bio-Techne",
-          "ticker": "TECH",
-          "exchange": "NYSE",
-          "close": 72.65,
-          "change_pct": -0.22,
-          "volume": 7091900,
-          "ratio": 2.2,
-          "streak": 1
-        },
-        {
-          "name": "Willis Towers Watson",
-          "ticker": "WTW",
-          "exchange": "NYSE",
-          "close": 352.56,
-          "change_pct": 1.67,
-          "volume": 1247200,
-          "ratio": 2.1,
-          "streak": 1
-        },
-        {
-          "name": "Jacobs Solutions",
-          "ticker": "J",
-          "exchange": "NYSE",
-          "close": 145.49,
-          "change_pct": -4.27,
-          "volume": 1952700,
-          "ratio": 2.1,
-          "streak": 3
-        },
-        {
-          "name": "Texas Pacific Land Corporation",
-          "ticker": "TPL",
-          "exchange": "NYSE",
-          "close": 261.37,
-          "change_pct": 3.97,
-          "volume": 1122800,
-          "ratio": 1.9,
-          "streak": 3
-        },
-        {
-          "name": "Deere & Company",
-          "ticker": "DE",
-          "exchange": "NYSE",
-          "close": 641.02,
-          "change_pct": 4.44,
-          "volume": 2353600,
-          "ratio": 1.8,
-          "streak": 5
-        },
-        {
-          "name": "McCormick & Company",
-          "ticker": "MKC",
-          "exchange": "NYSE",
-          "close": 49.85,
-          "change_pct": 1.67,
-          "volume": 6839700,
-          "ratio": 1.8,
-          "streak": 1
-        },
-        {
-          "name": "Ameren",
-          "ticker": "AEE",
-          "exchange": "NYSE",
-          "close": 114.88,
-          "change_pct": 1.32,
-          "volume": 3208300,
-          "ratio": 1.8,
+          "close": 320.2,
+          "change_pct": 0.23,
+          "volume": 1481400,
+          "ratio": 1.4,
           "streak": 1
         }
       ]
     },
     "nasdaq": {
-      "over20_count": 12,
+      "over20_count": 1,
       "threshold": 20,
       "items": [
         {
-          "name": "Workday, Inc.",
-          "ticker": "WDAY",
+          "name": "Vertex Pharmaceuticals",
+          "ticker": "VRTX",
           "exchange": "NASDAQ",
-          "close": 180.44,
-          "change_pct": 0.68,
-          "volume": 4118900,
-          "ratio": 1.8,
-          "streak": 2
-        },
-        {
-          "name": "Autodesk",
-          "ticker": "ADSK",
-          "exchange": "NASDAQ",
-          "close": 246.79,
-          "change_pct": -3.48,
-          "volume": 3320800,
-          "ratio": 1.6,
-          "streak": 2
-        },
-        {
-          "name": "Analog Devices",
-          "ticker": "ADI",
-          "exchange": "NASDAQ",
-          "close": 333.11,
-          "change_pct": 6.44,
-          "volume": 9202700,
-          "ratio": 1.6,
-          "streak": 4
-        },
-        {
-          "name": "Lam Research",
-          "ticker": "LRCX",
-          "exchange": "NASDAQ",
-          "close": 185.01,
-          "change_pct": -5.68,
-          "volume": 21505500,
-          "ratio": 1.5,
-          "streak": 1
-        },
-        {
-          "name": "MicroStrategy",
-          "ticker": "MSTR",
-          "exchange": "NASDAQ",
-          "close": 79.96,
-          "change_pct": 3.11,
-          "volume": 30231600,
-          "ratio": 1.5,
-          "streak": 8
-        },
-        {
-          "name": "Micron Technology",
-          "ticker": "MU",
-          "exchange": "NASDAQ",
-          "close": 601.25,
-          "change_pct": -4.53,
-          "volume": 52988400,
-          "ratio": 1.5,
-          "streak": 1
-        },
-        {
-          "name": "SpaceX",
-          "ticker": "SPCX",
-          "exchange": "NASDAQ",
-          "close": 127.44,
-          "change_pct": 1.3,
-          "volume": 148279900,
-          "ratio": 1.4,
-          "streak": 1
-        },
-        {
-          "name": "Applied Materials",
-          "ticker": "AMAT",
-          "exchange": "NASDAQ",
-          "close": 311.18,
-          "change_pct": -3.89,
-          "volume": 11719400,
+          "close": 534.57,
+          "change_pct": -5.24,
+          "volume": 2130900,
           "ratio": 1.3,
-          "streak": 1
-        },
-        {
-          "name": "PDD Holdings",
-          "ticker": "PDD",
-          "exchange": "NASDAQ",
-          "close": 87.42,
-          "change_pct": 0.23,
-          "volume": 10592200,
-          "ratio": 1.3,
-          "streak": 5
-        },
-        {
-          "name": "CrowdStrike",
-          "ticker": "CRWD",
-          "exchange": "NASDAQ",
-          "close": 209.3,
-          "change_pct": -0.74,
-          "volume": 14571700,
-          "ratio": 1.3,
-          "streak": 6
-        },
-        {
-          "name": "Arm Holdings",
-          "ticker": "ARM",
-          "exchange": "NASDAQ",
-          "close": 161.51,
-          "change_pct": -0.03,
-          "volume": 8187900,
-          "ratio": 1.2,
-          "streak": 1
-        },
-        {
-          "name": "Nebius Group",
-          "ticker": "NBIS",
-          "exchange": "NASDAQ",
-          "close": 84.99,
-          "change_pct": -2.66,
-          "volume": 40766800,
-          "ratio": 1.2,
           "streak": 1
         }
       ]
     },
     "all": null,
     "streaks": {
-      "2": [
-        {
-          "name": "HP Inc.",
-          "ticker": "HPQ",
-          "ratio": 2.7,
-          "streak": 2
-        },
-        {
-          "name": "Workday, Inc.",
-          "ticker": "WDAY",
-          "ratio": 1.8,
-          "streak": 2
-        },
-        {
-          "name": "Dollar General",
-          "ticker": "DG",
-          "ratio": 1.7,
-          "streak": 2
-        },
-        {
-          "name": "Autodesk",
-          "ticker": "ADSK",
-          "ratio": 1.6,
-          "streak": 2
-        },
-        {
-          "name": "Hormel Foods",
-          "ticker": "HRL",
-          "ratio": 1.4,
-          "streak": 2
-        },
-        {
-          "name": "Merck & Co.",
-          "ticker": "MRK",
-          "ratio": 1.3,
-          "streak": 2
-        },
-        {
-          "name": "IQVIA",
-          "ticker": "IQV",
-          "ratio": 1.3,
-          "streak": 2
-        }
-      ],
-      "3": [
-        {
-          "name": "Jacobs Solutions",
-          "ticker": "J",
-          "ratio": 2.1,
-          "streak": 3
-        },
-        {
-          "name": "Texas Pacific Land Corporation",
-          "ticker": "TPL",
-          "ratio": 1.9,
-          "streak": 3
-        },
-        {
-          "name": "Hasbro",
-          "ticker": "HAS",
-          "ratio": 1.5,
-          "streak": 3
-        },
-        {
-          "name": "J.M. Smucker Company (The)",
-          "ticker": "SJM",
-          "ratio": 1.4,
-          "streak": 3
-        },
-        {
-          "name": "Dollar Tree",
-          "ticker": "DLTR",
-          "ratio": 1.4,
-          "streak": 3
-        }
-      ],
-      "4plus": [
-        {
-          "name": "Dell Technologies",
-          "ticker": "DELL",
-          "ratio": 2.9,
-          "streak": 4
-        },
-        {
-          "name": "Deere & Company",
-          "ticker": "DE",
-          "ratio": 1.8,
-          "streak": 5
-        },
-        {
-          "name": "Analog Devices",
-          "ticker": "ADI",
-          "ratio": 1.6,
-          "streak": 4
-        },
-        {
-          "name": "Hewlett Packard Enterprise",
-          "ticker": "HPE",
-          "ratio": 1.5,
-          "streak": 4
-        },
-        {
-          "name": "Medtronic",
-          "ticker": "MDT",
-          "ratio": 1.5,
-          "streak": 4
-        },
-        {
-          "name": "MicroStrategy",
-          "ticker": "MSTR",
-          "ratio": 1.5,
-          "streak": 8
-        },
-        {
-          "name": "Morgan Stanley",
-          "ticker": "MS",
-          "ratio": 1.5,
-          "streak": 5
-        },
-        {
-          "name": "Goldman Sachs",
-          "ticker": "GS",
-          "ratio": 1.4,
-          "streak": 5
-        },
-        {
-          "name": "PDD Holdings",
-          "ticker": "PDD",
-          "ratio": 1.3,
-          "streak": 5
-        },
-        {
-          "name": "CrowdStrike",
-          "ticker": "CRWD",
-          "ratio": 1.3,
-          "streak": 6
-        },
-        {
-          "name": "EOG Resources",
-          "ticker": "EOG",
-          "ratio": 1.2,
-          "streak": 4
-        },
-        {
-          "name": "Loews Corporation",
-          "ticker": "L",
-          "ratio": 1.2,
-          "streak": 4
-        }
-      ]
+      "2": [],
+      "3": [],
+      "4plus": []
     }
   },
   "notes": [
